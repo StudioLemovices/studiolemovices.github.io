@@ -28,7 +28,7 @@ Les autres fichiers (`index.html`, `style.css`, `app.js`, `fonts/`) font fonctio
 1. Sur github.com, ouvrez le dépôt, puis cliquez sur **`contenu.json`**.
 2. Cliquez sur le **crayon** (✏️ « Edit this file ») en haut à droite du fichier.
 3. Trouvez le texte (raccourci : Ctrl+F ou Cmd+F) et modifiez-le **entre les guillemets**.
-   Chaque texte existe en deux versions : `"fr": "…"` et `"en": "…"`.
+   Chaque texte existe en trois versions : `"fr": "…"`, `"en": "…"` et `"es": "…"` (espagnol).
 4. Cliquez sur le bouton vert **Commit changes…**, puis encore sur **Commit changes**.
 
 ⚠️ Trois règles pour ne rien casser :
@@ -62,7 +62,7 @@ Même chose dans le dossier `making-of/` : un dossier au même nom (`table-nouve
 3. Collez-le juste après, et modifiez :
    - `"slug"` : le nom du dossier (`table-nouvelle`) — c'est aussi l'adresse de la fiche : `studiolemovices.github.io/#/table-nouvelle` ;
    - `"famille"` : `dining`, `living`, `working` ou `chess` ;
-   - `"nom"`, `"sous_titre"`, `"matieres"`, `"texte"` (en français et en anglais) ;
+   - `"nom"`, `"sous_titre"`, `"matieres"`, `"texte"` (en français, en anglais et en espagnol) ;
    - `"photos"` : les chemins de vos photos, par exemple `"pieces/table-nouvelle/01-ensemble.jpg"` ;
    - `"making_of"` : `"making-of/table-nouvelle/"`, ou `null` s'il n'y a pas de photos d'atelier.
 4. Vérifiez la virgule entre deux blocs : chaque `}` est suivi d'une virgule, **sauf le dernier de la liste**.

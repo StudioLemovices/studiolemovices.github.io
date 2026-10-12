@@ -113,7 +113,10 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 }
 .nav a:hover::after { transform: scaleX(1); }
 .lang { font-size: 11px; letter-spacing: .2em; color: var(--muted); padding: 8px 0; white-space: nowrap; }
-.lang span.on { color: var(--ink); font-weight: 500; }
+.lang { display: flex; gap: 6px; align-items: center; }
+.lang button { font-size: 11px; letter-spacing: .2em; color: var(--muted); padding: 4px 0; }
+.lang button.on { color: var(--ink); font-weight: 500; }
+.lang button:hover { color: var(--ink); }
 .menu-btn { display: none; width: 32px; height: 32px; position: relative; }
 .menu-btn span, .menu-btn::before, .menu-btn::after {
   content: ""; position: absolute; left: 6px; right: 6px; height: 1px; background: var(--ink);

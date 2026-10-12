@@ -1,0 +1,354 @@
+TEXTES ESPAGNOLS À RELIRE — Studio Lemovices
+Pour corriger : modifiez la ligne "es" correspondante dans contenu.json.
+
+— accueil › phrase
+FR : Chaque pièce est unique.
+ES : Cada pieza es única.
+
+— accueil › lieux
+FR : 🇧🇪 Bruxelles / Lyon 🇫🇷
+ES : 🇧🇪 Bruselas / Lyon 🇫🇷
+
+— intro › titre
+FR : Un portfolio, pas un catalogue
+ES : Un portafolio, no un catálogo
+
+— intro › texte
+FR : Chaque pièce présentée ici est unique, dessinée pour un lieu, un usage, une histoire. Plutôt qu'un catalogue, ce portfolio montre une façon de faire. Chaque nouvelle commande est un projet sur mesure, pensé autour de la matière, de l'espace et des personnes qui vivront avec.
+ES : Cada pieza presentada aquí es única, diseñada para un lugar, un uso, una historia. Más que un catálogo, este portafolio muestra una manera de hacer. Cada nuevo encargo es un proyecto a medida, pensado en torno a la materia, el espacio y las personas que vivirán con él.
+
+— intro › nom_origine
+FR : Lemovices : du gaulois lemo, l'orme, et vices, ceux qui vainquent. « Les vainqueurs par l'orme », un peuple gaulois du Limousin.
+ES : Lemovices: del galo lemo, el olmo, y vices, los que vencen. «Los vencedores por el olmo», un pueblo galo del Lemosín.
+
+— familles 1 › bois
+FR : Chêne
+ES : Roble
+
+— familles 2 › bois
+FR : Noyer
+ES : Nogal
+
+— familles 3 › bois
+FR : Érable
+ES : Arce
+
+— familles 4 › bois
+FR : Merisier
+ES : Cerezo
+
+— Table Quercus Aguacate › sous_titre
+FR : Le chêne et la pierre
+ES : El roble y la piedra
+
+— Table Quercus Aguacate › matieres
+FR : Chêne massif · quartzite Avocado
+ES : Roble macizo · cuarcita Avocado
+
+— Table Quercus Aguacate › texte
+FR : La première. Une dalle de quartzite trouvée par hasard, et une base dessinée pour elle. Des pieds doubles enserrent les traverses : un mikado qui cache sa complexité derrière une simplicité apparente.
+ES : La primera. Una losa de cuarcita encontrada por azar, y una base dibujada para ella. Patas dobles abrazan los travesaños: un mikado que esconde su complejidad tras una sencillez aparente.
+
+— Bench Quercus Aguacate › sous_titre
+FR : La forme distillée
+ES : La forma destilada
+
+— Bench Quercus Aguacate › matieres
+FR : Chêne massif
+ES : Roble macizo
+
+— Bench Quercus Aguacate › texte
+FR : Après la table est venu le banc. Les mêmes lignes qui se croisent, la même structure ramenée à l'essentiel. Une pièce compagnon, pensée pour l'usage quotidien.
+ES : Después de la mesa llegó el banco. Las mismas líneas que se cruzan, la misma estructura reducida a lo esencial. Una pieza compañera, pensada para el uso diario.
+
+— Stool Quercus Aguacate › sous_titre
+FR : Expression compacte
+ES : Expresión compacta
+
+— Stool Quercus Aguacate › matieres
+FR : Chêne massif
+ES : Roble macizo
+
+— Stool Quercus Aguacate › texte
+FR : Troisième volet d'un même dessin. Le vocabulaire de la table et du banc, resserré à la mesure d'une seule assise. Plus petit, rien en moins.
+ES : Tercer capítulo de un mismo dibujo. El lenguaje de la mesa y del banco, ceñido a la medida de un solo asiento. Más pequeño, nada menos.
+
+— Chair Quercus Aguacate › sous_titre
+FR : Forme et confort
+ES : Forma y comodidad
+
+— Chair Quercus Aguacate › matieres
+FR : Chêne massif
+ES : Roble macizo
+
+— Chair Quercus Aguacate › texte
+FR : Une cousine de la série, redessinée pour répondre aux premières pièces tout en s'en affranchissant. Le vocabulaire de la table, adapté au corps : simple, solide, pensé pour le confort.
+ES : Una prima de la serie, redibujada para responder a las primeras piezas sin dejar de tener voz propia. El vocabulario de la mesa, adaptado al cuerpo: sencilla, sólida, pensada para la comodidad.
+
+— Cutting Board Olea Nux › sous_titre
+FR : Le bois millénaire
+ES : La madera milenaria
+
+— Cutting Board Olea Nux › matieres
+FR : Olivier en bois de bout · noyer américain
+ES : Olivo a contrafibra · nogal americano
+
+— Cutting Board Olea Nux › texte
+FR : Une planche en bois de bout d'olivier, cadrée de noyer américain. Lourde, dense, faite pour durer. L'olivier, un bois ancré dans l'usage des hommes et dans leur mémoire.
+ES : Una tabla de olivo a contrafibra, enmarcada en nogal americano. Pesada, densa, hecha para durar. El olivo, una madera arraigada en el uso de los hombres y en su memoria.
+
+— Tasting Board Olea Lux › sous_titre
+FR : La veine sombre
+ES : La veta oscura
+
+— Tasting Board Olea Lux › matieres
+FR : Olivier
+ES : Olivo
+
+— Tasting Board Olea Lux › texte
+FR : Une planche de présentation en olivier, traversée d'une ligne sombre. Le contraste fait ressortir le fil et la profondeur du bois.
+ES : Una tabla de presentación de olivo, atravesada por una línea oscura. El contraste realza la fibra y la profundidad de la madera.
+
+— Table Prunus Orbita › sous_titre
+FR : La courbe tranquille
+ES : La curva tranquila
+
+— Table Prunus Orbita › matieres
+FR : Merisier · noyer américain · plateau ancien du Mali
+ES : Cerezo · nogal americano · tablero antiguo de Malí
+
+— Table Prunus Orbita › texte
+FR : Quatre arcs de merisier se croisent sous un plateau sculpté, venu d'une pièce ancienne du Mali. Des clés de noyer sombre tiennent les courbes ensemble. Le mouvement ne s'arrête jamais tout à fait.
+ES : Cuatro arcos de cerezo se cruzan bajo un tablero tallado, procedente de una pieza antigua de Malí. Llaves de nogal oscuro mantienen unidas las curvas. El movimiento nunca se detiene del todo.
+
+— Credenza Confluencia › sous_titre
+FR : Paysage intérieur
+ES : Paisaje interior
+
+— Credenza Confluencia › matieres
+FR : Noyer américain · olivier · laiton
+ES : Nogal americano · olivo · latón
+
+— Credenza Confluencia › texte
+FR : Une ligne de noyer américain, calme et droite. Au centre, l'olivier garde ses rives naturelles ; un filet de laiton les tient en ligne. Six mois de dessin, deux ans d'atelier.
+ES : Una línea de nogal americano, serena y recta. En el centro, el olivo conserva sus cantos naturales; un filete de latón los mantiene en línea. Seis meses de dibujo, dos años de taller.
+
+— Table Levitas Aguacate › sous_titre
+FR : La masse flottante
+ES : La masa flotante
+
+— Table Levitas Aguacate › matieres
+FR : Afzelia · quartzite Avocado · verre fumé
+ES : Afzelia · cuarcita Avocado · vidrio ahumado
+
+— Table Levitas Aguacate › texte
+FR : Une table basse où la pierre semble flotter. Des pieds au fil finement texturé, une tablette de verre fumé dessous : le contraste et la transparence allègent la masse du quartzite.
+ES : Una mesa baja donde la piedra parece flotar. Patas de fibra finamente texturizada, una repisa de vidrio ahumado debajo: el contraste y la transparencia aligeran la masa de la cuarcita.
+
+— Standing Desk Quercus Industria › sous_titre
+FR : Mémoire industrielle
+ES : Memoria industrial
+
+— Standing Desk Quercus Industria › matieres
+FR : Chêne de réemploi · piètement réglable
+ES : Roble recuperado · base regulable
+
+— Standing Desk Quercus Industria › texte
+FR : Des planches de chêne récupérées sur un ancien site industriel, marquées par le temps et l'usage. Le plateau est repris et stabilisé, puis posé sur un piètement réglable en hauteur.
+ES : Tablas de roble recuperadas de un antiguo sitio industrial, marcadas por el tiempo y el uso. El tablero se retrabaja y se estabiliza, y luego descansa sobre una base regulable en altura.
+
+— Standing Desk Quercus Memoria › sous_titre
+FR : Mémoire endormie
+ES : Memoria dormida
+
+— Standing Desk Quercus Memoria › matieres
+FR : Chêne du Limousin · piètement réglable
+ES : Roble del Lemosín · base regulable
+
+— Standing Desk Quercus Memoria › texte
+FR : Un chêne du Limousin, abattu vers 1950. Ses planches ont attendu en famille depuis 1955, quand mon arrière-grand-père a fermé son atelier. Comblées, ses imperfections restent visibles : elles racontent le temps.
+ES : Un roble del Lemosín, talado hacia 1950. Sus tablas esperaron en la familia desde 1955, cuando mi bisabuelo cerró su taller. Rellenadas, sus imperfecciones siguen visibles: cuentan el tiempo.
+
+— Chess Table Dualis › sous_titre
+FR : Une étude en contraste
+ES : Un estudio en contraste
+
+— Chess Table Dualis › matieres
+FR : Chêne · wengé
+ES : Roble · wengué
+
+— Chess Table Dualis › texte
+FR : Le chêne et le wengé se croisent jusque dans le pied central et les jambes courbes. La dualité de l'échiquier devient la structure même de la table.
+ES : El roble y el wengué se cruzan hasta en el pie central y las patas curvas. La dualidad del tablero de ajedrez se convierte en la estructura misma de la mesa.
+
+— Chess Set Flamma › sous_titre
+FR : Formes simples, matières riches
+ES : Formas simples, materias ricas
+
+— Chess Set Flamma › matieres
+FR : Chêne · résine noire · merisier
+ES : Roble · resina negra · cerezo
+
+— Chess Set Flamma › texte
+FR : Un plateau fin en chêne et résine noire, cadré de merisier, et sa boîte en merisier flammé aux clés claires. Tout est réduit à l'essentiel : le fil du bois fait le reste.
+ES : Un tablero fino de roble y resina negra, enmarcado en cerezo, y su caja de cerezo flameado con llaves claras. Todo se reduce a lo esencial: la fibra de la madera hace el resto.
+
+— making_of › titre
+FR : À l'atelier
+ES : En el taller
+
+— making_of › texte
+FR : Avant la pièce finie : la planche brute, les essais, les serre-joints.
+ES : Antes de la pieza terminada: la tabla en bruto, las pruebas, los sargentos.
+
+— methode › titre
+FR : Comment naît une pièce
+ES : Cómo nace una pieza
+
+— methode › etapes 1 › titre
+FR : Le dessin
+ES : El dibujo
+
+— methode › etapes 1 › texte
+FR : Après une première conversation, des croquis et des plans. On fixe ensemble les proportions et les détails.
+ES : Tras una primera conversación, bocetos y planos. Juntos fijamos las proporciones y los detalles.
+
+— methode › etapes 2 › titre
+FR : La matière
+ES : La materia
+
+— methode › etapes 2 › texte
+FR : Le bois se choisit planche par planche. Parfois, c'est lui qui change le dessin.
+ES : La madera se elige tabla por tabla. A veces, es ella la que cambia el dibujo.
+
+— methode › etapes 3 › titre
+FR : L'atelier
+ES : El taller
+
+— methode › etapes 3 › texte
+FR : Chaque assemblage se dessine avant de se couper. Puis tout se fait à la main.
+ES : Cada ensamble se dibuja antes de cortarse. Luego, todo se hace a mano.
+
+— methode › etapes 4 › titre
+FR : Chez vous
+ES : En su casa
+
+— methode › etapes 4 › texte
+FR : La pièce trouve sa place. Elle prendra sa patine avec les années.
+ES : La pieza encuentra su lugar. Irá tomando su pátina con los años.
+
+— a_propos › titre
+FR : À propos
+ES : Acerca de
+
+— a_propos › texte §1
+FR : Je dessine et fabrique des meubles en bois massif, entre Bruxelles et Lyon. Des pièces honnêtes, utiles et singulières, où la matière guide le dessin.
+ES : Diseño y fabrico muebles de madera maciza, entre Bruselas y Lyon. Piezas honestas, útiles y singulares, donde la materia guía el dibujo.
+
+— a_propos › texte §2
+FR : J'ai grandi près de l'atelier familial. Mon arrière-grand-père et mon grand-père m'y ont transmis le respect du geste et du bois. Dans l'esprit Arts & Crafts, le dessin et le métier se répondent sans cesse. Le bois ne se dompte pas, il se comprend : ses nœuds, ses veines, ses irrégularités ont souvent le dernier mot.
+ES : Crecí junto al taller familiar. Allí, mi bisabuelo y mi abuelo me transmitieron el respeto por el gesto y por la madera. En el espíritu Arts & Crafts, el dibujo y el oficio se responden sin cesar. La madera no se doma, se comprende: sus nudos, sus vetas, sus irregularidades suelen tener la última palabra.
+
+— a_propos › texte §3
+FR : Je suis aussi chef opérateur au cinéma. Lumière, proportion, matière : le même regard, d'un métier à l'autre. Chaque projet devient une pièce unique, née d'un dialogue entre la matière, l'usage et les personnes qui vivront avec.
+ES : También soy director de fotografía de cine. Luz, proporción, materia: la misma mirada, de un oficio a otro. Cada proyecto se convierte en una pieza única, nacida de un diálogo entre la materia, el uso y las personas que vivirán con ella.
+
+— contact › titre
+FR : Contact
+ES : Contacto
+
+— contact › phrase
+FR : Chaque projet commence par une conversation.
+ES : Cada proyecto empieza con una conversación.
+
+— contact › mention
+FR : Pièce unique — projet sur mesure sur demande
+ES : Pieza única — proyecto a medida por encargo
+
+— contact › lieux
+FR : 🇧🇪 Bruxelles / Lyon 🇫🇷
+ES : 🇧🇪 Bruselas / Lyon 🇫🇷
+
+— interface › nav_pieces
+FR : Pièces
+ES : Piezas
+
+— interface › nav_atelier
+FR : Atelier
+ES : Taller
+
+— interface › nav_methode
+FR : Méthode
+ES : Método
+
+— interface › nav_a_propos
+FR : À propos
+ES : Acerca de
+
+— interface › nav_contact
+FR : Contact
+ES : Contacto
+
+— interface › pieces_titre
+FR : Pièces
+ES : Piezas
+
+— interface › matieres
+FR : Matières
+ES : Materiales
+
+— interface › precedente
+FR : Pièce précédente
+ES : Pieza anterior
+
+— interface › suivante
+FR : Pièce suivante
+ES : Pieza siguiente
+
+— interface › retour
+FR : Retour aux pièces
+ES : Volver a las piezas
+
+— interface › voir_atelier
+FR : Voir à l'atelier
+ES : Ver en el taller
+
+— interface › nom
+FR : Nom
+ES : Nombre
+
+— interface › email
+FR : E-mail
+ES : Correo electrónico
+
+— interface › message
+FR : Message
+ES : Mensaje
+
+— interface › envoyer
+FR : Envoyer
+ES : Enviar
+
+— interface › envoi
+FR : Envoi…
+ES : Enviando…
+
+— interface › merci
+FR : Merci ! Votre message est bien parti. Je vous réponds très vite.
+ES : ¡Gracias! Su mensaje ya está en camino. Le responderé muy pronto.
+
+— interface › erreur
+FR : Oups, le message n'est pas parti. Réessayez dans un instant, ou écrivez-moi sur Instagram.
+ES : Vaya, el mensaje no se ha enviado. Inténtelo de nuevo en un momento, o escríbame por Instagram.
+
+— interface › fermer
+FR : Fermer
+ES : Cerrar
+
+— interface › mentions_titre
+FR : Mentions légales
+ES : Aviso legal
+
+— interface › mentions_texte
+FR : Éditeur : Studio Lemovices. Hébergement : GitHub Pages. Ce site ne dépose aucun cookie ; la fréquentation est mesurée de façon anonyme, sans cookie.
+ES : Editor: Studio Lemovices. Alojamiento: GitHub Pages. Este sitio no utiliza cookies; las visitas se miden de forma anónima, sin cookies.

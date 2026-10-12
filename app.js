@@ -23,6 +23,7 @@
 
   /* ---------- Outils ---------- */
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const LANGS = ['fr', 'en', 'es'];
   const t = (v) => (v && typeof v === 'object' && !Array.isArray(v) ? (v[lang] ?? v.fr ?? '') : (v ?? ''));
   const ui = (k) => t(C.interface[k]);
   const quote = (s) => `« ${s} »`;
@@ -31,10 +32,13 @@
   const moDir = (p) => slash(p.making_of || `making-of/${p.slug}/`);
   const instaIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".8" fill="currentColor"/></svg>';
 
+  const homeTitle = () => `${C.nom} — ${t(C.accueil.lieux).replace(/[^\p{L}\s/]/gu, '').trim()}`;
+
   function pickLang() {
-    try { const s = sessionStorage.getItem('lang'); if (s === 'fr' || s === 'en') return s; } catch (e) { /* navigation privée */ }
+    try { const s = sessionStorage.getItem('lang'); if (LANGS.includes(s)) return s; } catch (e) { /* navigation privée */ }
     const l = (navigator.languages && navigator.languages[0]) || navigator.language || '';
-    return l.toLowerCase().startsWith('fr') ? 'fr' : 'en';
+    const code = l.toLowerCase().slice(0, 2);
+    return code === 'fr' || code === 'es' ? code : 'en';
   }
 
   /* ---------- En-tête et pied de page ---------- */
@@ -48,7 +52,7 @@
         <a href="#/" data-goto="a-propos">${esc(ui('nav_a_propos'))}</a>
         <a href="#/" data-goto="contact">${esc(ui('nav_contact'))}</a>
       </nav>
-      <button class="lang" id="lang" type="button" aria-label="Langue / Language"><span class="${lang === 'fr' ? 'on' : ''}">FR</span> / <span class="${lang === 'en' ? 'on' : ''}">EN</span></button>
+      <span class="lang" role="group" aria-label="Langue / Language / Idioma">${LANGS.map((l) => `<button type="button" data-lang="${l}" class="${l === lang ? 'on' : ''}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join('<span aria-hidden="true">/</span>')}</span>
       <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>`;
   }
 
@@ -99,7 +103,7 @@
           <img class="hero-logo" src="${esc(a.logo)}" alt="" width="400" height="400" fetchpriority="high">
           <h1 class="hero-title">${esc(C.nom)}</h1>
           <p class="hero-phrase lead">${esc(t(a.phrase))}</p>
-          <p class="hero-lieux">${esc(a.lieux)}</p>
+          <p class="hero-lieux">${esc(t(a.lieux))}</p>
         </div>
         <a class="hero-scroll" href="#/" data-goto="intro" aria-label="${esc(t(i.titre))}"></a>
       </section>
@@ -180,7 +184,7 @@
           <div class="reveal" id="form-zone">${formHTML()}</div>
           <div class="contact-links reveal">
             <a class="insta" href="${esc(c.instagram)}" target="_blank" rel="noopener">${instaIcon}<span>@studiolemovices</span></a>
-            <span class="places">${esc(c.lieux)}</span>
+            <span class="places">${esc(t(c.lieux))}</span>
           </div>
         </div>
       </section>`;
@@ -388,8 +392,14 @@
   }
 
   function showHome() {
-    if (view === 'home') { if (pendingGoto) scrollToId(pendingGoto, false); pendingGoto = null; return; }
+    if (view === 'home') {
+      // un 2e appel (popstate + hashchange) pendant l'animation ne doit pas consommer la cible
+      if (pendingGoto && !home.hidden) { scrollToId(pendingGoto, false); pendingGoto = null; }
+      return;
+    }
     view = 'home';
+    const goto = pendingGoto;
+    pendingGoto = null;
     const prev = current;
     current = null;
     let thumb = null;
@@ -398,8 +408,8 @@
       pieceView.innerHTML = '';
       home.hidden = false;
       document.body.classList.remove('on-piece');
-      document.title = `${C.nom} — ${C.accueil.lieux.replace(/[^\p{L}\s/]/gu, '').trim()}`;
-      if (pendingGoto) { scrollToId(pendingGoto, false); pendingGoto = null; }
+      document.title = homeTitle();
+      if (goto) scrollToId(goto, false);
       else window.scrollTo({ top: homeScroll, behavior: 'instant' });
       thumb = thumbOf(prev);
       if (thumb) thumb.style.viewTransitionName = 'piece-hero';
@@ -492,8 +502,8 @@
 
   /* ---------- Événements ---------- */
   document.addEventListener('click', (e) => {
-    const lang_ = e.target.closest('#lang');
-    if (lang_) { setLang(lang === 'fr' ? 'en' : 'fr'); return; }
+    const lang_ = e.target.closest('[data-lang]');
+    if (lang_) { if (lang_.dataset.lang !== lang) setLang(lang_.dataset.lang); return; }
 
     const menu = e.target.closest('.menu-btn');
     if (menu) {
@@ -536,6 +546,7 @@
     if (e.key === 'Escape') closeMenu();
   });
 
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   window.addEventListener('popstate', route);
   window.addEventListener('hashchange', route);
 
@@ -558,7 +569,7 @@
     renderHome();
     renderFooter();
     if (current) renderPiece(current);
-    else document.title = `${C.nom} — ${C.accueil.lieux.replace(/[^\p{L}\s/]/gu, '').trim()}`;
+    else document.title = homeTitle();
     firstRender = false;
     onScroll();
   }
