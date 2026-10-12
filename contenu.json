@@ -1,0 +1,463 @@
+{
+  "nom": "Studio Lemovices",
+  "accueil": {
+    "logo": "logo/logo-noir.svg",
+    "phrase": {
+      "fr": "Chaque pièce est unique.",
+      "en": "Every piece is one of a kind."
+    },
+    "lieux": "🇧🇪 Bruxelles / Lyon 🇫🇷"
+  },
+  "intro": {
+    "titre": {
+      "fr": "Un portfolio, pas un catalogue",
+      "en": "A portfolio, not a catalogue"
+    },
+    "texte": {
+      "fr": "Chaque pièce présentée ici est unique, dessinée pour un lieu, un usage, une histoire. Plutôt qu'un catalogue, ce portfolio montre une façon de faire. Chaque nouvelle commande est un projet sur mesure, pensé autour de la matière, de l'espace et des personnes qui vivront avec.",
+      "en": "The pieces presented here are unique creations, designed for specific places, needs and stories. Rather than a catalogue, this portfolio reflects an approach to craftsmanship and design. Every new commission is a bespoke project, shaped around the material, the space and the people who will live with it."
+    },
+    "nom_origine": {
+      "fr": "Lemovices : du gaulois lemo, l'orme, et vices, ceux qui vainquent. « Les vainqueurs par l'orme », un peuple gaulois du Limousin.",
+      "en": "Lemovices: from the Gaulish lemo, the elm, and vices, those who conquer. “The conquerors by the elm”, a Gaulish people of the Limousin."
+    }
+  },
+  "familles": [
+    {
+      "id": "dining",
+      "num": "01",
+      "nom": "Dining",
+      "bois": {
+        "fr": "Chêne",
+        "en": "Oak"
+      }
+    },
+    {
+      "id": "living",
+      "num": "02",
+      "nom": "Living",
+      "bois": {
+        "fr": "Noyer",
+        "en": "Walnut"
+      }
+    },
+    {
+      "id": "working",
+      "num": "03",
+      "nom": "Working",
+      "bois": {
+        "fr": "Érable",
+        "en": "Maple"
+      }
+    },
+    {
+      "id": "chess",
+      "num": "04",
+      "nom": "Chess",
+      "bois": {
+        "fr": "Merisier",
+        "en": "Cherry"
+      }
+    }
+  ],
+  "pieces": [
+    {
+      "slug": "table-quercus-aguacate",
+      "famille": "dining",
+      "nom": "Table Quercus Aguacate",
+      "sous_titre": {
+        "fr": "Le chêne et la pierre",
+        "en": "Oak and stone"
+      },
+      "matieres": {
+        "fr": "Chêne massif · quartzite Avocado",
+        "en": "Solid oak · Avocado quartzite"
+      },
+      "texte": {
+        "fr": "La première. Une dalle de quartzite trouvée par hasard, et une base dessinée pour elle. Des pieds doubles enserrent les traverses : un mikado qui cache sa complexité derrière une simplicité apparente.",
+        "en": "The first one. A quartzite slab found by chance, and a base drawn for it. Double legs grip the rails: a mikado hiding its complexity behind an apparent simplicity."
+      },
+      "photos": [
+        "images/pieces/table-quercus-aguacate/01-ensemble.jpg",
+        "images/pieces/table-quercus-aguacate/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/table-quercus-aguacate/"
+    },
+    {
+      "slug": "bench-quercus-aguacate",
+      "famille": "dining",
+      "nom": "Bench Quercus Aguacate",
+      "sous_titre": {
+        "fr": "La forme distillée",
+        "en": "Distilled form"
+      },
+      "matieres": {
+        "fr": "Chêne massif",
+        "en": "Solid oak"
+      },
+      "texte": {
+        "fr": "Après la table est venu le banc. Les mêmes lignes qui se croisent, la même structure ramenée à l'essentiel. Une pièce compagnon, pensée pour l'usage quotidien.",
+        "en": "After the table came the bench. The same crossing lines, the same structure pared back to its essence. A companion piece, made for everyday use."
+      },
+      "photos": [
+        "images/pieces/bench-quercus-aguacate/01-ensemble.jpg",
+        "images/pieces/bench-quercus-aguacate/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/bench-quercus-aguacate/"
+    },
+    {
+      "slug": "stool-quercus-aguacate",
+      "famille": "dining",
+      "nom": "Stool Quercus Aguacate",
+      "sous_titre": {
+        "fr": "Expression compacte",
+        "en": "Compact expression"
+      },
+      "matieres": {
+        "fr": "Chêne massif",
+        "en": "Solid oak"
+      },
+      "texte": {
+        "fr": "Troisième volet d'un même dessin. Le vocabulaire de la table et du banc, resserré à la mesure d'une seule assise. Plus petit, rien en moins.",
+        "en": "Third chapter of a single design. The language of the table and the bench, drawn in to the measure of a single seat. Smaller, nothing less."
+      },
+      "photos": [
+        "images/pieces/stool-quercus-aguacate/01-ensemble.jpg",
+        "images/pieces/stool-quercus-aguacate/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/stool-quercus-aguacate/"
+    },
+    {
+      "slug": "chair-quercus-aguacate",
+      "famille": "dining",
+      "nom": "Chair Quercus Aguacate",
+      "sous_titre": {
+        "fr": "Forme et confort",
+        "en": "Form and comfort"
+      },
+      "matieres": {
+        "fr": "Chêne massif",
+        "en": "Solid oak"
+      },
+      "texte": {
+        "fr": "Une cousine de la série, redessinée pour répondre aux premières pièces tout en s'en affranchissant. Le vocabulaire de la table, adapté au corps : simple, solide, pensé pour le confort.",
+        "en": "A cousin of the series, redrawn to answer the first pieces while finding its own voice. The table's vocabulary, adapted to the body: simple, sturdy, made for comfort."
+      },
+      "photos": [
+        "images/pieces/chair-quercus-aguacate/01-ensemble.jpg",
+        "images/pieces/chair-quercus-aguacate/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/chair-quercus-aguacate/"
+    },
+    {
+      "slug": "cutting-board-olea-nux",
+      "famille": "dining",
+      "nom": "Cutting Board Olea Nux",
+      "sous_titre": {
+        "fr": "Le bois millénaire",
+        "en": "Millenary wood"
+      },
+      "matieres": {
+        "fr": "Olivier en bois de bout · noyer américain",
+        "en": "End-grain olive · American walnut"
+      },
+      "texte": {
+        "fr": "Une planche en bois de bout d'olivier, cadrée de noyer américain. Lourde, dense, faite pour durer. L'olivier, un bois ancré dans l'usage des hommes et dans leur mémoire.",
+        "en": "An end-grain olive board framed in American walnut. Heavy, dense, built to last. Olive, a wood rooted in human use and in collective memory."
+      },
+      "photos": [
+        "images/pieces/cutting-board-olea-nux/01-ensemble.jpg",
+        "images/pieces/cutting-board-olea-nux/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/cutting-board-olea-nux/"
+    },
+    {
+      "slug": "tasting-board-olea-lux",
+      "famille": "dining",
+      "nom": "Tasting Board Olea Lux",
+      "sous_titre": {
+        "fr": "La veine sombre",
+        "en": "Dark vein"
+      },
+      "matieres": {
+        "fr": "Olivier",
+        "en": "Olive"
+      },
+      "texte": {
+        "fr": "Une planche de présentation en olivier, traversée d'une ligne sombre. Le contraste fait ressortir le fil et la profondeur du bois.",
+        "en": "A serving board in olive wood, crossed by a dark flowing line. Contrast brings out the grain and depth of the wood."
+      },
+      "photos": [
+        "images/pieces/tasting-board-olea-lux/01-ensemble.jpg",
+        "images/pieces/tasting-board-olea-lux/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/tasting-board-olea-lux/"
+    },
+    {
+      "slug": "table-prunus-orbita",
+      "famille": "dining",
+      "nom": "Table Prunus Orbita",
+      "sous_titre": {
+        "fr": "La courbe tranquille",
+        "en": "The quiet curve"
+      },
+      "matieres": {
+        "fr": "Merisier · noyer américain · plateau ancien du Mali",
+        "en": "Cherry · American walnut · antique Malian top"
+      },
+      "texte": {
+        "fr": "Quatre arcs de merisier se croisent sous un plateau sculpté, venu d'une pièce ancienne du Mali. Des clés de noyer sombre tiennent les courbes ensemble. Le mouvement ne s'arrête jamais tout à fait.",
+        "en": "Four cherry arcs cross beneath a carved top, taken from an antique Malian piece. Dark walnut keys hold the curves together. The motion never quite stops."
+      },
+      "photos": [
+        "images/pieces/table-prunus-orbita/01-ensemble.jpg",
+        "images/pieces/table-prunus-orbita/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/table-prunus-orbita/"
+    },
+    {
+      "slug": "credenza-confluencia",
+      "famille": "living",
+      "nom": "Credenza Confluencia",
+      "sous_titre": {
+        "fr": "Paysage intérieur",
+        "en": "Inner landscape"
+      },
+      "matieres": {
+        "fr": "Noyer américain · olivier · laiton",
+        "en": "American walnut · olive · brass"
+      },
+      "texte": {
+        "fr": "Une ligne de noyer américain, calme et droite. Au centre, l'olivier garde ses rives naturelles ; un filet de laiton les tient en ligne. Six mois de dessin, deux ans d'atelier.",
+        "en": "A calm, straight line of American walnut. At its heart, olive boards keep their natural edges; a brass inlay holds them in line. Six months of drawing, two years in the workshop."
+      },
+      "photos": [
+        "images/pieces/credenza-confluencia/01-ensemble.jpg",
+        "images/pieces/credenza-confluencia/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/credenza-confluencia/"
+    },
+    {
+      "slug": "table-levitas-aguacate",
+      "famille": "living",
+      "nom": "Table Levitas Aguacate",
+      "sous_titre": {
+        "fr": "La masse flottante",
+        "en": "Floating mass"
+      },
+      "matieres": {
+        "fr": "Afzelia · quartzite Avocado · verre fumé",
+        "en": "Afzelia · Avocado quartzite · smoked glass"
+      },
+      "texte": {
+        "fr": "Une table basse où la pierre semble flotter. Des pieds au fil finement texturé, une tablette de verre fumé dessous : le contraste et la transparence allègent la masse du quartzite.",
+        "en": "A coffee table where the stone seems to float. Finely textured legs, a smoked glass shelf below: contrast and transparency lighten the mass of the quartzite."
+      },
+      "photos": [
+        "images/pieces/table-levitas-aguacate/01-ensemble.jpg"
+      ],
+      "making_of": null
+    },
+    {
+      "slug": "standing-desk-quercus-industria",
+      "famille": "working",
+      "nom": "Standing Desk Quercus Industria",
+      "sous_titre": {
+        "fr": "Mémoire industrielle",
+        "en": "Industrial memory"
+      },
+      "matieres": {
+        "fr": "Chêne de réemploi · piètement réglable",
+        "en": "Reclaimed oak · height-adjustable base"
+      },
+      "texte": {
+        "fr": "Des planches de chêne récupérées sur un ancien site industriel, marquées par le temps et l'usage. Le plateau est repris et stabilisé, puis posé sur un piètement réglable en hauteur.",
+        "en": "Oak boards salvaged from an old industrial site, deeply marked by time and use. The top is reworked and stabilised, then set on a height-adjustable base."
+      },
+      "photos": [
+        "images/pieces/standing-desk-quercus-industria/01-ensemble.jpg",
+        "images/pieces/standing-desk-quercus-industria/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/standing-desk-quercus-industria/"
+    },
+    {
+      "slug": "standing-desk-quercus-memoria",
+      "famille": "working",
+      "nom": "Standing Desk Quercus Memoria",
+      "sous_titre": {
+        "fr": "Mémoire endormie",
+        "en": "Dormant memory"
+      },
+      "matieres": {
+        "fr": "Chêne du Limousin · piètement réglable",
+        "en": "Limousin oak · height-adjustable base"
+      },
+      "texte": {
+        "fr": "Un chêne du Limousin, abattu vers 1950. Ses planches ont attendu en famille depuis 1955, quand mon arrière-grand-père a fermé son atelier. Comblées, ses imperfections restent visibles : elles racontent le temps.",
+        "en": "A Limousin oak, felled around 1950. Its boards waited in the family from 1955, when my great-grandfather closed his workshop. Filled, its imperfections stay visible: they tell of time."
+      },
+      "photos": [
+        "images/pieces/standing-desk-quercus-memoria/01-ensemble.jpg",
+        "images/pieces/standing-desk-quercus-memoria/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/standing-desk-quercus-memoria/"
+    },
+    {
+      "slug": "chess-table-dualis",
+      "famille": "chess",
+      "nom": "Chess Table Dualis",
+      "sous_titre": {
+        "fr": "Une étude en contraste",
+        "en": "A study in contrast"
+      },
+      "matieres": {
+        "fr": "Chêne · wengé",
+        "en": "Oak · wenge"
+      },
+      "texte": {
+        "fr": "Le chêne et le wengé se croisent jusque dans le pied central et les jambes courbes. La dualité de l'échiquier devient la structure même de la table.",
+        "en": "Oak and wenge laminations run through the central pedestal and curved legs. The duality of the chessboard becomes the structure of the table itself."
+      },
+      "photos": [
+        "images/pieces/chess-table-dualis/01-ensemble.jpg",
+        "images/pieces/chess-table-dualis/02-detail.jpg"
+      ],
+      "making_of": "images/making-of/chess-table-dualis/"
+    },
+    {
+      "slug": "chess-set-flamma",
+      "famille": "chess",
+      "nom": "Chess Set Flamma",
+      "sous_titre": {
+        "fr": "Formes simples, matières riches",
+        "en": "Simple forms, rich materials"
+      },
+      "matieres": {
+        "fr": "Chêne · résine noire · merisier",
+        "en": "Oak · black resin · cherry"
+      },
+      "texte": {
+        "fr": "Un plateau fin en chêne et résine noire, cadré de merisier, et sa boîte en merisier flammé aux clés claires. Tout est réduit à l'essentiel : le fil du bois fait le reste.",
+        "en": "A slim oak and black resin board framed in cherry, with a figured cherry box and light splines. Everything is pared back: the grain does the rest."
+      },
+      "photos": [
+        "images/pieces/chess-set-flamma/01-ensemble.jpg",
+        "images/pieces/chess-set-flamma/02-detail.jpg"
+      ],
+      "making_of": null
+    }
+  ],
+  "making_of": {
+    "titre": {
+      "fr": "À l'atelier",
+      "en": "In the workshop"
+    },
+    "texte": {
+      "fr": "Avant la pièce finie : la planche brute, les essais, les serre-joints.",
+      "en": "Before the finished piece: rough boards, trials, clamps."
+    }
+  },
+  "methode": {
+    "titre": {
+      "fr": "Comment naît une pièce",
+      "en": "How a piece comes to life"
+    },
+    "etapes": [
+      {
+        "num": "01",
+        "titre": {
+          "fr": "Le dessin",
+          "en": "The drawing"
+        },
+        "texte": {
+          "fr": "Après une première conversation, des croquis et des plans. On fixe ensemble les proportions et les détails.",
+          "en": "After a first conversation, sketches and drawings. Together we settle the proportions."
+        },
+        "photo": "images/methode/01-le-dessin.jpg"
+      },
+      {
+        "num": "02",
+        "titre": {
+          "fr": "La matière",
+          "en": "The material"
+        },
+        "texte": {
+          "fr": "Le bois se choisit planche par planche. Parfois, c'est lui qui change le dessin.",
+          "en": "The wood is chosen board by board. Sometimes it changes the design."
+        },
+        "photo": "images/methode/02-la-matiere.jpg"
+      },
+      {
+        "num": "03",
+        "titre": {
+          "fr": "L'atelier",
+          "en": "The workshop"
+        },
+        "texte": {
+          "fr": "Chaque assemblage se dessine avant de se couper. Puis tout se fait à la main.",
+          "en": "Every joint is drawn before it is cut. Then it is all done by hand."
+        },
+        "photo": "images/methode/03-l-atelier.jpg"
+      },
+      {
+        "num": "04",
+        "titre": {
+          "fr": "Chez vous",
+          "en": "At home"
+        },
+        "texte": {
+          "fr": "La pièce trouve sa place. Elle prendra sa patine avec les années.",
+          "en": "The piece finds its place, and takes on its patina over the years."
+        },
+        "photo": "images/methode/04-chez-vous.jpg"
+      }
+    ]
+  },
+  "a_propos": {
+    "titre": {
+      "fr": "À propos",
+      "en": "About"
+    },
+    "photo": "images/site/a-propos---noeud.jpg",
+    "texte": {
+      "fr": [
+        "Je dessine et fabrique des meubles en bois massif, entre Bruxelles et Lyon. Des pièces honnêtes, utiles et singulières, où la matière guide le dessin.",
+        "J'ai grandi près de l'atelier familial. Mon arrière-grand-père et mon grand-père m'y ont transmis le respect du geste et du bois. Dans l'esprit Arts & Crafts, le dessin et le métier se répondent sans cesse. Le bois ne se dompte pas, il se comprend : ses nœuds, ses veines, ses irrégularités ont souvent le dernier mot.",
+        "Je suis aussi chef opérateur au cinéma. Lumière, proportion, matière : le même regard, d'un métier à l'autre. Chaque projet devient une pièce unique, née d'un dialogue entre la matière, l'usage et les personnes qui vivront avec."
+      ],
+      "en": [
+        "I design and make solid wood furniture between Brussels and Lyon. Honest, useful and distinctive pieces, where the material guides the design.",
+        "I grew up around the family workshop, where my great-grandfather and grandfather passed on their respect for the craft and for wood. In the Arts & Crafts spirit, design and making stay in constant dialogue. Wood is not mastered, it is understood: its knots, its grain, its irregularities often have the last word.",
+        "I also work as a director of photography. Light, proportion, material: the same eye, from one craft to the other. Every project becomes a one-of-a-kind piece, born from a dialogue between material, use and the people who will live with it."
+      ]
+    }
+  },
+  "contact": {
+    "titre": {
+      "fr": "Contact",
+      "en": "Contact"
+    },
+    "phrase": {
+      "fr": "Chaque projet commence par une conversation.",
+      "en": "Every project begins with a conversation."
+    },
+    "mention": {
+      "fr": "Pièce unique — projet sur mesure sur demande",
+      "en": "One-of-a-kind piece — bespoke commissions welcome"
+    },
+    "formulaire": {
+      "champs": [
+        "nom",
+        "email",
+        "message"
+      ],
+      "destinataire": "studiolemovices@gmail.com (jamais affiché sur le site)"
+    },
+    "instagram": "https://www.instagram.com/studiolemovices/",
+    "lieux": "🇧🇪 Bruxelles / Lyon 🇫🇷"
+  },
+  "mentions_legales": {
+    "editeur": "Studio Lemovices",
+    "note": "Pas encore d'adresse ni de numéro d'entreprise : à compléter plus tard. Pas de cookies, pas de traceur."
+  }
+}
