@@ -28,6 +28,7 @@
   const quote = (s) => `« ${s} »`;
   const family = (id) => C.familles.find((f) => f.id === id);
   const slash = (d) => (d.endsWith('/') ? d : d + '/');
+  const moDir = (p) => slash(p.making_of || `making-of/${p.slug}/`);
   const instaIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".8" fill="currentColor"/></svg>';
 
   function pickLang() {
@@ -85,8 +86,8 @@
         </div>`;
     }).join('');
 
-    const making = C.pieces.filter((p) => p.making_of).map((p) => `
-      <div class="mo-row reveal" id="atelier-${esc(p.slug)}" data-dir="${esc(slash(p.making_of))}" data-name="${esc(p.nom)}">
+    const making = C.pieces.map((p) => `
+      <div class="mo-row reveal" id="atelier-${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
         <div class="mo-head"><h3><a href="#/${esc(p.slug)}">${esc(p.nom)}</a></h3><span class="count"></span></div>
         <div class="mo-strip"></div>
       </div>`).join('');
@@ -246,10 +247,11 @@
   function probe(dir) {
     if (!probes[dir]) {
       probes[dir] = (async () => {
-        const found = [];
+        const head = (u) => fetch(u, { method: 'HEAD' }).then((r) => r.ok).catch(() => false);
+        const found = (await head(`${dir}00.jpg`)) ? [`${dir}00.jpg`] : [];
         for (let start = 1; start < 100; start += 6) {
           const batch = Array.from({ length: 6 }, (_, k) => `${dir}${String(start + k).padStart(2, '0')}.jpg`);
-          const ok = await Promise.all(batch.map((u) => fetch(u, { method: 'HEAD' }).then((r) => r.ok).catch(() => false)));
+          const ok = await Promise.all(batch.map(head));
           for (let k = 0; k < batch.length; k++) {
             if (!ok[k]) return found;
             found.push(batch[k]);
@@ -265,6 +267,7 @@
     probe(row.dataset.dir).then((list) => {
       if (!row.isConnected) return;
       if (!list.length) { row.hidden = true; return; }
+      row.hidden = false;
       const name = row.dataset.name;
       $('.count', row).textContent = String(list.length).padStart(2, '0');
       $('.mo-strip', row).innerHTML = list.map((src, k) => `
@@ -312,11 +315,10 @@
               <button class="fiche-photo" type="button" data-i="${k}" aria-label="${esc(p.nom)} ${k + 1}/${p.photos.length}">
                 <img src="${esc(src)}" alt="${esc(p.nom)}" ${k ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async" width="1500" height="2000">
               </button>`).join('')}
-            ${p.making_of ? `
-            <div class="mo-row fiche-mo" data-dir="${esc(slash(p.making_of))}" data-name="${esc(p.nom)}">
+            <div class="mo-row fiche-mo" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
               <div class="mo-head"><h3>${esc(t(C.making_of.titre))}</h3><span class="count"></span></div>
               <div class="mo-strip"></div>
-            </div>` : ''}
+            </div>
           </div>
           <div class="fiche-info">
             <a class="back" href="#/" data-back>← ${esc(ui('retour'))}</a>
