@@ -72,7 +72,6 @@
           <header class="family-head reveal">
             <span class="num">${esc(f.num)}</span>
             <h3 class="h-family">${esc(f.nom)}</h3>
-            <span class="eyebrow wood">${esc(t(f.bois))}</span>
           </header>
           <ul class="grid">
             ${list.map((p) => `
@@ -120,6 +119,15 @@
           <h2 class="h-section">${esc(ui('pieces_titre'))}</h2>
           <span class="rule"></span>
         </div>
+        <ul class="toc">
+          ${C.familles.filter((f) => C.pieces.some((p) => p.famille === f.id)).map((f) => `
+            <li class="reveal">
+              <a href="#/" data-goto="famille-${esc(f.id)}">
+                <div class="toc-img">${f.texture ? `<img src="${esc(f.texture)}" alt="" loading="lazy" decoding="async" width="800" height="1000">` : ''}</div>
+                <span class="toc-label"><span class="num">${esc(f.num)}</span><span class="toc-name">${esc(f.nom)}</span></span>
+              </a>
+            </li>`).join('')}
+        </ul>
         ${families}
       </section>
 
@@ -304,6 +312,11 @@
               <button class="fiche-photo" type="button" data-i="${k}" aria-label="${esc(p.nom)} ${k + 1}/${p.photos.length}">
                 <img src="${esc(src)}" alt="${esc(p.nom)}" ${k ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async" width="1500" height="2000">
               </button>`).join('')}
+            ${p.making_of ? `
+            <div class="mo-row fiche-mo" data-dir="${esc(slash(p.making_of))}" data-name="${esc(p.nom)}">
+              <div class="mo-head"><h3>${esc(t(C.making_of.titre))}</h3><span class="count"></span></div>
+              <div class="mo-strip"></div>
+            </div>` : ''}
           </div>
           <div class="fiche-info">
             <a class="back" href="#/" data-back>← ${esc(ui('retour'))}</a>
@@ -315,7 +328,6 @@
             <p class="fiche-mention">${esc(t(C.contact.mention))}</p>
             <div class="fiche-actions">
               <a class="btn" href="#/" data-goto="contact">${esc(ui('nav_contact'))}</a>
-              ${p.making_of ? `<a class="link-arrow" href="#/" data-goto="atelier-${esc(p.slug)}">${esc(ui('voir_atelier'))} →</a>` : ''}
             </div>
           </div>
         </div>
@@ -325,6 +337,8 @@
           <a class="pn next" href="#/${esc(next.slug)}"><span class="eyebrow">${esc(ui('suivante'))} →</span><strong>${esc(next.nom)}</strong></a>
         </nav>
       </article>`;
+    const mo = $('.fiche-mo', pieceView);
+    if (mo) fillStrip(mo);
     pieceView._photos = p.photos;
     pieceView._name = p.nom;
     document.title = `${p.nom} — ${C.nom}`;
@@ -424,6 +438,7 @@
   const lb = { el: $('#lightbox'), list: [], i: 0, name: '', last: null };
   lb.img = $('img', lb.el);
   lb.count = $('.lb-count', lb.el);
+  lb.nameEl = $('.lb-name', lb.el);
 
   function openLB(list, i, name) {
     lb.list = list; lb.i = i; lb.name = name; lb.last = document.activeElement;
@@ -437,6 +452,7 @@
     const n = lb.list.length;
     lb.img.src = lb.list[lb.i];
     lb.img.alt = lb.name;
+    lb.nameEl.textContent = lb.name;
     lb.count.textContent = n > 1 ? `${lb.i + 1} / ${n}` : '';
     lb.el.classList.toggle('single', n < 2);
     $$('.lb-prev, .lb-next', lb.el).forEach((b) => { b.style.visibility = n > 1 ? '' : 'hidden'; });
@@ -456,7 +472,7 @@
   lb.el.addEventListener('click', (e) => {
     const a = e.target.closest('[data-lb]');
     if (a) { const k = a.dataset.lb; if (k === 'close') closeLB(); else stepLB(k === 'next' ? 1 : -1); return; }
-    if (e.target !== lb.img) closeLB();
+    if (e.target === lb.el || e.target.classList.contains('lb-figure')) closeLB();
   });
   let tx = null, ty = null;
   lb.el.addEventListener('touchstart', (e) => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });

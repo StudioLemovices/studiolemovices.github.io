@@ -30,7 +30,8 @@
       "bois": {
         "fr": "Chêne",
         "en": "Oak"
-      }
+      },
+      "texture": "site/sommaire-01-dining---chene.jpg"
     },
     {
       "id": "living",
@@ -39,7 +40,8 @@
       "bois": {
         "fr": "Noyer",
         "en": "Walnut"
-      }
+      },
+      "texture": "site/sommaire-02-living---noyer.jpg"
     },
     {
       "id": "working",
@@ -48,7 +50,8 @@
       "bois": {
         "fr": "Érable",
         "en": "Maple"
-      }
+      },
+      "texture": "site/sommaire-03-working---erable.jpg"
     },
     {
       "id": "chess",
@@ -57,7 +60,8 @@
       "bois": {
         "fr": "Merisier",
         "en": "Cherry"
-      }
+      },
+      "texture": "site/sommaire-04-chess---merisier.jpg"
     }
   ],
   "pieces": [
