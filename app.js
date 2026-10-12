@@ -457,12 +457,16 @@
     lb.nameEl.textContent = lb.name;
     lb.count.textContent = n > 1 ? `${lb.i + 1} / ${n}` : '';
     lb.el.classList.toggle('single', n < 2);
-    $$('.lb-prev, .lb-next', lb.el).forEach((b) => { b.style.visibility = n > 1 ? '' : 'hidden'; });
-    if (n > 1) { new Image().src = lb.list[(lb.i + 1) % n]; }
+    $('.lb-prev', lb.el).style.visibility = lb.i > 0 ? '' : 'hidden';
+    $('.lb-next', lb.el).style.visibility = n > 1 ? '' : 'hidden';
+    if (lb.i + 1 < n) { new Image().src = lb.list[lb.i + 1]; }
   }
   function stepLB(d) {
-    if (lb.list.length < 2) return;
-    lb.i = (lb.i + d + lb.list.length) % lb.list.length;
+    // Pas de boucle : après la dernière photo, la visionneuse se ferme ; avant la première, rien.
+    const i = lb.i + d;
+    if (i >= lb.list.length) { closeLB(); return; }
+    if (i < 0) return;
+    lb.i = i;
     showLB();
   }
   function closeLB() {
