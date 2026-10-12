@@ -78,10 +78,10 @@
         "en": "The first one. A quartzite slab found by chance, and a base drawn for it. Double legs grip the rails: a mikado hiding its complexity behind an apparent simplicity."
       },
       "photos": [
-        "images/pieces/table-quercus-aguacate/01-ensemble.jpg",
-        "images/pieces/table-quercus-aguacate/02-detail.jpg"
+        "pieces/table-quercus-aguacate/01-ensemble.jpg",
+        "pieces/table-quercus-aguacate/02-detail.jpg"
       ],
-      "making_of": "images/making-of/table-quercus-aguacate/"
+      "making_of": "making-of/table-quercus-aguacate/"
     },
     {
       "slug": "bench-quercus-aguacate",
@@ -100,10 +100,10 @@
         "en": "After the table came the bench. The same crossing lines, the same structure pared back to its essence. A companion piece, made for everyday use."
       },
       "photos": [
-        "images/pieces/bench-quercus-aguacate/01-ensemble.jpg",
-        "images/pieces/bench-quercus-aguacate/02-detail.jpg"
+        "pieces/bench-quercus-aguacate/01-ensemble.jpg",
+        "pieces/bench-quercus-aguacate/02-detail.jpg"
       ],
-      "making_of": "images/making-of/bench-quercus-aguacate/"
+      "making_of": "making-of/bench-quercus-aguacate/"
     },
     {
       "slug": "stool-quercus-aguacate",
@@ -122,10 +122,10 @@
         "en": "Third chapter of a single design. The language of the table and the bench, drawn in to the measure of a single seat. Smaller, nothing less."
       },
       "photos": [
-        "images/pieces/stool-quercus-aguacate/01-ensemble.jpg",
-        "images/pieces/stool-quercus-aguacate/02-detail.jpg"
+        "pieces/stool-quercus-aguacate/01-ensemble.jpg",
+        "pieces/stool-quercus-aguacate/02-detail.jpg"
       ],
-      "making_of": "images/making-of/stool-quercus-aguacate/"
+      "making_of": "making-of/stool-quercus-aguacate/"
     },
     {
       "slug": "chair-quercus-aguacate",
@@ -144,10 +144,10 @@
         "en": "A cousin of the series, redrawn to answer the first pieces while finding its own voice. The table's vocabulary, adapted to the body: simple, sturdy, made for comfort."
       },
       "photos": [
-        "images/pieces/chair-quercus-aguacate/01-ensemble.jpg",
-        "images/pieces/chair-quercus-aguacate/02-detail.jpg"
+        "pieces/chair-quercus-aguacate/01-ensemble.jpg",
+        "pieces/chair-quercus-aguacate/02-detail.jpg"
       ],
-      "making_of": "images/making-of/chair-quercus-aguacate/"
+      "making_of": "making-of/chair-quercus-aguacate/"
     },
     {
       "slug": "cutting-board-olea-nux",
@@ -166,10 +166,10 @@
         "en": "An end-grain olive board framed in American walnut. Heavy, dense, built to last. Olive, a wood rooted in human use and in collective memory."
       },
       "photos": [
-        "images/pieces/cutting-board-olea-nux/01-ensemble.jpg",
-        "images/pieces/cutting-board-olea-nux/02-detail.jpg"
+        "pieces/cutting-board-olea-nux/01-ensemble.jpg",
+        "pieces/cutting-board-olea-nux/02-detail.jpg"
       ],
-      "making_of": "images/making-of/cutting-board-olea-nux/"
+      "making_of": "making-of/cutting-board-olea-nux/"
     },
     {
       "slug": "tasting-board-olea-lux",
@@ -188,10 +188,10 @@
         "en": "A serving board in olive wood, crossed by a dark flowing line. Contrast brings out the grain and depth of the wood."
       },
       "photos": [
-        "images/pieces/tasting-board-olea-lux/01-ensemble.jpg",
-        "images/pieces/tasting-board-olea-lux/02-detail.jpg"
+        "pieces/tasting-board-olea-lux/01-ensemble.jpg",
+        "pieces/tasting-board-olea-lux/02-detail.jpg"
       ],
-      "making_of": "images/making-of/tasting-board-olea-lux/"
+      "making_of": "making-of/tasting-board-olea-lux/"
     },
     {
       "slug": "table-prunus-orbita",
@@ -210,10 +210,10 @@
         "en": "Four cherry arcs cross beneath a carved top, taken from an antique Malian piece. Dark walnut keys hold the curves together. The motion never quite stops."
       },
       "photos": [
-        "images/pieces/table-prunus-orbita/01-ensemble.jpg",
-        "images/pieces/table-prunus-orbita/02-detail.jpg"
+        "pieces/table-prunus-orbita/01-ensemble.jpg",
+        "pieces/table-prunus-orbita/02-detail.jpg"
       ],
-      "making_of": "images/making-of/table-prunus-orbita/"
+      "making_of": "making-of/table-prunus-orbita/"
     },
     {
       "slug": "credenza-confluencia",
@@ -232,10 +232,10 @@
         "en": "A calm, straight line of American walnut. At its heart, olive boards keep their natural edges; a brass inlay holds them in line. Six months of drawing, two years in the workshop."
       },
       "photos": [
-        "images/pieces/credenza-confluencia/01-ensemble.jpg",
-        "images/pieces/credenza-confluencia/02-detail.jpg"
+        "pieces/credenza-confluencia/01-ensemble.jpg",
+        "pieces/credenza-confluencia/02-detail.jpg"
       ],
-      "making_of": "images/making-of/credenza-confluencia/"
+      "making_of": "making-of/credenza-confluencia/"
     },
     {
       "slug": "table-levitas-aguacate",
@@ -254,7 +254,7 @@
         "en": "A coffee table where the stone seems to float. Finely textured legs, a smoked glass shelf below: contrast and transparency lighten the mass of the quartzite."
       },
       "photos": [
-        "images/pieces/table-levitas-aguacate/01-ensemble.jpg"
+        "pieces/table-levitas-aguacate/01-ensemble.jpg"
       ],
       "making_of": null
     },
@@ -275,10 +275,10 @@
         "en": "Oak boards salvaged from an old industrial site, deeply marked by time and use. The top is reworked and stabilised, then set on a height-adjustable base."
       },
       "photos": [
-        "images/pieces/standing-desk-quercus-industria/01-ensemble.jpg",
-        "images/pieces/standing-desk-quercus-industria/02-detail.jpg"
+        "pieces/standing-desk-quercus-industria/01-ensemble.jpg",
+        "pieces/standing-desk-quercus-industria/02-detail.jpg"
       ],
-      "making_of": "images/making-of/standing-desk-quercus-industria/"
+      "making_of": "making-of/standing-desk-quercus-industria/"
     },
     {
       "slug": "standing-desk-quercus-memoria",
@@ -297,10 +297,10 @@
         "en": "A Limousin oak, felled around 1950. Its boards waited in the family from 1955, when my great-grandfather closed his workshop. Filled, its imperfections stay visible: they tell of time."
       },
       "photos": [
-        "images/pieces/standing-desk-quercus-memoria/01-ensemble.jpg",
-        "images/pieces/standing-desk-quercus-memoria/02-detail.jpg"
+        "pieces/standing-desk-quercus-memoria/01-ensemble.jpg",
+        "pieces/standing-desk-quercus-memoria/02-detail.jpg"
       ],
-      "making_of": "images/making-of/standing-desk-quercus-memoria/"
+      "making_of": "making-of/standing-desk-quercus-memoria/"
     },
     {
       "slug": "chess-table-dualis",
@@ -319,10 +319,10 @@
         "en": "Oak and wenge laminations run through the central pedestal and curved legs. The duality of the chessboard becomes the structure of the table itself."
       },
       "photos": [
-        "images/pieces/chess-table-dualis/01-ensemble.jpg",
-        "images/pieces/chess-table-dualis/02-detail.jpg"
+        "pieces/chess-table-dualis/01-ensemble.jpg",
+        "pieces/chess-table-dualis/02-detail.jpg"
       ],
-      "making_of": "images/making-of/chess-table-dualis/"
+      "making_of": "making-of/chess-table-dualis/"
     },
     {
       "slug": "chess-set-flamma",
@@ -341,8 +341,8 @@
         "en": "A slim oak and black resin board framed in cherry, with a figured cherry box and light splines. Everything is pared back: the grain does the rest."
       },
       "photos": [
-        "images/pieces/chess-set-flamma/01-ensemble.jpg",
-        "images/pieces/chess-set-flamma/02-detail.jpg"
+        "pieces/chess-set-flamma/01-ensemble.jpg",
+        "pieces/chess-set-flamma/02-detail.jpg"
       ],
       "making_of": null
     }
@@ -373,7 +373,7 @@
           "fr": "Après une première conversation, des croquis et des plans. On fixe ensemble les proportions et les détails.",
           "en": "After a first conversation, sketches and drawings. Together we settle the proportions."
         },
-        "photo": "images/methode/01-le-dessin.jpg"
+        "photo": "methode/01-le-dessin.jpg"
       },
       {
         "num": "02",
@@ -385,7 +385,7 @@
           "fr": "Le bois se choisit planche par planche. Parfois, c'est lui qui change le dessin.",
           "en": "The wood is chosen board by board. Sometimes it changes the design."
         },
-        "photo": "images/methode/02-la-matiere.jpg"
+        "photo": "methode/02-la-matiere.jpg"
       },
       {
         "num": "03",
@@ -397,7 +397,7 @@
           "fr": "Chaque assemblage se dessine avant de se couper. Puis tout se fait à la main.",
           "en": "Every joint is drawn before it is cut. Then it is all done by hand."
         },
-        "photo": "images/methode/03-l-atelier.jpg"
+        "photo": "methode/03-l-atelier.jpg"
       },
       {
         "num": "04",
@@ -409,7 +409,7 @@
           "fr": "La pièce trouve sa place. Elle prendra sa patine avec les années.",
           "en": "The piece finds its place, and takes on its patina over the years."
         },
-        "photo": "images/methode/04-chez-vous.jpg"
+        "photo": "methode/04-chez-vous.jpg"
       }
     ]
   },
@@ -418,7 +418,7 @@
       "fr": "À propos",
       "en": "About"
     },
-    "photo": "images/site/a-propos---noeud.jpg",
+    "photo": "site/a-propos---noeud.jpg",
     "texte": {
       "fr": [
         "Je dessine et fabrique des meubles en bois massif, entre Bruxelles et Lyon. Des pièces honnêtes, utiles et singulières, où la matière guide le dessin.",
@@ -451,7 +451,7 @@
         "email",
         "message"
       ],
-      "destinataire": "studiolemovices@gmail.com (jamais affiché sur le site)"
+      "web3forms_key": "4bd21d7d-c357-4d18-8d3e-e16571ca8bc0"
     },
     "instagram": "https://www.instagram.com/studiolemovices/",
     "lieux": "🇧🇪 Bruxelles / Lyon 🇫🇷"
@@ -459,5 +459,94 @@
   "mentions_legales": {
     "editeur": "Studio Lemovices",
     "note": "Pas encore d'adresse ni de numéro d'entreprise : à compléter plus tard. Pas de cookies, pas de traceur."
+  },
+  "statistiques": {
+    "goatcounter_code": "studiolemovices"
+  },
+  "interface": {
+    "nav_pieces": {
+      "fr": "Pièces",
+      "en": "Pieces"
+    },
+    "nav_atelier": {
+      "fr": "Atelier",
+      "en": "Workshop"
+    },
+    "nav_methode": {
+      "fr": "Méthode",
+      "en": "Process"
+    },
+    "nav_a_propos": {
+      "fr": "À propos",
+      "en": "About"
+    },
+    "nav_contact": {
+      "fr": "Contact",
+      "en": "Contact"
+    },
+    "pieces_titre": {
+      "fr": "Pièces",
+      "en": "Pieces"
+    },
+    "matieres": {
+      "fr": "Matières",
+      "en": "Materials"
+    },
+    "precedente": {
+      "fr": "Pièce précédente",
+      "en": "Previous piece"
+    },
+    "suivante": {
+      "fr": "Pièce suivante",
+      "en": "Next piece"
+    },
+    "retour": {
+      "fr": "Retour aux pièces",
+      "en": "Back to pieces"
+    },
+    "voir_atelier": {
+      "fr": "Voir à l'atelier",
+      "en": "See in the workshop"
+    },
+    "nom": {
+      "fr": "Nom",
+      "en": "Name"
+    },
+    "email": {
+      "fr": "E-mail",
+      "en": "Email"
+    },
+    "message": {
+      "fr": "Message",
+      "en": "Message"
+    },
+    "envoyer": {
+      "fr": "Envoyer",
+      "en": "Send"
+    },
+    "envoi": {
+      "fr": "Envoi…",
+      "en": "Sending…"
+    },
+    "merci": {
+      "fr": "Merci ! Votre message est bien parti. Je vous réponds très vite.",
+      "en": "Thank you! Your message is on its way. I'll get back to you very soon."
+    },
+    "erreur": {
+      "fr": "Oups, le message n'est pas parti. Réessayez dans un instant, ou écrivez-moi sur Instagram.",
+      "en": "Oops, the message didn't go through. Please try again in a moment, or write to me on Instagram."
+    },
+    "fermer": {
+      "fr": "Fermer",
+      "en": "Close"
+    },
+    "mentions_titre": {
+      "fr": "Mentions légales",
+      "en": "Legal notice"
+    },
+    "mentions_texte": {
+      "fr": "Éditeur : Studio Lemovices. Hébergement : GitHub Pages. Ce site ne dépose aucun cookie ; la fréquentation est mesurée de façon anonyme, sans cookie.",
+      "en": "Publisher: Studio Lemovices. Hosting: GitHub Pages. This site sets no cookies; visits are measured anonymously, without cookies."
+    }
   }
 }
