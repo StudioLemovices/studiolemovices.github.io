@@ -352,3 +352,7 @@ ES : Aviso legal
 — interface › mentions_texte
 FR : Éditeur : Studio Lemovices. Hébergement : GitHub Pages. Ce site ne dépose aucun cookie ; la fréquentation est mesurée de façon anonyme, sans cookie.
 ES : Editor: Studio Lemovices. Alojamiento: GitHub Pages. Este sitio no utiliza cookies; las visitas se miden de forma anónima, sin cookies.
+
+— interface › version_pdf
+FR : Version PDF
+ES : Versión PDF

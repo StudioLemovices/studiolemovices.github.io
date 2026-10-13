@@ -648,6 +648,12 @@
       "fr": "Éditeur : Studio Lemovices. Hébergement : GitHub Pages. Ce site ne dépose aucun cookie ; la fréquentation est mesurée de façon anonyme, sans cookie.",
       "en": "Publisher: Studio Lemovices. Hosting: GitHub Pages. This site sets no cookies; visits are measured anonymously, without cookies.",
       "es": "Editor: Studio Lemovices. Alojamiento: GitHub Pages. Este sitio no utiliza cookies; las visitas se miden de forma anónima, sin cookies."
+    },
+    "version_pdf": {
+      "fr": "Version PDF",
+      "en": "PDF version",
+      "es": "Versión PDF"
     }
-  }
+  },
+  "portfolio_pdf": "https://canva.link/3i3v585fwrx43vs"
 }

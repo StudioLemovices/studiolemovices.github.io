@@ -64,7 +64,10 @@
       <div class="wrap foot">
         <p style="margin:0">© ${new Date().getFullYear()} ${esc(C.mentions_legales.editeur)}</p>
         <details><summary>${esc(ui('mentions_titre'))}</summary><p>${esc(ui('mentions_texte'))}</p></details>
-        <a href="${esc(C.contact.instagram)}" target="_blank" rel="noopener">Instagram</a>
+        <span class="foot-links">
+          ${C.portfolio_pdf ? `<a href="${esc(C.portfolio_pdf)}" target="_blank" rel="noopener">${esc(ui('version_pdf'))}</a>` : ''}
+          <a href="${esc(C.contact.instagram)}" target="_blank" rel="noopener">Instagram</a>
+        </span>
       </div>`;
   }
 
