@@ -32,6 +32,9 @@
   const moDir = (p) => slash(p.making_of || `making-of/${p.slug}/`);
   const instaIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".8" fill="currentColor"/></svg>';
 
+  // logo noir en mode clair, blanc en mode sombre (réglage du téléphone / de l'ordinateur)
+  const logo = (a, size, cls = '') => `<picture class="${cls}">${a.logo_sombre ? `<source srcset="${esc(a.logo_sombre)}" media="(prefers-color-scheme: dark)">` : ''}<img class="logo-img" src="${esc(a.logo)}" alt="" width="${size}" height="${size}"></picture>`;
+  const isSketch = (src) => /\/00\.jpg$/.test(src);
   const homeTitle = () => `${C.nom} — ${t(C.accueil.lieux).replace(/[^\p{L}\s/]/gu, '').trim()}`;
 
   function pickLang() {
@@ -44,7 +47,7 @@
   /* ---------- En-tête et pied de page ---------- */
   function renderHeader() {
     header.innerHTML = `
-      <a class="brand" href="#/" data-goto="accueil"><img src="${esc(C.accueil.logo)}" alt="" width="30" height="30"><span>${esc(C.nom)}</span></a>
+      <a class="brand" href="#/" data-goto="accueil">${logo(C.accueil, 30)}<span>${esc(C.nom)}</span></a>
       <nav class="nav" id="nav">
         <a href="#/" data-goto="pieces">${esc(ui('nav_pieces'))}</a>
         <a href="#/" data-goto="atelier">${esc(ui('nav_atelier'))}</a>
@@ -100,7 +103,7 @@
     home.innerHTML = `
       <section class="hero" id="accueil">
         <div class="hero-inner">
-          <img class="hero-logo" src="${esc(a.logo)}" alt="" width="400" height="400" fetchpriority="high">
+          ${logo(a, 400, 'hero-logo')}
           <h1 class="hero-title">${esc(C.nom)}</h1>
           <p class="hero-phrase lead">${esc(t(a.phrase))}</p>
           <p class="hero-lieux">${esc(t(a.lieux))}</p>
@@ -164,12 +167,12 @@
       </section>
 
       <section class="section wrap" id="a-propos">
-        <div class="section-head reveal">
-          <h2 class="h-section">${esc(t(ap.titre))}</h2>
-          <span class="rule"></span>
-        </div>
-        <div class="about">
-          <div class="about-photo reveal"><img src="${esc(ap.photo)}" alt="${esc(C.nom)}" loading="lazy" decoding="async" width="190" height="600"></div>
+        ${ap.photo ? `<div class="about-band reveal"><img src="${esc(ap.photo)}" alt="" loading="lazy" decoding="async" width="1600" height="200"></div>` : ''}
+        <div class="intro">
+          <div class="section-head reveal">
+            <h2 class="h-section">${esc(t(ap.titre))}</h2>
+            <span class="rule"></span>
+          </div>
           <div class="about-text reveal">${(Array.isArray(texts) ? texts : [texts]).map((p) => `<p>${esc(p)}</p>`).join('')}</div>
         </div>
       </section>
@@ -275,8 +278,8 @@
       const name = row.dataset.name;
       $('.count', row).textContent = String(list.length).padStart(2, '0');
       $('.mo-strip', row).innerHTML = list.map((src, k) => `
-        <button class="mo-item" type="button" data-i="${k}" aria-label="${esc(name)} ${k + 1}/${list.length}">
-          <img src="${esc(src)}" alt="${esc(name)}" loading="lazy" decoding="async" width="800" height="1000">
+        <button class="mo-item${isSketch(src) ? ' sketch' : ''}" type="button" data-i="${k}" aria-label="${esc(name)} ${k + 1}/${list.length}">
+          <img src="${esc(src)}" alt="${esc(name)}" loading="lazy" decoding="async" ${isSketch(src) ? 'width="1600" height="1000"' : 'width="800" height="1000"'}>
         </button>`).join('');
       row._photos = list;
     });
@@ -463,6 +466,7 @@
   function showLB() {
     const n = lb.list.length;
     lb.img.src = lb.list[lb.i];
+    lb.img.classList.toggle('sketch', isSketch(lb.list[lb.i]));
     lb.img.alt = lb.name;
     lb.nameEl.textContent = lb.name;
     lb.count.textContent = n > 1 ? `${lb.i + 1} / ${n}` : '';

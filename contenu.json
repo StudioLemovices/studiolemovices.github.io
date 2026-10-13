@@ -2,6 +2,7 @@
   "nom": "Studio Lemovices",
   "accueil": {
     "logo": "logo/logo-noir.svg",
+    "logo_sombre": "logo/logo-blanc.svg",
     "phrase": {
       "fr": "Chaque pièce est unique.",
       "en": "Every piece is one of a kind.",
@@ -485,7 +486,7 @@
       "en": "About",
       "es": "Acerca de"
     },
-    "photo": "site/a-propos---noeud.jpg",
+    "photo": "site/sommaire-05-a-propos---bouleau.jpg",
     "texte": {
       "fr": [
         "Je dessine et fabrique des meubles en bois massif, entre Bruxelles et Lyon. Des pièces honnêtes, utiles et singulières, où la matière guide le dessin.",
