@@ -60,8 +60,6 @@
   /* photos légèrement adoucies (pas le logo ni les dessins) */
   .frame img, .fiche-photo img, .mo-item:not(.sketch) img, .about-band img, .lb-figure img:not(.sketch) { filter: var(--photo-filter); }
 }
-/* le logo noir a un fond blanc : on le fond dans le papier */
-@media (prefers-color-scheme: light) { .hero-logo, .brand picture { mix-blend-mode: multiply; } }
 picture { display: block; }
 
 *, *::before, *::after { box-sizing: border-box; }
