@@ -90,7 +90,7 @@ L'ordre des pièces dans `contenu.json` est l'ordre d'affichage sur le site (et 
    - 4 enregistrements **A** pour `studiolemovices.be` vers : `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` ;
    - 1 enregistrement **CNAME** pour `www` vers : `studiolemovices.github.io`.
 2. **Sur github.com**, dans le dépôt : **Settings → Pages → Custom domain**, tapez `studiolemovices.be`, cliquez sur **Save**. Attendez que la vérification passe au vert (de quelques minutes à 24 h), puis cochez **Enforce HTTPS**.
-3. **Dans `index.html`** (seule exception à la règle « n'y touchez pas ») : remplacez les 3 occurrences de `https://studiolemovices.github.io/` par `https://studiolemovices.be/` (ce sont les liens utilisés pour l'aperçu quand on partage le site sur Instagram, WhatsApp…).
+3. **Dans `index.html`** (seule exception à la règle « n'y touchez pas ») : remplacez les 3 occurrences de `https://studiolemovices.github.io/` par `https://studiolemovices.be/` (ce sont les liens utilisés pour l'aperçu quand on partage le site sur Instagram, WhatsApp…). Faites de même dans `robots.txt` et `sitemap.xml`.
 4. **Sur web3forms.com** et **goatcounter.com** : rien d'obligatoire. Sur GoatCounter, vous pouvez indiquer le nouveau domaine dans les réglages pour que les statistiques restent propres.
 5. **Mentions légales** : quand vous aurez une adresse ou un numéro d'entreprise, ajoutez-les dans `contenu.json`, rubrique `"mentions_texte"` (français et anglais).
 
