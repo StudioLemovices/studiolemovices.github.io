@@ -1,6 +1,6 @@
 # Studio Lemovices — site vitrine
 
-Le site est en ligne ici : **https://studiolemovices.github.io**
+Le site est en ligne ici : **https://studiolemovices.be**
 
 Tout ce qui s'affiche sur le site (textes en français et en anglais, pièces, photos) vient d'un seul fichier : **`contenu.json`**. Vous n'avez jamais besoin de toucher aux autres fichiers.
 
@@ -62,7 +62,7 @@ Même chose dans le dossier `making-of/` : un dossier au même nom (`table-nouve
 2. Repérez une pièce existante, par exemple le bloc qui commence par `"slug": "table-prunus-orbita"`.
    Copiez tout le bloc, de l'accolade `{` jusqu'à l'accolade `},` qui le ferme.
 3. Collez-le juste après, et modifiez :
-   - `"slug"` : le nom du dossier (`table-nouvelle`) — c'est aussi l'adresse de la page de la pièce : `studiolemovices.github.io/table-nouvelle/` (créée automatiquement) ;
+   - `"slug"` : le nom du dossier (`table-nouvelle`) — c'est aussi l'adresse de la page de la pièce : `studiolemovices.be/table-nouvelle/` (créée automatiquement) ;
    - `"famille"` : `dining`, `living`, `working` ou `chess` ;
    - `"nom"`, `"sous_titre"`, `"matieres"`, `"texte"` (en français, en anglais et en espagnol) ;
    - `"photos"` : les chemins de vos photos, par exemple `"pieces/table-nouvelle/01-ensemble.jpg"` ;
@@ -86,16 +86,19 @@ L'ordre des pièces dans `contenu.json` est l'ordre d'affichage sur le site (et 
 
 ---
 
-## Le jour où vous branchez le domaine studiolemovices.be
+## Le domaine studiolemovices.be
 
-1. **Chez le vendeur du domaine** (OVH, Gandi, one.com…), dans la zone « DNS », ajoutez :
+Le site est branché sur **studiolemovices.be**. Les anciennes adresses en `studiolemovices.github.io` renvoient automatiquement vers la nouvelle (y compris les QR codes déjà imprimés).
+
+Ce qui est en place, pour mémoire :
+1. **Chez le vendeur du domaine**, dans la zone « DNS » :
    - 4 enregistrements **A** pour `studiolemovices.be` vers : `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` ;
-   - 1 enregistrement **CNAME** pour `www` vers : `studiolemovices.github.io`.
-2. **Sur github.com**, dans le dépôt : **Settings → Pages → Custom domain**, tapez `studiolemovices.be`, cliquez sur **Save**. Attendez que la vérification passe au vert (de quelques minutes à 24 h), puis cochez **Enforce HTTPS**.
-3. **Dans `contenu.json`**, tout en haut : remplacez `"site_url": "https://studiolemovices.github.io"` par `"site_url": "https://studiolemovices.be"`. C'est le seul endroit où l'adresse du site est écrite : toutes les pages, `sitemap.xml` et `robots.txt` sont régénérés automatiquement avec la nouvelle adresse. Seule la page `liens/` (QR code) a sa propre adresse, à mettre à jour à part.
-   Puis, dans Google Search Console, ajoutez la nouvelle adresse et envoyez de nouveau `sitemap.xml`.
-4. **Sur web3forms.com** et **goatcounter.com** : rien d'obligatoire. Sur GoatCounter, vous pouvez indiquer le nouveau domaine dans les réglages pour que les statistiques restent propres.
-5. **Mentions légales** : quand vous aurez une adresse ou un numéro d'entreprise, ajoutez-les dans `contenu.json`, rubrique `"mentions_texte"` (français et anglais).
+   - 1 enregistrement **CNAME** pour `www` vers : `studiolemovices.github.io` (c'est normal : c'est l'adresse technique de GitHub, à laisser telle quelle).
+2. **Sur github.com** : **Settings → Pages → Custom domain** = `studiolemovices.be`, avec **Enforce HTTPS** coché. Le fichier `CNAME` à la racine du dépôt garde ce réglage : ne le supprimez pas.
+3. **Dans `contenu.json`**, tout en haut : `"site_url": "https://studiolemovices.be"`. C'est le seul endroit où l'adresse du site est écrite : toutes les pages, `sitemap.xml` et `robots.txt` sont régénérés automatiquement à partir de lui. Seule la page `liens/` (QR code) a sa propre adresse, écrite dans `liens/index.html`.
+4. **Google Search Console** : ajoutez la propriété `https://studiolemovices.be` et envoyez-y `sitemap.xml`.
+5. **GoatCounter** : vous pouvez indiquer le nouveau domaine dans les réglages pour que les statistiques restent propres.
+6. **Mentions légales** : quand vous aurez une adresse ou un numéro d'entreprise, ajoutez-les dans `contenu.json`, rubrique `"mentions_texte"`.
 
 ---
 

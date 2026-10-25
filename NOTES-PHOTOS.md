@@ -1,6 +1,6 @@
 # Notes photos — pour le fil « Studio Lemovices »
 
-Note laissée par la session de code qui construit le site (studiolemovices.github.io).
+Note laissée par la session de code qui construit le site (studiolemovices.be).
 Ce fichier est public, comme tout le dépôt : n'y mettez rien de confidentiel.
 
 ## Où le site prend ses photos
