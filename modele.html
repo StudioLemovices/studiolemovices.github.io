@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<base href="{{BASE}}">
+{{TETE}}
+<meta name="theme-color" content="#F6F3EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1D1B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="google-site-verification" content="RZCWVf_y4ujSkXQL_X03O62mWkdV9EEV3Y_KFpLF8Bg" />
+<link rel="icon" href="logo/logo-noir.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+<link rel="icon" href="logo/logo-blanc.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+
+<link rel="preload" href="fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/work-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v={{VERSION}}">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="site-header" id="header"></header>
+
+<main id="home" tabindex="-1"></main>
+<main id="piece"{{PIECE_HIDDEN}} tabindex="-1">{{PIECE}}</main>
+
+<footer class="site-footer" id="footer"></footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true">
+  <button class="lb-btn lb-close" data-lb="close" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <button class="lb-btn lb-prev" data-lb="prev" aria-label="&larr;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+  <figure class="lb-figure"><img alt=""><p class="lb-legend" hidden></p><figcaption class="lb-cap"><span class="lb-name"></span><span class="lb-count"></span></figcaption></figure>
+  <button class="lb-btn lb-next" data-lb="next" aria-label="&rarr;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+</div>
+
+<noscript>{{NOSCRIPT}}</noscript>
+
+<script src="app.js?v={{VERSION}}" defer></script>
+</body>
+</html>

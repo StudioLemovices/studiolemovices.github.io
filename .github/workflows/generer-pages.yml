@@ -1,0 +1,44 @@
+# Régénère les pages du site (accueil, une page par pièce, 404, sitemap.xml,
+# robots.txt) à partir de contenu.json et modele.html, à chaque modification.
+name: Générer les pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'contenu.json'
+      - 'modele.html'
+      - 'scripts/**'
+      - 'pieces/**'
+      - '.github/workflows/generer-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generer-pages
+  cancel-in-progress: false
+
+jobs:
+  generer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Générer les pages
+        run: python3 scripts/generer.py
+      - name: Enregistrer les pages générées
+        run: |
+          # seul le script a tourné : tout changement vient de lui
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Pages déjà à jour."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Pages générées depuis contenu.json"
+            git push
+          fi
