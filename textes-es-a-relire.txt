@@ -186,12 +186,12 @@ FR : Formes simples, matières riches
 ES : Formas simples, materias ricas
 
 — Chess Set Flamma › matieres
-FR : Chêne · résine noire · merisier
-ES : Roble · resina negra · cerezo
+FR : Chêne · résine noire · merbau · merisier
+ES : Roble · resina negra · merbau · cerezo
 
 — Chess Set Flamma › texte
-FR : Un plateau fin en chêne et résine noire, cadré de merisier, et sa boîte en merisier flammé aux clés claires. Tout est réduit à l'essentiel : le fil du bois fait le reste.
-ES : Un tablero fino de roble y resina negra, enmarcado en cerezo, y su caja de cerezo flameado con llaves claras. Todo se reduce a lo esencial: la fibra de la madera hace el resto.
+FR : Un plateau fin en chêne et résine noire, cadré de merbau, et sa boîte en merisier flammé aux clés claires. Tout est réduit à l'essentiel : le fil du bois fait le reste.
+ES : Un tablero fino de roble y resina negra, enmarcado en merbau, y su caja de cerezo flameado con llaves claras. Todo se reduce a lo esencial: la fibra de la madera hace el resto.
 
 — making_of › titre
 FR : À l'atelier

@@ -210,8 +210,10 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease), opacity .6s; }
 /* Vignettes des pièces et des étapes : photo entière, jamais coupée,
    posée en bas d'un cadre carré (les noms restent alignés) */
-.card .frame, .step .frame { aspect-ratio: 1 / 1; background: transparent; }
-.card .frame img, .step .frame img { object-fit: contain; object-position: center bottom; }
+.card .frame { aspect-ratio: 4 / 5; }
+.card .frame img { object-fit: cover; }
+.step .frame { aspect-ratio: 1 / 1; background: transparent; }
+.step .frame img { object-fit: contain; object-position: center bottom; }
 .card a:hover .frame img, .card a:focus-visible .frame img,
 .mo-item:hover img, .fiche-photo:hover img, .step:hover img { transform: scale(1.045); }
 .card-name {
@@ -312,8 +314,11 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .fiche { padding-top: calc(var(--header-h) + clamp(24px, 4vw, 56px)); }
 .fiche-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(32px, 5vw, 96px); align-items: start; }
 .fiche-photos { min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(12px, 1.6vw, 24px); }
-.fiche-photo { display: block; width: 100%; overflow: hidden; background: var(--soft); cursor: zoom-in; }
-.fiche-photo img { width: 100%; transition: transform 1.2s var(--ease); }
+.fiche-photo { display: block; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: var(--soft); cursor: zoom-in; }
+.fiche-photo.wide { aspect-ratio: 5 / 4; } /* vue d'ensemble d'un meuble long */
+.fiche-photo.free { aspect-ratio: auto; } /* photo pas encore au format : forme d'origine */
+.fiche-photo.free img { height: auto; }
+.fiche-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
 .fiche-photos .fiche-photo:first-child img { view-transition-name: piece-hero; }
 .fiche-info { position: sticky; top: calc(var(--header-h) + 32px); display: grid; gap: 22px; }
 .back { font-size: 11px; letter-spacing: .24em; text-transform: uppercase; text-decoration: none; color: var(--muted); }
