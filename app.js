@@ -608,6 +608,9 @@
         pieceView.hidden = false;
         document.body.classList.add('on-piece');
         onScroll();
+      } else if (/^#[\w-]+$/.test(location.hash)) {
+        // lien direct vers une section (ex. #contact depuis la page /liens/)
+        requestAnimationFrame(() => scrollToId(location.hash.slice(1), false));
       }
       stats();
     })
