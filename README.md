@@ -64,6 +64,7 @@ Même chose dans le dossier `making-of/` : un dossier au même nom (`table-nouve
    - `"famille"` : `dining`, `living`, `working` ou `chess` ;
    - `"nom"`, `"sous_titre"`, `"matieres"`, `"texte"` (en français, en anglais et en espagnol) ;
    - `"photos"` : les chemins de vos photos, par exemple `"pieces/table-nouvelle/01-ensemble.jpg"` ;
+   - `"vignette"` (facultatif) : la vignette de l'accueil, toujours en vertical 4:5, par exemple `"pieces/table-nouvelle/00-vignette.jpg"`. Utile quand la photo d'ensemble est horizontale (meuble long, format 5:4). Sans ce champ, l'accueil montre la première photo.
    - `"making_of"` : `"making-of/table-nouvelle/"`, ou `null` s'il n'y a pas de photos d'atelier.
 4. Vérifiez la virgule entre deux blocs : chaque `}` est suivi d'une virgule, **sauf le dernier de la liste**.
 5. **Commit changes**.

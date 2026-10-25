@@ -88,7 +88,7 @@
             ${list.map((p) => `
               <li class="card reveal">
                 <a href="#/${esc(p.slug)}" data-slug="${esc(p.slug)}">
-                  <div class="frame"><img src="${esc(p.photos[0])}" alt="${esc(p.nom)}" loading="lazy" decoding="async" width="800" height="1000"></div>
+                  <div class="frame"><img src="${esc(p.vignette || p.photos[0])}" alt="${esc(p.nom)}" loading="lazy" decoding="async" width="800" height="1000"></div>
                   <span class="card-name">${esc(p.nom)}</span>
                 </a>
               </li>`).join('')}
