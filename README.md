@@ -93,3 +93,11 @@ L'ordre des pièces dans `contenu.json` est l'ordre d'affichage sur le site (et 
 3. **Dans `index.html`** (seule exception à la règle « n'y touchez pas ») : remplacez les 3 occurrences de `https://studiolemovices.github.io/` par `https://studiolemovices.be/` (ce sont les liens utilisés pour l'aperçu quand on partage le site sur Instagram, WhatsApp…).
 4. **Sur web3forms.com** et **goatcounter.com** : rien d'obligatoire. Sur GoatCounter, vous pouvez indiquer le nouveau domaine dans les réglages pour que les statistiques restent propres.
 5. **Mentions légales** : quand vous aurez une adresse ou un numéro d'entreprise, ajoutez-les dans `contenu.json`, rubrique `"mentions_texte"` (français et anglais).
+
+---
+
+## Numéro de version des fichiers du site
+
+Dans `index.html`, les fichiers `style.css` et `app.js` sont appelés avec un numéro de version (`style.css?v=2026-10-25`, `app.js?v=2026-10-25`). Quand l'un de ces deux fichiers change, on change aussi ce numéro (par exemple la date du jour) : les navigateurs des visiteurs chargent alors tout de suite la nouvelle version, au lieu de garder l'ancienne en mémoire pendant quelques minutes.
+
+Ce n'est pas nécessaire quand on modifie seulement `contenu.json` ou des photos.
