@@ -1,5 +1,10 @@
 {
+  "site_url": "https://studiolemovices.github.io",
   "nom": "Studio Lemovices",
+  "seo": {
+    "titre_accueil": "Studio Lemovices · Ébéniste, mobilier sur mesure en bois massif · Bruxelles",
+    "description_accueil": "Studio Lemovices, ébéniste entre Bruxelles et Lyon : mobilier sur mesure en bois massif, tables, bancs, bureaux et pièces uniques dessinés et fabriqués à la main."
+  },
   "accueil": {
     "logo": "logo/logo-noir.svg",
     "logo_sombre": "logo/logo-blanc.svg",

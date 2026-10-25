@@ -19,7 +19,9 @@ Après chaque modification enregistrée sur github.com, le site se met à jour t
 | `site/` | La photo de la rubrique « À propos » |
 | `logo/` | Le logo |
 
-Les autres fichiers (`index.html`, `style.css`, `app.js`, `fonts/`) font fonctionner le site : n'y touchez pas.
+Les autres fichiers (`modele.html`, `style.css`, `app.js`, `scripts/`, `fonts/`) font fonctionner le site : n'y touchez pas.
+
+**Pages générées automatiquement.** `index.html` (l'accueil), un dossier par pièce (`table-quercus-aguacate/index.html`…), `404.html`, `sitemap.xml` et `robots.txt` sont fabriqués à partir de `contenu.json` par une GitHub Action, à chaque modification (onglet **Actions** du dépôt : « Générer les pages »). Ne les modifiez pas à la main : vos changements seraient écrasés. Chaque pièce a ainsi sa vraie page, que Google peut lire et référencer.
 
 ---
 
@@ -60,7 +62,7 @@ Même chose dans le dossier `making-of/` : un dossier au même nom (`table-nouve
 2. Repérez une pièce existante, par exemple le bloc qui commence par `"slug": "table-prunus-orbita"`.
    Copiez tout le bloc, de l'accolade `{` jusqu'à l'accolade `},` qui le ferme.
 3. Collez-le juste après, et modifiez :
-   - `"slug"` : le nom du dossier (`table-nouvelle`) — c'est aussi l'adresse de la fiche : `studiolemovices.github.io/#/table-nouvelle` ;
+   - `"slug"` : le nom du dossier (`table-nouvelle`) — c'est aussi l'adresse de la page de la pièce : `studiolemovices.github.io/table-nouvelle/` (créée automatiquement) ;
    - `"famille"` : `dining`, `living`, `working` ou `chess` ;
    - `"nom"`, `"sous_titre"`, `"matieres"`, `"texte"` (en français, en anglais et en espagnol) ;
    - `"photos"` : les chemins de vos photos, par exemple `"pieces/table-nouvelle/01-ensemble.jpg"` ;
@@ -90,7 +92,8 @@ L'ordre des pièces dans `contenu.json` est l'ordre d'affichage sur le site (et 
    - 4 enregistrements **A** pour `studiolemovices.be` vers : `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` ;
    - 1 enregistrement **CNAME** pour `www` vers : `studiolemovices.github.io`.
 2. **Sur github.com**, dans le dépôt : **Settings → Pages → Custom domain**, tapez `studiolemovices.be`, cliquez sur **Save**. Attendez que la vérification passe au vert (de quelques minutes à 24 h), puis cochez **Enforce HTTPS**.
-3. **Dans `index.html`** (seule exception à la règle « n'y touchez pas ») : remplacez les 3 occurrences de `https://studiolemovices.github.io/` par `https://studiolemovices.be/` (ce sont les liens utilisés pour l'aperçu quand on partage le site sur Instagram, WhatsApp…). Faites de même dans `robots.txt` et `sitemap.xml`.
+3. **Dans `contenu.json`**, tout en haut : remplacez `"site_url": "https://studiolemovices.github.io"` par `"site_url": "https://studiolemovices.be"`. C'est le seul endroit où l'adresse du site est écrite : toutes les pages, `sitemap.xml` et `robots.txt` sont régénérés automatiquement avec la nouvelle adresse. Seule la page `liens/` (QR code) a sa propre adresse, à mettre à jour à part.
+   Puis, dans Google Search Console, ajoutez la nouvelle adresse et envoyez de nouveau `sitemap.xml`.
 4. **Sur web3forms.com** et **goatcounter.com** : rien d'obligatoire. Sur GoatCounter, vous pouvez indiquer le nouveau domaine dans les réglages pour que les statistiques restent propres.
 5. **Mentions légales** : quand vous aurez une adresse ou un numéro d'entreprise, ajoutez-les dans `contenu.json`, rubrique `"mentions_texte"` (français et anglais).
 
@@ -98,6 +101,16 @@ L'ordre des pièces dans `contenu.json` est l'ordre d'affichage sur le site (et 
 
 ## Numéro de version des fichiers du site
 
-Dans `index.html`, les fichiers `style.css` et `app.js` sont appelés avec un numéro de version (`style.css?v=2026-10-25`, `app.js?v=2026-10-25`). Quand l'un de ces deux fichiers change, on change aussi ce numéro (par exemple la date du jour) : les navigateurs des visiteurs chargent alors tout de suite la nouvelle version, au lieu de garder l'ancienne en mémoire pendant quelques minutes.
+Les fichiers `style.css` et `app.js` sont appelés avec un numéro de version (`style.css?v=2026-10-26`…), réglé en haut de `scripts/generer.py` (ligne `VERSION = …`). Quand l'un de ces deux fichiers change, on change aussi ce numéro (par exemple la date du jour) : les navigateurs des visiteurs chargent alors tout de suite la nouvelle version, au lieu de garder l'ancienne en mémoire pendant quelques minutes.
 
 Ce n'est pas nécessaire quand on modifie seulement `contenu.json` ou des photos.
+
+---
+
+## Référencement (Google)
+
+- **Titre et description de l'accueil** : dans `contenu.json`, rubrique `"seo"` (`"titre_accueil"`, `"description_accueil"`).
+- **Pages de pièces** : titre « Nom de la pièce · Studio Lemovices », description tirée du texte français, image de partage = la première photo. Tout est automatique.
+- **Anciens liens** en `#/nom-de-la-piece` (déjà partagés sur Instagram ou WhatsApp) : ils mènent toujours à la bonne page.
+- **Données structurées** (fiche « entreprise locale » pour Google) : générées dans l'accueil, sans adresse postale ni téléphone.
+

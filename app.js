@@ -41,7 +41,7 @@
     return (p && p.legendes && m && t(p.legendes[m[1]])) || '';
   };
   const isSketch = (src) => /\/00\.jpg$/.test(src);
-  const homeTitle = () => `${C.nom} — ${t(C.accueil.lieux).replace(/[^\p{L}\s/]/gu, '').trim()}`;
+  const homeTitle = () => C.seo.titre_accueil;
 
   function pickLang() {
     try { const s = sessionStorage.getItem('lang'); if (LANGS.includes(s)) return s; } catch (e) { /* navigation privée */ }
@@ -53,12 +53,12 @@
   /* ---------- En-tête et pied de page ---------- */
   function renderHeader() {
     header.innerHTML = `
-      <a class="brand" href="#/" data-goto="accueil">${logo(C.accueil, 30)}<span>${esc(C.nom)}</span></a>
+      <a class="brand" href="./" data-goto="accueil">${logo(C.accueil, 30)}<span>${esc(C.nom)}</span></a>
       <nav class="nav" id="nav">
-        <a href="#/" data-goto="pieces">${esc(ui('nav_pieces'))}</a>
-        <a href="#/" data-goto="methode">${esc(ui('nav_methode'))}</a>
-        <a href="#/" data-goto="a-propos">${esc(ui('nav_a_propos'))}</a>
-        <a href="#/" data-goto="contact">${esc(ui('nav_contact'))}</a>
+        <a href="./" data-goto="pieces">${esc(ui('nav_pieces'))}</a>
+        <a href="./" data-goto="methode">${esc(ui('nav_methode'))}</a>
+        <a href="./" data-goto="a-propos">${esc(ui('nav_a_propos'))}</a>
+        <a href="./" data-goto="contact">${esc(ui('nav_contact'))}</a>
       </nav>
       <span class="lang" role="group" aria-label="Langue / Language / Idioma">${LANGS.map((l) => `<button type="button" data-lang="${l}" class="${l === lang ? 'on' : ''}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join('<span aria-hidden="true">/</span>')}</span>
       <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>`;
@@ -92,7 +92,7 @@
           <ul class="grid">
             ${list.map((p) => `
               <li class="card reveal">
-                <a href="#/${esc(p.slug)}" data-slug="${esc(p.slug)}">
+                <a href="${esc(p.slug)}/" data-slug="${esc(p.slug)}">
                   <div class="frame"><img src="${esc(p.vignette || p.photos[0])}" alt="${esc(p.nom)}" loading="lazy" decoding="async" width="800" height="1000"></div>
                   <span class="card-name">${esc(p.nom)}</span>
                 </a>
@@ -110,7 +110,7 @@
           <p class="hero-phrase lead">${esc(t(a.phrase))}</p>
           <p class="hero-lieux">${esc(t(a.lieux))}</p>
         </div>
-        <a class="hero-scroll" href="#/" data-goto="intro" aria-label="${esc(t(i.titre))}"></a>
+        <a class="hero-scroll" href="./" data-goto="intro" aria-label="${esc(t(i.titre))}"></a>
       </section>
 
       <section class="section wrap" id="intro">
@@ -132,7 +132,7 @@
         <ul class="toc">
           ${C.familles.filter((f) => C.pieces.some((p) => p.famille === f.id)).map((f) => `
             <li class="reveal">
-              <a href="#/" data-goto="famille-${esc(f.id)}">
+              <a href="./" data-goto="famille-${esc(f.id)}">
                 <div class="toc-img">${f.texture ? `<img src="${esc(f.texture)}" alt="" loading="lazy" decoding="async" width="800" height="1000">` : ''}</div>
                 <span class="toc-label"><span class="num">${esc(f.num)}</span><span class="toc-name">${esc(f.nom)}</span></span>
               </a>
@@ -309,7 +309,7 @@
             </div>
           </div>
           <div class="fiche-info">
-            <a class="back" href="#/" data-back>← ${esc(ui('retour'))}</a>
+            <a class="back" href="./" data-back>← ${esc(ui('retour'))}</a>
             <p class="eyebrow">${esc(f ? `${f.num} — ${f.nom}` : '')}</p>
             <h1 class="fiche-title">${esc(p.nom)}</h1>
             <p class="fiche-sub lead">${esc(quote(t(p.sous_titre)))}</p>
@@ -317,14 +317,14 @@
             <p class="fiche-text">${esc(t(p.texte))}</p>
             <p class="fiche-mention">${esc(t(C.contact.mention))}</p>
             <div class="fiche-actions">
-              <a class="btn" href="#/" data-goto="contact">${esc(ui('nav_contact'))}</a>
+              <a class="btn" href="./#contact" data-goto="contact">${esc(ui('nav_contact'))}</a>
             </div>
           </div>
         </div>
         <nav class="fiche-nav">
-          <a class="pn prev" href="#/${esc(prev.slug)}"><span class="eyebrow">← ${esc(ui('precedente'))}</span><strong>${esc(prev.nom)}</strong></a>
-          <a class="back mid" href="#/" data-back>${esc(ui('retour'))}</a>
-          <a class="pn next" href="#/${esc(next.slug)}"><span class="eyebrow">${esc(ui('suivante'))} →</span><strong>${esc(next.nom)}</strong></a>
+          <a class="pn prev" href="${esc(prev.slug)}/"><span class="eyebrow">← ${esc(ui('precedente'))}</span><strong>${esc(prev.nom)}</strong></a>
+          <a class="back mid" href="./" data-back>${esc(ui('retour'))}</a>
+          <a class="pn next" href="${esc(next.slug)}/"><span class="eyebrow">${esc(ui('suivante'))} →</span><strong>${esc(next.nom)}</strong></a>
         </nav>
       </article>`;
     // cadre selon le format : 4:5 par défaut, .wide pour une vue d'ensemble 5:4,
@@ -341,10 +341,10 @@
     if (mo) fillStrip(mo);
     pieceView._photos = p.photos;
     pieceView._name = p.nom;
-    document.title = `${p.nom} — ${C.nom}`;
+    document.title = `${p.nom} · ${C.nom}`;
   }
 
-  /* ---------- Navigation (#/slug) ---------- */
+  /* ---------- Navigation : une vraie adresse par pièce (/slug/) ---------- */
   function transition(fn) {
     if (!reduce && document.startViewTransition) {
       return document.startViewTransition(fn).finished.catch(() => {});
@@ -355,13 +355,30 @@
 
   const thumbOf = (slug) => slug && $(`.card a[data-slug="${CSS.escape(slug)}"] img`, home);
 
-  function slugFromHash() {
-    const m = location.hash.match(/^#\/([\w-]+)/);
-    return m && C.pieces.some((p) => p.slug === m[1]) ? m[1] : null;
+  // adresses relatives à <base href> (la racine du site, définie dans contenu.json → site_url)
+  const BASE_PATH = new URL(document.baseURI).pathname;
+  const pieceUrl = (slug) => `${BASE_PATH}${slug}/`;
+  const isPiece = (slug) => C.pieces.some((p) => p.slug === slug);
+
+  function slugFromPath(pathname = location.pathname) {
+    if (!pathname.startsWith(BASE_PATH)) return null;
+    const m = pathname.slice(BASE_PATH.length).match(/^([\w-]+)\/?(?:index\.html)?$/);
+    return m && isPiece(m[1]) ? m[1] : null;
+  }
+
+  // anciens liens #/slug (déjà partagés) → /slug/ ; adresse inconnue (page 404) → accueil
+  function normalizeUrl() {
+    const m = location.hash.match(/^#\/([\w-]*)/);
+    if (m) {
+      history.replaceState(history.state, '', isPiece(m[1]) ? pieceUrl(m[1]) : BASE_PATH);
+    } else if (!slugFromPath() && location.pathname !== BASE_PATH) {
+      history.replaceState(history.state, '', BASE_PATH + location.hash);
+    }
   }
 
   function route() {
-    const slug = slugFromHash();
+    normalizeUrl();
+    const slug = slugFromPath();
     if (slug) showPiece(slug); else showHome();
   }
 
@@ -429,7 +446,7 @@
     pendingGoto = gotoId || null;
     const depth = (history.state && history.state.depth) || 0;
     if (current !== null && depth > 0) { history.go(-depth); return; }
-    if (current !== null) { history.pushState({ depth: 0 }, '', '#/'); route(); return; }
+    if (current !== null) { history.pushState({ depth: 0 }, '', BASE_PATH); route(); return; }
     if (gotoId) scrollToId(gotoId);
     pendingGoto = null;
   }
@@ -523,11 +540,10 @@
     const fp = e.target.closest('.fiche-photo');
     if (fp) { openLB(pieceView._photos, +fp.dataset.i, pieceView._name); return; }
 
-    const link = e.target.closest('a[href^="#/"]');
-    if (link && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
-      e.preventDefault();
-      closeMenu();
-      navigate(link.getAttribute('href'));
+    const link = e.target.closest('a[href]');
+    if (link && link.origin === location.origin && !link.target && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
+      const slug = slugFromPath(link.pathname);
+      if (slug) { e.preventDefault(); closeMenu(); navigate(pieceUrl(slug)); }
     }
   });
 
@@ -588,7 +604,7 @@
   }
   function count() {
     if (!statsReady || !window.goatcounter || !window.goatcounter.count) return;
-    window.goatcounter.count({ path: current ? `/${current}` : '/', title: document.title });
+    window.goatcounter.count({ path: current ? `/${current}/` : '/', title: document.title });
   }
 
   /* ---------- Démarrage ---------- */
@@ -598,8 +614,9 @@
       C = data;
       lang = pickLang();
       document.documentElement.lang = lang;
+      normalizeUrl();
       renderAll();
-      const slug = slugFromHash();
+      const slug = slugFromPath();
       if (slug) {
         renderPiece(slug);
         current = slug;
