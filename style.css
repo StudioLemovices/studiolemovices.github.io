@@ -348,6 +348,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .lb-count { color: var(--muted); }
 /* légende d'une photo d'atelier, sous la photo : petite et discrète */
 .lb-legend { margin: -8px 0 0; max-width: 40em; text-align: center; font-family: var(--sans); font-size: 13px; line-height: 1.5; color: var(--muted); }
+@media (min-width: 761px) { .lb-legend { font-size: 16px; } } /* ordinateur : un peu plus grande */
 .lb-btn { position: absolute; z-index: 2; width: 52px; height: 52px; display: grid; place-items: center; color: var(--ink); opacity: .7; transition: opacity .2s; }
 .lb-btn svg { width: 26px; height: 26px; }
 .lb-btn:hover { opacity: 1; }
