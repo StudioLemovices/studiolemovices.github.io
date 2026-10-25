@@ -249,6 +249,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .mo-strip {
   display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
   margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter) 10px;
+  scroll-padding-inline: var(--gutter); /* le point d'accroche tient compte de la marge : la 1re photo reste sous le titre */
   scrollbar-width: thin; scrollbar-color: #4a4640 transparent;
   -webkit-overflow-scrolling: touch;
   min-height: clamp(200px, 26vw, 340px);
@@ -260,7 +261,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .mo-item.sketch img { width: auto; height: calc(clamp(200px, 26vw, 340px) - 16px); object-fit: contain; }
 
 .fiche-mo { margin-top: clamp(28px, 4vw, 48px); }
-.fiche-mo .mo-strip { margin: 0; padding: 0 0 10px; min-height: 0; scrollbar-color: var(--field) transparent; }
+.fiche-mo .mo-strip { margin: 0; padding: 0 0 10px; scroll-padding-inline: 0; min-height: 0; scrollbar-color: var(--field) transparent; }
 .fiche-mo .mo-item.sketch { background: #fff; padding: 0; box-shadow: none; }
 .fiche-mo .mo-item.sketch img { width: auto; height: clamp(150px, 16vw, 220px); }
 .fiche-mo .mo-head .count { color: var(--muted); }
