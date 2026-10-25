@@ -101,7 +101,7 @@ L'ordre des pièces dans `contenu.json` est l'ordre d'affichage sur le site (et 
 
 ## Numéro de version des fichiers du site
 
-Les fichiers `style.css` et `app.js` sont appelés avec un numéro de version (`style.css?v=2026-10-26`…), réglé en haut de `scripts/generer.py` (ligne `VERSION = …`). Quand l'un de ces deux fichiers change, on change aussi ce numéro (par exemple la date du jour) : les navigateurs des visiteurs chargent alors tout de suite la nouvelle version, au lieu de garder l'ancienne en mémoire pendant quelques minutes.
+Les fichiers `style.css` et `app.js` sont appelés avec un numéro de version (`style.css?v=2026-10-27`…), réglé en haut de `scripts/generer.py` (ligne `VERSION = …`). Quand l'un de ces deux fichiers change, on change aussi ce numéro (par exemple la date du jour) : les navigateurs des visiteurs chargent alors tout de suite la nouvelle version, au lieu de garder l'ancienne en mémoire pendant quelques minutes.
 
 Ce n'est pas nécessaire quand on modifie seulement `contenu.json` ou des photos.
 
