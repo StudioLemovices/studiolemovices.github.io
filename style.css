@@ -208,6 +208,10 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .card a { display: block; text-decoration: none; }
 .frame { overflow: hidden; background: var(--soft); aspect-ratio: 4 / 5; }
 .frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease), opacity .6s; }
+/* Vignettes des pièces et des étapes : photo entière, jamais coupée,
+   posée en bas d'un cadre carré (les noms restent alignés) */
+.card .frame, .step .frame { aspect-ratio: 1 / 1; background: transparent; }
+.card .frame img, .step .frame img { object-fit: contain; object-position: center bottom; }
 .card a:hover .frame img, .card a:focus-visible .frame img,
 .mo-item:hover img, .fiche-photo:hover img, .step:hover img { transform: scale(1.045); }
 .card-name {
