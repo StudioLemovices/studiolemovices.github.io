@@ -23,7 +23,7 @@ Copie de travail dans Dropbox : `_Communication/Site vitrine/images/` (même str
 ## État actuel (25 octobre 2026)
 
 - Détails en haute définition : Bench, Cutting Board, Tasting Board, Credenza, Industria (pris dans `Post/02 …`, 4:5), Chair, Prunus Orbita, Memoria, et Chess Set Flamma (version agrandie `À publier/Chess Set Flamma/Post/02 - gros plan_upscayl…png`, format 0,7).
-- Pas de photo de détail pour **Table Levitas Aguacate** : la version agrandie `_Portfolio/02 Living/Table Levitas Aguacate/tablebasse 2_upscayl_2x_ultramix-balanced-4x.png` (et son original `tablebasse 2.png`) porte une petite étoile blanche en bas à droite, à retirer.
+- Table Levitas Aguacate : ensemble et détail en versions agrandies (`_Portfolio/02 Living/Table Levitas Aguacate/tablebasse 1/2_upscayl…png`), étoile retirée.
 - Photos d'ensemble (`01-ensemble.jpg`) de formats mélangés : 8 presque carrées (1380 × 1360, gabarit portfolio), 5 verticales, 1 horizontale. Le site les affiche entières, sans recadrage, mais une série homogène en 4:5 serait plus régulière.
 
 ## Question pour le fil
