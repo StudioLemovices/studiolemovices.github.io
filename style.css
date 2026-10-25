@@ -378,6 +378,17 @@ body.lb-open .site-header { visibility: hidden; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .fiche-grid { grid-template-columns: minmax(0, 1fr); }
   .fiche-info { position: static; }
+  /* Fiche sur téléphone/tablette : titre d'abord, puis photos, puis texte, puis atelier */
+  .fiche-grid { display: flex; flex-direction: column; gap: 0; }
+  .fiche-photos, .fiche-info { display: contents; }
+  .fiche-info > * { order: 3; margin-top: 22px; }
+  .fiche-info > .back { order: 1; margin-top: 0; }
+  .fiche-info > .eyebrow, .fiche-info > .fiche-title { order: 1; }
+  .fiche-info > .fiche-sub { order: 1; margin-top: 16px; }
+  .fiche-photo { order: 2; margin-top: clamp(12px, 1.6vw, 24px); }
+  .fiche-photo[data-i="0"] { margin-top: 32px; }
+  .fiche-info > .fiche-mat { margin-top: 32px; }
+  .mo-row { order: 4; min-width: 0; max-width: 100%; }
 }
 @media (max-width: 760px) {
   :root { --header-h: 56px; }
