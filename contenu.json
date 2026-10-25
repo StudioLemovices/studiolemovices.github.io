@@ -93,9 +93,9 @@
         "es": "Roble macizo · cuarcita Avocado"
       },
       "texte": {
-        "fr": "La première. Une dalle de quartzite trouvée par hasard, et une base dessinée pour elle. Des pieds doubles enserrent les traverses : un mikado qui cache sa complexité derrière une simplicité apparente.",
-        "en": "The first one. A quartzite slab found by chance, and a base drawn for it. Double legs grip the rails: a mikado hiding its complexity behind an apparent simplicity.",
-        "es": "La primera. Una losa de cuarcita encontrada por azar, y una base dibujada para ella. Patas dobles abrazan los travesaños: un mikado que esconde su complejidad tras una sencillez aparente."
+        "fr": "La première. Une dalle de quartzite choisie avec soin, et une base dessinée pour elle. Des pieds doubles enserrent les traverses : un mikado qui cache sa complexité derrière une simplicité apparente.",
+        "en": "The first one. A carefully chosen quartzite slab, and a base drawn for it. Double legs grip the rails: a mikado hiding its complexity behind an apparent simplicity.",
+        "es": "La primera. Una losa de cuarcita elegida con cuidado, y una base dibujada para ella. Patas dobles abrazan los travesaños: un mikado que esconde su complejidad tras una sencillez aparente."
       },
       "vignette": "pieces/table-quercus-aguacate/00-vignette.jpg",
       "photos": [
@@ -105,14 +105,14 @@
       "making_of": "making-of/table-quercus-aguacate/",
       "legendes": {
         "00": {
-          "fr": "Le dessin",
-          "en": "The drawing",
-          "es": "El dibujo"
+          "fr": "Une base à la hauteur de sa pierre, introuvable ailleurs",
+          "en": "A base worthy of its stone, found nowhere else",
+          "es": "Una base a la altura de su piedra, imposible de encontrar en otro lugar"
         },
         "01": {
-          "fr": "Un plan et quelques sections de chêne",
-          "en": "A drawing and a few lengths of oak",
-          "es": "Un plano y algunas secciones de roble"
+          "fr": "Je croyais faire une table. Je fondais un atelier.",
+          "en": "I thought I was making a table. I was founding a workshop.",
+          "es": "Creía hacer una mesa. Estaba fundando un taller."
         },
         "02": {
           "fr": "Chaque assemblage se dessine avant de se couper",
@@ -120,19 +120,19 @@
           "es": "Cada ensamble se dibuja antes de cortarse"
         },
         "03": {
-          "fr": "Le mi-bois, coupé au ciseau",
-          "en": "The half-lap, cut with a chisel",
-          "es": "La media madera, cortada con formón"
+          "fr": "Deux pièces n'en formeront plus qu'une, coupées à la main",
+          "en": "Two pieces will become one, cut by hand",
+          "es": "Dos piezas que serán una sola, cortadas a mano"
         },
         "04": {
-          "fr": "Les lignes se croisent",
-          "en": "The lines cross",
-          "es": "Las líneas se cruzan"
+          "fr": "Le mikado prend forme",
+          "en": "The mikado takes shape",
+          "es": "El mikado toma forma"
         },
         "05": {
-          "fr": "Montage à blanc, avant le chevillage",
-          "en": "Dry-fit, before pegging",
-          "es": "Montaje en seco, antes del clavijado"
+          "fr": "Ajustée avant le chevillage, elle attend sa pierre",
+          "en": "Fitted before pegging, it awaits its stone",
+          "es": "Ajustada antes del clavijado, espera su piedra"
         }
       }
     },
@@ -163,9 +163,9 @@
       "making_of": "making-of/bench-quercus-aguacate/",
       "legendes": {
         "00": {
-          "fr": "Le dessin",
-          "en": "The drawing",
-          "es": "El dibujo"
+          "fr": "Le langage de la table, ramené à l'essentiel",
+          "en": "The table's language, pared back to its essence",
+          "es": "El lenguaje de la mesa, reducido a lo esencial"
         },
         "01": {
           "fr": "Choisir ses planches, c'est déjà dessiner",
@@ -173,19 +173,19 @@
           "es": "Elegir las tablas ya es dibujar"
         },
         "02": {
-          "fr": "Montage à blanc",
-          "en": "Dry-fit",
-          "es": "Montaje en seco"
+          "fr": "Le premier objet, on l'improvise. Le deuxième, on le comprend.",
+          "en": "The first piece you improvise. The second, you understand.",
+          "es": "La primera pieza se improvisa. La segunda se comprende."
         },
         "03": {
-          "fr": "Les chevilles prennent leur place",
-          "en": "The pegs find their place",
-          "es": "Las clavijas encuentran su lugar"
+          "fr": "Les chevilles prennent leur place, une à une",
+          "en": "The pegs find their place, one by one",
+          "es": "Las clavijas encuentran su lugar, una a una"
         },
         "04": {
-          "fr": "Du chêne de quartier",
-          "en": "Quarter-sawn oak",
-          "es": "Roble cortado al cuarto"
+          "fr": "Les rayons du chêne de quartier, le bois des Arts & Crafts",
+          "en": "Quarter-sawn rays, the wood of Arts & Crafts",
+          "es": "Los radios del roble cortado al cuarto, la madera del Arts & Crafts"
         }
       }
     },
@@ -215,14 +215,14 @@
       "making_of": "making-of/stool-quercus-aguacate/",
       "legendes": {
         "00": {
-          "fr": "Le dessin",
-          "en": "The drawing",
-          "es": "El dibujo"
+          "fr": "Le vocabulaire de la table et du banc, resserré à une seule assise",
+          "en": "The language of the table and bench, drawn in to a single seat",
+          "es": "El vocabulario de la mesa y del banco, ceñido a un solo asiento"
         },
         "01": {
-          "fr": "Le dessin resserré, au centimètre",
-          "en": "The design drawn in, to the centimetre",
-          "es": "El dibujo ceñido, al centímetro"
+          "fr": "À cette échelle, chaque millimètre compte",
+          "en": "At this scale, every millimetre counts",
+          "es": "A esta escala, cada milímetro cuenta"
         },
         "02": {
           "fr": "Petit meuble, grand coup de balai",
@@ -235,9 +235,9 @@
           "es": "El dibujo deja el papel"
         },
         "04": {
-          "fr": "Prêt à quitter l'atelier",
-          "en": "Ready to leave the workshop",
-          "es": "Listo para dejar el taller"
+          "fr": "Plus petit, rien en moins",
+          "en": "Smaller, nothing less",
+          "es": "Más pequeño, nada menos"
         }
       }
     },
@@ -267,39 +267,39 @@
       "making_of": "making-of/chair-quercus-aguacate/",
       "legendes": {
         "00": {
-          "fr": "Le dessin",
-          "en": "The drawing",
-          "es": "El dibujo"
+          "fr": "Rien n'est plus difficile à faire qu'une chaise",
+          "en": "Nothing is harder to make than a chair",
+          "es": "Nada es más difícil de hacer que una silla"
         },
         "01": {
-          "fr": "Avant le chêne, des prototypes",
-          "en": "Before the oak, prototypes",
-          "es": "Antes del roble, prototipos"
+          "fr": "On s'assoit, on doute, on recommence",
+          "en": "Sit down, doubt, start again",
+          "es": "Uno se sienta, duda, vuelve a empezar"
         },
         "02": {
-          "fr": "Le chêne de l'arrière-grand-père",
-          "en": "Great-grandfather's oak",
-          "es": "El roble del bisabuelo"
+          "fr": "Le chêne de l'arrière-grand-père : plus le droit à l'erreur",
+          "en": "Great-grandfather's oak: no room for error",
+          "es": "El roble del bisabuelo: ya no hay margen de error"
         },
         "03": {
-          "fr": "Enfin une courbe",
-          "en": "At last, a curve",
-          "es": "Por fin, una curva"
+          "fr": "Enfin une courbe. La série n'en avait jamais vu.",
+          "en": "At last, a curve. The series had never seen one.",
+          "es": "Por fin, una curva. La serie nunca había visto una."
         },
         "04": {
-          "fr": "Le dossier, à blanc",
-          "en": "The back, dry-fitted",
-          "es": "El respaldo, montado en seco"
+          "fr": "Un dos ne se laisse pas convaincre facilement",
+          "en": "A back is not easily convinced",
+          "es": "Una espalda no se deja convencer fácilmente"
         },
         "05": {
-          "fr": "La traverse plonge au cœur du pied",
-          "en": "The rail reaches deep into the leg",
-          "es": "El travesaño penetra hasta el corazón de la pata"
+          "fr": "De quoi tenir quelques générations",
+          "en": "Enough to last a few generations",
+          "es": "Lo suficiente para durar algunas generaciones"
         },
         "06": {
-          "fr": "Dernier test : s'asseoir",
-          "en": "Final test: sit down",
-          "es": "Última prueba: sentarse"
+          "fr": "Dernier test : s'asseoir, et oublier la chaise",
+          "en": "Final test: sit down, and forget the chair",
+          "es": "Última prueba: sentarse, y olvidar la silla"
         }
       }
     },
@@ -329,29 +329,29 @@
       "making_of": "making-of/cutting-board-olea-nux/",
       "legendes": {
         "01": {
-          "fr": "L'olivier arrive à l'atelier",
-          "en": "The olive wood arrives",
-          "es": "El olivo llega al taller"
+          "fr": "Il ne sait pas encore ce qui l'attend",
+          "en": "It has no idea what's coming",
+          "es": "Todavía no sabe lo que le espera"
         },
         "02": {
-          "fr": "Il faut l'ouvrir pour le découvrir",
-          "en": "You have to open it up",
-          "es": "Hay que abrirlo para descubrirlo"
+          "fr": "Chaque bloc a son dessin. Aucun ne se répète.",
+          "en": "Every block has its own pattern. None repeats.",
+          "es": "Cada bloque tiene su dibujo. Ninguno se repite."
         },
         "03": {
-          "fr": "Remettre les morceaux ensemble, autrement",
-          "en": "Back together, in a new order",
-          "es": "Volver a unir las piezas, de otro modo"
+          "fr": "Remettre les morceaux ensemble, mais pas dans le même ordre",
+          "en": "Put the pieces back together, just not in the same order",
+          "es": "Volver a unir las piezas, pero no en el mismo orden"
         },
         "04": {
-          "fr": "Un cadre de noyer",
-          "en": "A walnut frame",
-          "es": "Un marco de nogal"
+          "fr": "Un noyer plus sombre, pour faire ressortir l'olivier",
+          "en": "Darker walnut, to make the olive stand out",
+          "es": "Un nogal más oscuro, para realzar el olivo"
         },
         "05": {
-          "fr": "L'huile de tung, puis la cuisine",
-          "en": "Tung oil, then the kitchen",
-          "es": "El aceite de tung, y luego la cocina"
+          "fr": "L'olivier vit des siècles. Celle-ci compte en faire autant.",
+          "en": "Olive trees live for centuries. This one intends to do the same.",
+          "es": "El olivo vive siglos. Esta tabla piensa hacer lo mismo."
         }
       }
     },
@@ -381,14 +381,14 @@
       "making_of": "making-of/tasting-board-olea-lux/",
       "legendes": {
         "01": {
-          "fr": "La planche reste entière",
-          "en": "The board stays whole",
-          "es": "La tabla queda entera"
+          "fr": "Pas de découpe : la planche reste telle que l'arbre l'a laissée",
+          "en": "No cutting: the board stays as the tree left it",
+          "es": "Sin cortes: la tabla queda tal como la dejó el árbol"
         },
         "02": {
-          "fr": "Le bord de l'arbre, comblé de noir",
-          "en": "The tree's edge, filled with black",
-          "es": "El borde del árbol, relleno de negro"
+          "fr": "Là où l'olivier s'arrête, le noir prend le relais",
+          "en": "Where the olive ends, the black takes over",
+          "es": "Donde termina el olivo, el negro toma el relevo"
         }
       }
     },
@@ -418,39 +418,39 @@
       "making_of": "making-of/table-prunus-orbita/",
       "legendes": {
         "00": {
-          "fr": "Le dessin",
-          "en": "The drawing",
-          "es": "El dibujo"
+          "fr": "Le mouvement ne s'arrête jamais tout à fait",
+          "en": "The motion never quite stops",
+          "es": "El movimiento nunca se detiene del todo"
         },
         "01": {
-          "fr": "Le merisier brut",
-          "en": "Rough cherry",
-          "es": "El cerezo en bruto"
+          "fr": "Le point de départ : du merisier tout juste débité",
+          "en": "Where it begins: freshly sawn cherry",
+          "es": "El punto de partida: cerezo recién aserrado"
         },
         "02": {
-          "fr": "Les arcs, pièce par pièce",
-          "en": "The arcs, piece by piece",
-          "es": "Los arcos, pieza a pieza"
+          "fr": "Les courbes apparaissent, les mortaises attendent",
+          "en": "The curves emerge, the mortises wait",
+          "es": "Aparecen las curvas, las mortajas esperan"
         },
         "03": {
-          "fr": "Les courbes tracées, les mortaises prêtes",
-          "en": "Curves marked, mortises ready",
-          "es": "Las curvas trazadas, las mortajas listas"
+          "fr": "Un trait de feutre décide de tout le mouvement",
+          "en": "One marker line decides the whole movement",
+          "es": "Un trazo de rotulador decide todo el movimiento"
         },
         "04": {
-          "fr": "Le collage des arcs",
-          "en": "Gluing the arcs",
-          "es": "El encolado de los arcos"
+          "fr": "Le cercle se referme. Le collage prend son temps.",
+          "en": "The circle closes. The glue-up takes its time.",
+          "es": "El círculo se cierra. El encolado se toma su tiempo."
         },
         "05": {
-          "fr": "Une clé de noyer",
-          "en": "A walnut key",
-          "es": "Una llave de nogal"
+          "fr": "Le bois mouillé annonce la couleur finale",
+          "en": "Wet wood reveals the final colour",
+          "es": "La madera mojada anuncia el color final"
         },
         "06": {
-          "fr": "Les quatre arcs se croisent",
-          "en": "The four arcs cross",
-          "es": "Los cuatro arcos se cruzan"
+          "fr": "Poncée, huilée : la matière rend enfin la lumière",
+          "en": "Sanded, oiled: the wood finally gives back the light",
+          "es": "Lijada, aceitada: la materia por fin devuelve la luz"
         }
       }
     },
@@ -481,44 +481,44 @@
       "making_of": "making-of/credenza-confluencia/",
       "legendes": {
         "00": {
-          "fr": "Le dessin",
-          "en": "The drawing",
-          "es": "El dibujo"
+          "fr": "Six mois de dessin, deux ans d'atelier",
+          "en": "Six months of drawing, two years in the workshop",
+          "es": "Seis meses de dibujo, dos años de taller"
         },
         "01": {
-          "fr": "Les plateaux d'olivier, encore bruts",
-          "en": "Raw olive slabs",
-          "es": "Los tablones de olivo, aún en bruto"
+          "fr": "Une palette d'olivier, et le projet a basculé",
+          "en": "A pallet of olive, and the project changed course",
+          "es": "Un palé de olivo, y el proyecto cambió de rumbo"
         },
         "02": {
-          "fr": "La résine noire dessine ses veines",
-          "en": "Black resin drawing its veins",
-          "es": "La resina negra dibuja sus vetas"
+          "fr": "Un Pollock qui attend son menuisier",
+          "en": "A Pollock waiting for its woodworker",
+          "es": "Un Pollock que espera a su ebanista"
         },
         "03": {
-          "fr": "Le surfaçage, sous les copeaux",
-          "en": "Flattening, under the shavings",
-          "es": "El cepillado, bajo las virutas"
+          "fr": "Premier jour de neige à l'atelier, en plein été",
+          "en": "First snow at the workshop, in midsummer",
+          "es": "Primer día de nieve en el taller, en pleno verano"
         },
         "04": {
-          "fr": "L'olivier aplani, rives naturelles",
-          "en": "Olive flattened, natural edges kept",
-          "es": "El olivo aplanado, cantos naturales"
+          "fr": "Le chaos de la coulée s'efface",
+          "en": "The chaos of the pour fades away",
+          "es": "El caos del vertido se desvanece"
         },
         "05": {
-          "fr": "Les panneaux",
-          "en": "The panels",
-          "es": "Los paneles"
+          "fr": "Chaque tiroir, chaque porte aura un morceau du même paysage",
+          "en": "Every drawer, every door gets a piece of the same landscape",
+          "es": "Cada cajón, cada puerta tendrá un trozo del mismo paisaje"
         },
         "06": {
-          "fr": "Le collage du caisson",
-          "en": "Gluing the case",
-          "es": "El encolado del cuerpo"
+          "fr": "Des pieds arrondis pour adoucir la ligne droite du noyer",
+          "en": "Rounded legs to soften the straight walnut line",
+          "es": "Patas redondeadas para suavizar la línea recta del nogal"
         },
         "07": {
-          "fr": "Premier montage à blanc",
-          "en": "First dry-fit",
-          "es": "Primer montaje en seco"
+          "fr": "Le noyer et l'olivier dialoguent, avant la finition",
+          "en": "Walnut and olive in conversation, before the finish",
+          "es": "El nogal y el olivo dialogan, antes del acabado"
         }
       }
     },
@@ -537,9 +537,9 @@
         "es": "Afzelia · cuarcita Avocado · vidrio ahumado"
       },
       "texte": {
-        "fr": "Une table basse où la pierre semble flotter. Des pieds au fil finement texturé, une tablette de verre fumé dessous : le contraste et la transparence allègent la masse du quartzite.",
-        "en": "A coffee table where the stone seems to float. Finely textured legs, a smoked glass shelf below: contrast and transparency lighten the mass of the quartzite.",
-        "es": "Una mesa baja donde la piedra parece flotar. Patas de fibra finamente texturizada, una repisa de vidrio ahumado debajo: el contraste y la transparencia aligeran la masa de la cuarcita."
+        "fr": "Une table basse où la pierre, tirée de la même dalle que la Table Quercus Aguacate, semble flotter. Des pieds taillés dans une chute d'afzelia, une tablette de verre fumé dessous : le contraste et la transparence allègent la masse du quartzite.",
+        "en": "A coffee table where the stone, cut from the same slab as the Table Quercus Aguacate, seems to float. Legs cut from an afzelia offcut, a smoked glass shelf below: contrast and transparency lighten the mass of the quartzite.",
+        "es": "Una mesa baja donde la piedra, extraída de la misma losa que la Table Quercus Aguacate, parece flotar. Patas talladas en un retal de afzelia, una repisa de vidrio ahumado debajo: el contraste y la transparencia aligeran la masa de la cuarcita."
       },
       "vignette": "pieces/table-levitas-aguacate/00-vignette.jpg",
       "photos": [
@@ -574,19 +574,19 @@
       "making_of": "making-of/standing-desk-quercus-industria/",
       "legendes": {
         "01": {
-          "fr": "Mis à nu, le chêne redevient neuf",
-          "en": "Stripped back, the oak looks new",
-          "es": "Al desnudo, el roble vuelve a ser nuevo"
+          "fr": "Mis à nu, le chêne redevenait neuf. Trop neuf.",
+          "en": "Stripped back, the oak looked new. Too new.",
+          "es": "Al desnudo, el roble volvía a ser nuevo. Demasiado nuevo."
         },
         "02": {
-          "fr": "Teinter, poncer, recommencer",
-          "en": "Stain, sand, start again",
-          "es": "Teñir, lijar, volver a empezar"
+          "fr": "Teinter, poncer, recommencer, jusqu'à « celui-là »",
+          "en": "Stain, sand, start again, until \"that one\"",
+          "es": "Teñir, lijar, volver a empezar, hasta «ese»"
         },
         "03": {
-          "fr": "À moitié poncé, la mémoire reste",
-          "en": "Half sanded, the memory stays",
-          "es": "A medio lijar, la memoria permanece"
+          "fr": "Le neuf affleure, la mémoire reste",
+          "en": "The new shows through, the memory stays",
+          "es": "Lo nuevo aflora, la memoria permanece"
         }
       }
     },
@@ -617,34 +617,34 @@
       "making_of": "making-of/standing-desk-quercus-memoria/",
       "legendes": {
         "00": {
-          "fr": "Le dessin",
-          "en": "The drawing",
-          "es": "El dibujo"
+          "fr": "La simplicité du tracé",
+          "en": "The simplicity of the line",
+          "es": "La sencillez del trazo"
         },
         "01": {
-          "fr": "Le chêne du Limousin, abattu vers 1950",
-          "en": "Limousin oak, felled around 1950",
-          "es": "El roble del Lemosín, talado hacia 1950"
+          "fr": "Telle qu'elle était en 1955, devant la maison à Limoges",
+          "en": "As it stood in 1955, outside the house in Limoges",
+          "es": "Tal como era en 1955, delante de la casa en Limoges"
         },
         "02": {
-          "fr": "Les planches, après des décennies d'attente",
-          "en": "The boards, after decades of waiting",
-          "es": "Las tablas, tras décadas de espera"
+          "fr": "Le moment du choix : lesquelles deviendront ce bureau",
+          "en": "The moment of choosing which will become this desk",
+          "es": "El momento de elegir: cuáles se convertirán en este escritorio"
         },
         "03": {
-          "fr": "Le plateau se compose",
-          "en": "Laying out the top",
-          "es": "El tablero se compone"
+          "fr": "On cherche l'ordre, l'accord des fils",
+          "en": "Searching for the order, the grain in agreement",
+          "es": "Se busca el orden, el acuerdo de las vetas"
         },
         "04": {
-          "fr": "Les fentes, comblées",
-          "en": "The cracks, filled",
-          "es": "Las grietas, rellenadas"
+          "fr": "Rien n'est effacé : les défauts sont stabilisés, puis donnés à voir",
+          "en": "Nothing erased: the flaws are stabilized, then shown",
+          "es": "Nada se borra: los defectos se estabilizan y luego se muestran"
         },
         "05": {
-          "fr": "Le plateau prend sa forme",
-          "en": "The top takes shape",
-          "es": "El tablero toma forma"
+          "fr": "Le défaut au centre ne se cache plus, il devient le sujet",
+          "en": "The flaw at the centre no longer hides; it becomes the subject",
+          "es": "El defecto del centro ya no se esconde, se convierte en el tema"
         }
       }
     },
@@ -674,44 +674,44 @@
       "making_of": "making-of/chess-table-dualis/",
       "legendes": {
         "00": {
-          "fr": "Le dessin",
-          "en": "The drawing",
-          "es": "El dibujo"
+          "fr": "Une radiographie pour voir chaque assemblage",
+          "en": "An X-ray to see every joint",
+          "es": "Una radiografía para ver cada ensamble"
         },
         "01": {
-          "fr": "Le chêne",
-          "en": "The oak",
-          "es": "El roble"
+          "fr": "Le point de départ : 194 × 31 × 10 cm de chêne, ses nœuds, ses gerces",
+          "en": "Where it begins: 76 × 12 × 4 in of oak, knots and checks",
+          "es": "El punto de partida: 194 × 31 × 10 cm de roble, sus nudos, sus grietas"
         },
         "02": {
-          "fr": "Le wengé",
-          "en": "The wengé",
-          "es": "El wengué"
+          "fr": "Le wengé, dur et sombre : la moitié noire du jeu",
+          "en": "Wenge, hard and dark: the black half of the game",
+          "es": "El wengué, duro y oscuro: la mitad negra del juego"
         },
         "03": {
-          "fr": "Chêne et wengé, collés en bandes",
-          "en": "Oak and wengé, glued in strips",
-          "es": "Roble y wengué, encolados en tiras"
+          "fr": "Recoupées en travers puis recollées : l'alternance naît ainsi",
+          "en": "Cross-cut, then glued again: that's how the pattern is born",
+          "es": "Cortadas en sentido transversal y vueltas a encolar: así nace la alternancia"
         },
         "04": {
-          "fr": "Deux bois, une seule pièce",
-          "en": "Two woods, one piece",
-          "es": "Dos maderas, una sola pieza"
+          "fr": "La ligne noire de wengé traverse toute l'épaisseur",
+          "en": "The black wenge line runs right through",
+          "es": "La línea negra de wengué atraviesa todo el grosor"
         },
         "05": {
-          "fr": "Les jambes courbes",
-          "en": "The curved legs",
-          "es": "Las patas curvas"
+          "fr": "La forme définitive viendra au gabarit",
+          "en": "The final shape will come from the template",
+          "es": "La forma definitiva vendrá con la plantilla"
         },
         "06": {
-          "fr": "Le pied central",
-          "en": "The central leg",
-          "es": "El pie central"
+          "fr": "Premier montage à blanc, premier test concluant",
+          "en": "First dry fit, first successful test",
+          "es": "Primer montaje en seco, primera prueba superada"
         },
         "07": {
-          "fr": "L'échiquier dans son cadre",
-          "en": "The board in its frame",
-          "es": "El tablero de ajedrez en su marco"
+          "fr": "Quarante ans, soixante-quatre cases",
+          "en": "Forty years, sixty-four squares",
+          "es": "Cuarenta años, sesenta y cuatro casillas"
         }
       }
     },

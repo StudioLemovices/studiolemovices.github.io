@@ -46,8 +46,8 @@ FR : Chêne massif · quartzite Avocado
 ES : Roble macizo · cuarcita Avocado
 
 — Table Quercus Aguacate › texte
-FR : La première. Une dalle de quartzite trouvée par hasard, et une base dessinée pour elle. Des pieds doubles enserrent les traverses : un mikado qui cache sa complexité derrière une simplicité apparente.
-ES : La primera. Una losa de cuarcita encontrada por azar, y una base dibujada para ella. Patas dobles abrazan los travesaños: un mikado que esconde su complejidad tras una sencillez aparente.
+FR : La première. Une dalle de quartzite choisie avec soin, et une base dessinée pour elle. Des pieds doubles enserrent les traverses : un mikado qui cache sa complexité derrière une simplicité apparente.
+ES : La primera. Una losa de cuarcita elegida con cuidado, y una base dibujada para ella. Patas dobles abrazan los travesaños: un mikado que esconde su complejidad tras una sencillez aparente.
 
 — Bench Quercus Aguacate › sous_titre
 FR : La forme distillée
@@ -142,8 +142,8 @@ FR : Afzelia · quartzite Avocado · verre fumé
 ES : Afzelia · cuarcita Avocado · vidrio ahumado
 
 — Table Levitas Aguacate › texte
-FR : Une table basse où la pierre semble flotter. Des pieds au fil finement texturé, une tablette de verre fumé dessous : le contraste et la transparence allègent la masse du quartzite.
-ES : Una mesa baja donde la piedra parece flotar. Patas de fibra finamente texturizada, una repisa de vidrio ahumado debajo: el contraste y la transparencia aligeran la masa de la cuarcita.
+FR : Une table basse où la pierre, tirée de la même dalle que la Table Quercus Aguacate, semble flotter. Des pieds taillés dans une chute d'afzelia, une tablette de verre fumé dessous : le contraste et la transparence allègent la masse du quartzite.
+ES : Una mesa baja donde la piedra, extraída de la misma losa que la Table Quercus Aguacate, parece flotar. Patas talladas en un retal de afzelia, una repisa de vidrio ahumado debajo: el contraste y la transparencia aligeran la masa de la cuarcita.
 
 — Standing Desk Quercus Industria › sous_titre
 FR : Mémoire industrielle
@@ -358,59 +358,59 @@ FR : Version PDF
 ES : Versión PDF
 
 
-— LÉGENDES DU MAKING-OF (ajout du 25 octobre) —
+— LÉGENDES DU MAKING-OF —
 
 — Table Quercus Aguacate › atelier 00
-FR : Le dessin
-ES : El dibujo
+FR : Une base à la hauteur de sa pierre, introuvable ailleurs
+ES : Una base a la altura de su piedra, imposible de encontrar en otro lugar
 
 — Table Quercus Aguacate › atelier 01
-FR : Un plan et quelques sections de chêne
-ES : Un plano y algunas secciones de roble
+FR : Je croyais faire une table. Je fondais un atelier.
+ES : Creía hacer una mesa. Estaba fundando un taller.
 
 — Table Quercus Aguacate › atelier 02
 FR : Chaque assemblage se dessine avant de se couper
 ES : Cada ensamble se dibuja antes de cortarse
 
 — Table Quercus Aguacate › atelier 03
-FR : Le mi-bois, coupé au ciseau
-ES : La media madera, cortada con formón
+FR : Deux pièces n'en formeront plus qu'une, coupées à la main
+ES : Dos piezas que serán una sola, cortadas a mano
 
 — Table Quercus Aguacate › atelier 04
-FR : Les lignes se croisent
-ES : Las líneas se cruzan
+FR : Le mikado prend forme
+ES : El mikado toma forma
 
 — Table Quercus Aguacate › atelier 05
-FR : Montage à blanc, avant le chevillage
-ES : Montaje en seco, antes del clavijado
+FR : Ajustée avant le chevillage, elle attend sa pierre
+ES : Ajustada antes del clavijado, espera su piedra
 
 — Bench Quercus Aguacate › atelier 00
-FR : Le dessin
-ES : El dibujo
+FR : Le langage de la table, ramené à l'essentiel
+ES : El lenguaje de la mesa, reducido a lo esencial
 
 — Bench Quercus Aguacate › atelier 01
 FR : Choisir ses planches, c'est déjà dessiner
 ES : Elegir las tablas ya es dibujar
 
 — Bench Quercus Aguacate › atelier 02
-FR : Montage à blanc
-ES : Montaje en seco
+FR : Le premier objet, on l'improvise. Le deuxième, on le comprend.
+ES : La primera pieza se improvisa. La segunda se comprende.
 
 — Bench Quercus Aguacate › atelier 03
-FR : Les chevilles prennent leur place
-ES : Las clavijas encuentran su lugar
+FR : Les chevilles prennent leur place, une à une
+ES : Las clavijas encuentran su lugar, una a una
 
 — Bench Quercus Aguacate › atelier 04
-FR : Du chêne de quartier
-ES : Roble cortado al cuarto
+FR : Les rayons du chêne de quartier, le bois des Arts & Crafts
+ES : Los radios del roble cortado al cuarto, la madera del Arts & Crafts
 
 — Stool Quercus Aguacate › atelier 00
-FR : Le dessin
-ES : El dibujo
+FR : Le vocabulaire de la table et du banc, resserré à une seule assise
+ES : El vocabulario de la mesa y del banco, ceñido a un solo asiento
 
 — Stool Quercus Aguacate › atelier 01
-FR : Le dessin resserré, au centimètre
-ES : El dibujo ceñido, al centímetro
+FR : À cette échelle, chaque millimètre compte
+ES : A esta escala, cada milímetro cuenta
 
 — Stool Quercus Aguacate › atelier 02
 FR : Petit meuble, grand coup de balai
@@ -421,189 +421,189 @@ FR : Le dessin quitte le papier
 ES : El dibujo deja el papel
 
 — Stool Quercus Aguacate › atelier 04
-FR : Prêt à quitter l'atelier
-ES : Listo para dejar el taller
+FR : Plus petit, rien en moins
+ES : Más pequeño, nada menos
 
 — Chair Quercus Aguacate › atelier 00
-FR : Le dessin
-ES : El dibujo
+FR : Rien n'est plus difficile à faire qu'une chaise
+ES : Nada es más difícil de hacer que una silla
 
 — Chair Quercus Aguacate › atelier 01
-FR : Avant le chêne, des prototypes
-ES : Antes del roble, prototipos
+FR : On s'assoit, on doute, on recommence
+ES : Uno se sienta, duda, vuelve a empezar
 
 — Chair Quercus Aguacate › atelier 02
-FR : Le chêne de l'arrière-grand-père
-ES : El roble del bisabuelo
+FR : Le chêne de l'arrière-grand-père : plus le droit à l'erreur
+ES : El roble del bisabuelo: ya no hay margen de error
 
 — Chair Quercus Aguacate › atelier 03
-FR : Enfin une courbe
-ES : Por fin, una curva
+FR : Enfin une courbe. La série n'en avait jamais vu.
+ES : Por fin, una curva. La serie nunca había visto una.
 
 — Chair Quercus Aguacate › atelier 04
-FR : Le dossier, à blanc
-ES : El respaldo, montado en seco
+FR : Un dos ne se laisse pas convaincre facilement
+ES : Una espalda no se deja convencer fácilmente
 
 — Chair Quercus Aguacate › atelier 05
-FR : La traverse plonge au cœur du pied
-ES : El travesaño penetra hasta el corazón de la pata
+FR : De quoi tenir quelques générations
+ES : Lo suficiente para durar algunas generaciones
 
 — Chair Quercus Aguacate › atelier 06
-FR : Dernier test : s'asseoir
-ES : Última prueba: sentarse
+FR : Dernier test : s'asseoir, et oublier la chaise
+ES : Última prueba: sentarse, y olvidar la silla
 
 — Cutting Board Olea Nux › atelier 01
-FR : L'olivier arrive à l'atelier
-ES : El olivo llega al taller
+FR : Il ne sait pas encore ce qui l'attend
+ES : Todavía no sabe lo que le espera
 
 — Cutting Board Olea Nux › atelier 02
-FR : Il faut l'ouvrir pour le découvrir
-ES : Hay que abrirlo para descubrirlo
+FR : Chaque bloc a son dessin. Aucun ne se répète.
+ES : Cada bloque tiene su dibujo. Ninguno se repite.
 
 — Cutting Board Olea Nux › atelier 03
-FR : Remettre les morceaux ensemble, autrement
-ES : Volver a unir las piezas, de otro modo
+FR : Remettre les morceaux ensemble, mais pas dans le même ordre
+ES : Volver a unir las piezas, pero no en el mismo orden
 
 — Cutting Board Olea Nux › atelier 04
-FR : Un cadre de noyer
-ES : Un marco de nogal
+FR : Un noyer plus sombre, pour faire ressortir l'olivier
+ES : Un nogal más oscuro, para realzar el olivo
 
 — Cutting Board Olea Nux › atelier 05
-FR : L'huile de tung, puis la cuisine
-ES : El aceite de tung, y luego la cocina
+FR : L'olivier vit des siècles. Celle-ci compte en faire autant.
+ES : El olivo vive siglos. Esta tabla piensa hacer lo mismo.
 
 — Tasting Board Olea Lux › atelier 01
-FR : La planche reste entière
-ES : La tabla queda entera
+FR : Pas de découpe : la planche reste telle que l'arbre l'a laissée
+ES : Sin cortes: la tabla queda tal como la dejó el árbol
 
 — Tasting Board Olea Lux › atelier 02
-FR : Le bord de l'arbre, comblé de noir
-ES : El borde del árbol, relleno de negro
+FR : Là où l'olivier s'arrête, le noir prend le relais
+ES : Donde termina el olivo, el negro toma el relevo
 
 — Table Prunus Orbita › atelier 00
-FR : Le dessin
-ES : El dibujo
+FR : Le mouvement ne s'arrête jamais tout à fait
+ES : El movimiento nunca se detiene del todo
 
 — Table Prunus Orbita › atelier 01
-FR : Le merisier brut
-ES : El cerezo en bruto
+FR : Le point de départ : du merisier tout juste débité
+ES : El punto de partida: cerezo recién aserrado
 
 — Table Prunus Orbita › atelier 02
-FR : Les arcs, pièce par pièce
-ES : Los arcos, pieza a pieza
+FR : Les courbes apparaissent, les mortaises attendent
+ES : Aparecen las curvas, las mortajas esperan
 
 — Table Prunus Orbita › atelier 03
-FR : Les courbes tracées, les mortaises prêtes
-ES : Las curvas trazadas, las mortajas listas
+FR : Un trait de feutre décide de tout le mouvement
+ES : Un trazo de rotulador decide todo el movimiento
 
 — Table Prunus Orbita › atelier 04
-FR : Le collage des arcs
-ES : El encolado de los arcos
+FR : Le cercle se referme. Le collage prend son temps.
+ES : El círculo se cierra. El encolado se toma su tiempo.
 
 — Table Prunus Orbita › atelier 05
-FR : Une clé de noyer
-ES : Una llave de nogal
+FR : Le bois mouillé annonce la couleur finale
+ES : La madera mojada anuncia el color final
 
 — Table Prunus Orbita › atelier 06
-FR : Les quatre arcs se croisent
-ES : Los cuatro arcos se cruzan
+FR : Poncée, huilée : la matière rend enfin la lumière
+ES : Lijada, aceitada: la materia por fin devuelve la luz
 
 — Credenza Confluencia › atelier 00
-FR : Le dessin
-ES : El dibujo
+FR : Six mois de dessin, deux ans d'atelier
+ES : Seis meses de dibujo, dos años de taller
 
 — Credenza Confluencia › atelier 01
-FR : Les plateaux d'olivier, encore bruts
-ES : Los tablones de olivo, aún en bruto
+FR : Une palette d'olivier, et le projet a basculé
+ES : Un palé de olivo, y el proyecto cambió de rumbo
 
 — Credenza Confluencia › atelier 02
-FR : La résine noire dessine ses veines
-ES : La resina negra dibuja sus vetas
+FR : Un Pollock qui attend son menuisier
+ES : Un Pollock que espera a su ebanista
 
 — Credenza Confluencia › atelier 03
-FR : Le surfaçage, sous les copeaux
-ES : El cepillado, bajo las virutas
+FR : Premier jour de neige à l'atelier, en plein été
+ES : Primer día de nieve en el taller, en pleno verano
 
 — Credenza Confluencia › atelier 04
-FR : L'olivier aplani, rives naturelles
-ES : El olivo aplanado, cantos naturales
+FR : Le chaos de la coulée s'efface
+ES : El caos del vertido se desvanece
 
 — Credenza Confluencia › atelier 05
-FR : Les panneaux
-ES : Los paneles
+FR : Chaque tiroir, chaque porte aura un morceau du même paysage
+ES : Cada cajón, cada puerta tendrá un trozo del mismo paisaje
 
 — Credenza Confluencia › atelier 06
-FR : Le collage du caisson
-ES : El encolado del cuerpo
+FR : Des pieds arrondis pour adoucir la ligne droite du noyer
+ES : Patas redondeadas para suavizar la línea recta del nogal
 
 — Credenza Confluencia › atelier 07
-FR : Premier montage à blanc
-ES : Primer montaje en seco
+FR : Le noyer et l'olivier dialoguent, avant la finition
+ES : El nogal y el olivo dialogan, antes del acabado
 
 — Standing Desk Quercus Industria › atelier 01
-FR : Mis à nu, le chêne redevient neuf
-ES : Al desnudo, el roble vuelve a ser nuevo
+FR : Mis à nu, le chêne redevenait neuf. Trop neuf.
+ES : Al desnudo, el roble volvía a ser nuevo. Demasiado nuevo.
 
 — Standing Desk Quercus Industria › atelier 02
-FR : Teinter, poncer, recommencer
-ES : Teñir, lijar, volver a empezar
+FR : Teinter, poncer, recommencer, jusqu'à « celui-là »
+ES : Teñir, lijar, volver a empezar, hasta «ese»
 
 — Standing Desk Quercus Industria › atelier 03
-FR : À moitié poncé, la mémoire reste
-ES : A medio lijar, la memoria permanece
+FR : Le neuf affleure, la mémoire reste
+ES : Lo nuevo aflora, la memoria permanece
 
 — Standing Desk Quercus Memoria › atelier 00
-FR : Le dessin
-ES : El dibujo
+FR : La simplicité du tracé
+ES : La sencillez del trazo
 
 — Standing Desk Quercus Memoria › atelier 01
-FR : Le chêne du Limousin, abattu vers 1950
-ES : El roble del Lemosín, talado hacia 1950
+FR : Telle qu'elle était en 1955, devant la maison à Limoges
+ES : Tal como era en 1955, delante de la casa en Limoges
 
 — Standing Desk Quercus Memoria › atelier 02
-FR : Les planches, après des décennies d'attente
-ES : Las tablas, tras décadas de espera
+FR : Le moment du choix : lesquelles deviendront ce bureau
+ES : El momento de elegir: cuáles se convertirán en este escritorio
 
 — Standing Desk Quercus Memoria › atelier 03
-FR : Le plateau se compose
-ES : El tablero se compone
+FR : On cherche l'ordre, l'accord des fils
+ES : Se busca el orden, el acuerdo de las vetas
 
 — Standing Desk Quercus Memoria › atelier 04
-FR : Les fentes, comblées
-ES : Las grietas, rellenadas
+FR : Rien n'est effacé : les défauts sont stabilisés, puis donnés à voir
+ES : Nada se borra: los defectos se estabilizan y luego se muestran
 
 — Standing Desk Quercus Memoria › atelier 05
-FR : Le plateau prend sa forme
-ES : El tablero toma forma
+FR : Le défaut au centre ne se cache plus, il devient le sujet
+ES : El defecto del centro ya no se esconde, se convierte en el tema
 
 — Chess Table Dualis › atelier 00
-FR : Le dessin
-ES : El dibujo
+FR : Une radiographie pour voir chaque assemblage
+ES : Una radiografía para ver cada ensamble
 
 — Chess Table Dualis › atelier 01
-FR : Le chêne
-ES : El roble
+FR : Le point de départ : 194 × 31 × 10 cm de chêne, ses nœuds, ses gerces
+ES : El punto de partida: 194 × 31 × 10 cm de roble, sus nudos, sus grietas
 
 — Chess Table Dualis › atelier 02
-FR : Le wengé
-ES : El wengué
+FR : Le wengé, dur et sombre : la moitié noire du jeu
+ES : El wengué, duro y oscuro: la mitad negra del juego
 
 — Chess Table Dualis › atelier 03
-FR : Chêne et wengé, collés en bandes
-ES : Roble y wengué, encolados en tiras
+FR : Recoupées en travers puis recollées : l'alternance naît ainsi
+ES : Cortadas en sentido transversal y vueltas a encolar: así nace la alternancia
 
 — Chess Table Dualis › atelier 04
-FR : Deux bois, une seule pièce
-ES : Dos maderas, una sola pieza
+FR : La ligne noire de wengé traverse toute l'épaisseur
+ES : La línea negra de wengué atraviesa todo el grosor
 
 — Chess Table Dualis › atelier 05
-FR : Les jambes courbes
-ES : Las patas curvas
+FR : La forme définitive viendra au gabarit
+ES : La forma definitiva vendrá con la plantilla
 
 — Chess Table Dualis › atelier 06
-FR : Le pied central
-ES : El pie central
+FR : Premier montage à blanc, premier test concluant
+ES : Primer montaje en seco, primera prueba superada
 
 — Chess Table Dualis › atelier 07
-FR : L'échiquier dans son cadre
-ES : El tablero de ajedrez en su marco
+FR : Quarante ans, soixante-quatre cases
+ES : Cuarenta años, sesenta y cuatro casillas
