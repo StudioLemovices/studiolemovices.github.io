@@ -356,3 +356,254 @@ ES : Editor: Studio Lemovices. Alojamiento: GitHub Pages. Este sitio no utiliza 
 — interface › version_pdf
 FR : Version PDF
 ES : Versión PDF
+
+
+— LÉGENDES DU MAKING-OF (ajout du 25 octobre) —
+
+— Table Quercus Aguacate › atelier 00
+FR : Le dessin
+ES : El dibujo
+
+— Table Quercus Aguacate › atelier 01
+FR : Un plan et quelques sections de chêne
+ES : Un plano y algunas secciones de roble
+
+— Table Quercus Aguacate › atelier 02
+FR : Chaque assemblage se dessine avant de se couper
+ES : Cada ensamble se dibuja antes de cortarse
+
+— Table Quercus Aguacate › atelier 03
+FR : Le mi-bois, coupé au ciseau
+ES : La media madera, cortada con formón
+
+— Table Quercus Aguacate › atelier 04
+FR : Les lignes se croisent
+ES : Las líneas se cruzan
+
+— Table Quercus Aguacate › atelier 05
+FR : Montage à blanc, avant le chevillage
+ES : Montaje en seco, antes del clavijado
+
+— Bench Quercus Aguacate › atelier 00
+FR : Le dessin
+ES : El dibujo
+
+— Bench Quercus Aguacate › atelier 01
+FR : Choisir ses planches, c'est déjà dessiner
+ES : Elegir las tablas ya es dibujar
+
+— Bench Quercus Aguacate › atelier 02
+FR : Montage à blanc
+ES : Montaje en seco
+
+— Bench Quercus Aguacate › atelier 03
+FR : Les chevilles prennent leur place
+ES : Las clavijas encuentran su lugar
+
+— Bench Quercus Aguacate › atelier 04
+FR : Du chêne de quartier
+ES : Roble cortado al cuarto
+
+— Stool Quercus Aguacate › atelier 00
+FR : Le dessin
+ES : El dibujo
+
+— Stool Quercus Aguacate › atelier 01
+FR : Le dessin resserré, au centimètre
+ES : El dibujo ceñido, al centímetro
+
+— Stool Quercus Aguacate › atelier 02
+FR : Petit meuble, grand coup de balai
+ES : Mueble pequeño, gran barrido
+
+— Stool Quercus Aguacate › atelier 03
+FR : Le dessin quitte le papier
+ES : El dibujo deja el papel
+
+— Stool Quercus Aguacate › atelier 04
+FR : Prêt à quitter l'atelier
+ES : Listo para dejar el taller
+
+— Chair Quercus Aguacate › atelier 00
+FR : Le dessin
+ES : El dibujo
+
+— Chair Quercus Aguacate › atelier 01
+FR : Avant le chêne, des prototypes
+ES : Antes del roble, prototipos
+
+— Chair Quercus Aguacate › atelier 02
+FR : Le chêne de l'arrière-grand-père
+ES : El roble del bisabuelo
+
+— Chair Quercus Aguacate › atelier 03
+FR : Enfin une courbe
+ES : Por fin, una curva
+
+— Chair Quercus Aguacate › atelier 04
+FR : Le dossier, à blanc
+ES : El respaldo, montado en seco
+
+— Chair Quercus Aguacate › atelier 05
+FR : La traverse plonge au cœur du pied
+ES : El travesaño penetra hasta el corazón de la pata
+
+— Chair Quercus Aguacate › atelier 06
+FR : Dernier test : s'asseoir
+ES : Última prueba: sentarse
+
+— Cutting Board Olea Nux › atelier 01
+FR : L'olivier arrive à l'atelier
+ES : El olivo llega al taller
+
+— Cutting Board Olea Nux › atelier 02
+FR : Il faut l'ouvrir pour le découvrir
+ES : Hay que abrirlo para descubrirlo
+
+— Cutting Board Olea Nux › atelier 03
+FR : Remettre les morceaux ensemble, autrement
+ES : Volver a unir las piezas, de otro modo
+
+— Cutting Board Olea Nux › atelier 04
+FR : Un cadre de noyer
+ES : Un marco de nogal
+
+— Cutting Board Olea Nux › atelier 05
+FR : L'huile de tung, puis la cuisine
+ES : El aceite de tung, y luego la cocina
+
+— Tasting Board Olea Lux › atelier 01
+FR : La planche reste entière
+ES : La tabla queda entera
+
+— Tasting Board Olea Lux › atelier 02
+FR : Le bord de l'arbre, comblé de noir
+ES : El borde del árbol, relleno de negro
+
+— Table Prunus Orbita › atelier 00
+FR : Le dessin
+ES : El dibujo
+
+— Table Prunus Orbita › atelier 01
+FR : Le merisier brut
+ES : El cerezo en bruto
+
+— Table Prunus Orbita › atelier 02
+FR : Les arcs, pièce par pièce
+ES : Los arcos, pieza a pieza
+
+— Table Prunus Orbita › atelier 03
+FR : Les courbes tracées, les mortaises prêtes
+ES : Las curvas trazadas, las mortajas listas
+
+— Table Prunus Orbita › atelier 04
+FR : Le collage des arcs
+ES : El encolado de los arcos
+
+— Table Prunus Orbita › atelier 05
+FR : Une clé de noyer
+ES : Una llave de nogal
+
+— Table Prunus Orbita › atelier 06
+FR : Les quatre arcs se croisent
+ES : Los cuatro arcos se cruzan
+
+— Credenza Confluencia › atelier 00
+FR : Le dessin
+ES : El dibujo
+
+— Credenza Confluencia › atelier 01
+FR : Les plateaux d'olivier, encore bruts
+ES : Los tablones de olivo, aún en bruto
+
+— Credenza Confluencia › atelier 02
+FR : La résine noire dessine ses veines
+ES : La resina negra dibuja sus vetas
+
+— Credenza Confluencia › atelier 03
+FR : Le surfaçage, sous les copeaux
+ES : El cepillado, bajo las virutas
+
+— Credenza Confluencia › atelier 04
+FR : L'olivier aplani, rives naturelles
+ES : El olivo aplanado, cantos naturales
+
+— Credenza Confluencia › atelier 05
+FR : Les panneaux
+ES : Los paneles
+
+— Credenza Confluencia › atelier 06
+FR : Le collage du caisson
+ES : El encolado del cuerpo
+
+— Credenza Confluencia › atelier 07
+FR : Premier montage à blanc
+ES : Primer montaje en seco
+
+— Standing Desk Quercus Industria › atelier 01
+FR : Mis à nu, le chêne redevient neuf
+ES : Al desnudo, el roble vuelve a ser nuevo
+
+— Standing Desk Quercus Industria › atelier 02
+FR : Teinter, poncer, recommencer
+ES : Teñir, lijar, volver a empezar
+
+— Standing Desk Quercus Industria › atelier 03
+FR : À moitié poncé, la mémoire reste
+ES : A medio lijar, la memoria permanece
+
+— Standing Desk Quercus Memoria › atelier 00
+FR : Le dessin
+ES : El dibujo
+
+— Standing Desk Quercus Memoria › atelier 01
+FR : Le chêne du Limousin, abattu vers 1950
+ES : El roble del Lemosín, talado hacia 1950
+
+— Standing Desk Quercus Memoria › atelier 02
+FR : Les planches, après des décennies d'attente
+ES : Las tablas, tras décadas de espera
+
+— Standing Desk Quercus Memoria › atelier 03
+FR : Le plateau se compose
+ES : El tablero se compone
+
+— Standing Desk Quercus Memoria › atelier 04
+FR : Les fentes, comblées
+ES : Las grietas, rellenadas
+
+— Standing Desk Quercus Memoria › atelier 05
+FR : Le plateau prend sa forme
+ES : El tablero toma forma
+
+— Chess Table Dualis › atelier 00
+FR : Le dessin
+ES : El dibujo
+
+— Chess Table Dualis › atelier 01
+FR : Le chêne
+ES : El roble
+
+— Chess Table Dualis › atelier 02
+FR : Le wengé
+ES : El wengué
+
+— Chess Table Dualis › atelier 03
+FR : Chêne et wengé, collés en bandes
+ES : Roble y wengué, encolados en tiras
+
+— Chess Table Dualis › atelier 04
+FR : Deux bois, une seule pièce
+ES : Dos maderas, una sola pieza
+
+— Chess Table Dualis › atelier 05
+FR : Les jambes courbes
+ES : Las patas curvas
+
+— Chess Table Dualis › atelier 06
+FR : Le pied central
+ES : El pie central
+
+— Chess Table Dualis › atelier 07
+FR : L'échiquier dans son cadre
+ES : El tablero de ajedrez en su marco

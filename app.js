@@ -34,6 +34,12 @@
 
   // logo noir en mode clair, blanc en mode sombre (réglage du téléphone / de l'ordinateur)
   const logo = (a, size, cls = '') => `<picture class="${cls}">${a.logo_sombre ? `<source srcset="${esc(a.logo_sombre)}" media="(prefers-color-scheme: dark)">` : ''}<img class="logo-img" src="${esc(a.logo)}" alt="" width="${size}" height="${size}"></picture>`;
+  // légende d'une photo d'atelier : champ « legendes » de la pièce, clé = numéro du fichier (00, 01…)
+  const legendOf = (slug, src) => {
+    const p = C.pieces.find((x) => x.slug === slug);
+    const m = /(\d+)\.jpg$/.exec(src);
+    return (p && p.legendes && m && t(p.legendes[m[1]])) || '';
+  };
   const isSketch = (src) => /\/00\.jpg$/.test(src);
   const homeTitle = () => `${C.nom} — ${t(C.accueil.lieux).replace(/[^\p{L}\s/]/gu, '').trim()}`;
 
@@ -97,7 +103,7 @@
     }).join('');
 
     const making = C.pieces.map((p) => `
-      <div class="mo-row reveal" id="atelier-${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
+      <div class="mo-row reveal" id="atelier-${esc(p.slug)}" data-slug="${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
         <div class="mo-head"><h3><a href="#/${esc(p.slug)}">${esc(p.nom)}</a></h3><span class="count"></span></div>
         <div class="mo-strip"></div>
       </div>`).join('');
@@ -279,12 +285,14 @@
       if (!list.length) { row.hidden = true; return; }
       row.hidden = false;
       const name = row.dataset.name;
+      const legends = list.map((src) => legendOf(row.dataset.slug, src));
       $('.count', row).textContent = String(list.length).padStart(2, '0');
       $('.mo-strip', row).innerHTML = list.map((src, k) => `
         <button class="mo-item${isSketch(src) ? ' sketch' : ''}" type="button" data-i="${k}" aria-label="${esc(name)} ${k + 1}/${list.length}">
-          <img src="${esc(src)}" alt="${esc(name)}" loading="lazy" decoding="async" ${isSketch(src) ? 'width="1600" height="1000"' : 'width="800" height="1000"'}>
+          <img src="${esc(src)}" alt="${esc(legends[k] || name)}" loading="lazy" decoding="async" ${isSketch(src) ? 'width="1600" height="1000"' : 'width="800" height="1000"'}>
         </button>`).join('');
       row._photos = list;
+      row._legends = legends;
     });
   }
 
@@ -325,7 +333,7 @@
               <button class="fiche-photo" type="button" data-i="${k}" aria-label="${esc(p.nom)} ${k + 1}/${p.photos.length}">
                 <img src="${esc(src)}" alt="${esc(p.nom)}" ${k ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async" width="1500" height="2000">
               </button>`).join('')}
-            <div class="mo-row fiche-mo" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
+            <div class="mo-row fiche-mo" data-slug="${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
               <div class="mo-head"><h3>${esc(t(C.making_of.titre))}</h3><span class="count"></span></div>
               <div class="mo-strip"></div>
             </div>
@@ -467,9 +475,10 @@
   lb.img = $('img', lb.el);
   lb.count = $('.lb-count', lb.el);
   lb.nameEl = $('.lb-name', lb.el);
+  lb.legendEl = $('.lb-legend', lb.el);
 
-  function openLB(list, i, name) {
-    lb.list = list; lb.i = i; lb.name = name; lb.last = document.activeElement;
+  function openLB(list, i, name, legends = []) {
+    lb.list = list; lb.i = i; lb.name = name; lb.legends = legends; lb.last = document.activeElement;
     lb.el.hidden = false;
     document.body.classList.add('lb-open');
     showLB();
@@ -480,7 +489,10 @@
     const n = lb.list.length;
     lb.img.src = lb.list[lb.i];
     lb.img.classList.toggle('sketch', isSketch(lb.list[lb.i]));
-    lb.img.alt = lb.name;
+    const legend = lb.legends[lb.i] || '';
+    lb.img.alt = legend || lb.name;
+    lb.legendEl.textContent = legend;
+    lb.legendEl.hidden = !legend;
     lb.nameEl.textContent = lb.name;
     lb.count.textContent = n > 1 ? `${lb.i + 1} / ${n}` : '';
     lb.el.classList.toggle('single', n < 2);
@@ -536,7 +548,7 @@
     if (back) { e.preventDefault(); backHome(null); return; }
 
     const mo = e.target.closest('.mo-item');
-    if (mo) { const row = mo.closest('.mo-row'); openLB(row._photos, +mo.dataset.i, row.dataset.name); return; }
+    if (mo) { const row = mo.closest('.mo-row'); openLB(row._photos, +mo.dataset.i, row.dataset.name, row._legends); return; }
 
     const fp = e.target.closest('.fiche-photo');
     if (fp) { openLB(pieceView._photos, +fp.dataset.i, pieceView._name); return; }

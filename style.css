@@ -256,16 +256,16 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .mo-item { flex: 0 0 auto; scroll-snap-align: start; overflow: hidden; background: var(--atelier-soft); }
 /* dessin 00.jpg : vignette paysage, image entière */
 .mo-item.sketch { background: var(--sheet); padding: 8px; box-shadow: 0 2px 10px rgba(0,0,0,.28); }
-.mo-item.sketch img { width: auto; height: calc(clamp(200px, 26vw, 340px) - 16px); aspect-ratio: 16 / 10; object-fit: contain; }
-.mo-item img { height: clamp(200px, 26vw, 340px); width: auto; max-width: none; transition: transform 1.2s var(--ease); }
+.mo-item img { height: clamp(200px, 26vw, 340px); width: calc(clamp(200px, 26vw, 340px) * .8); max-width: none; object-fit: cover; transition: transform 1.2s var(--ease); }
+.mo-item.sketch img { width: auto; height: calc(clamp(200px, 26vw, 340px) - 16px); object-fit: contain; }
 
 .fiche-mo { margin-top: clamp(28px, 4vw, 48px); }
 .fiche-mo .mo-strip { margin: 0; padding: 0 0 10px; min-height: 0; scrollbar-color: var(--field) transparent; }
 .fiche-mo .mo-item.sketch { background: #fff; padding: 0; box-shadow: none; }
-.fiche-mo .mo-item.sketch img { height: clamp(150px, 16vw, 220px); }
+.fiche-mo .mo-item.sketch img { width: auto; height: clamp(150px, 16vw, 220px); }
 .fiche-mo .mo-head .count { color: var(--muted); }
 .fiche-mo .mo-item { background: var(--soft); }
-.fiche-mo .mo-item img { height: clamp(150px, 16vw, 220px); }
+.fiche-mo .mo-item img { height: clamp(150px, 16vw, 220px); width: calc(clamp(150px, 16vw, 220px) * .8); }
 
 /* ---------- Méthode ---------- */
 .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(36px, 3vw, 44px) clamp(16px, 2vw, 32px); grid-template-columns: repeat(4, 1fr); }
@@ -362,12 +362,14 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;
   padding: clamp(56px, 8vh, 96px) clamp(72px, 10vw, 160px) clamp(28px, 5vh, 56px);
 }
-.lb-figure img { flex: 0 1 auto; min-height: 0; width: auto; height: auto; max-width: 100%; max-height: calc(100% - 48px); object-fit: contain; user-select: none; -webkit-user-drag: none; }
+.lb-figure img { flex: 0 1 auto; min-height: 0; width: auto; height: auto; max-width: 100%; max-height: calc(100% - 90px); object-fit: contain; user-select: none; -webkit-user-drag: none; }
 .lb-cap {
   display: flex; gap: 18px; align-items: baseline; justify-content: center; flex-wrap: wrap; text-align: center;
   font-family: var(--serif); font-size: 14px; letter-spacing: .24em; text-transform: uppercase; color: var(--ink);
 }
 .lb-count { color: var(--muted); }
+/* légende d'une photo d'atelier, sous la photo : petite et discrète */
+.lb-legend { margin: -8px 0 0; max-width: 40em; text-align: center; font-family: var(--sans); font-size: 13px; line-height: 1.5; color: var(--muted); }
 .lb-btn { position: absolute; z-index: 2; width: 52px; height: 52px; display: grid; place-items: center; color: var(--ink); opacity: .7; transition: opacity .2s; }
 .lb-btn svg { width: 26px; height: 26px; }
 .lb-btn:hover { opacity: 1; }
