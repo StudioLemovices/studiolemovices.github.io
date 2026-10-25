@@ -53,7 +53,7 @@ Si le site devient tout blanc après une modification, c'est presque toujours un
 **Étape 2 — les photos d'atelier (facultatif)**
 Même chose dans le dossier `making-of/` : un dossier au même nom (`table-nouvelle`), avec des photos nommées `01.jpg`, `02.jpg`, `03.jpg`… sans trou dans la numérotation. Le site les trouve tout seul.
 
-**Rendu 3D (SketchUp)** : nommez-le `00.jpg` et mettez-le dans le dossier `making-of/` de la pièce. Il s'affiche en premier dans la rangée de l'atelier (accueil et fiche). Ça marche aussi pour une pièce sans photos d'atelier : créez simplement `making-of/<nom-de-la-pièce>/00.jpg`, la rangée apparaît avec ce seul dessin, sans rien changer dans `contenu.json`.
+**Rendu 3D (SketchUp)** : nommez-le `00.jpg` et mettez-le dans le dossier `making-of/` de la pièce. Il s'affiche en premier dans la rangée « À l'atelier » de la page de la pièce. Ça marche aussi pour une pièce sans photos d'atelier : créez simplement `making-of/<nom-de-la-pièce>/00.jpg`, la rangée apparaît avec ce seul dessin, sans rien changer dans `contenu.json`.
 
 **Étape 3 — la fiche dans `contenu.json`**
 1. Ouvrez `contenu.json` et cliquez sur le crayon.

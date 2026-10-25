@@ -56,7 +56,6 @@
       <a class="brand" href="#/" data-goto="accueil">${logo(C.accueil, 30)}<span>${esc(C.nom)}</span></a>
       <nav class="nav" id="nav">
         <a href="#/" data-goto="pieces">${esc(ui('nav_pieces'))}</a>
-        <a href="#/" data-goto="atelier">${esc(ui('nav_atelier'))}</a>
         <a href="#/" data-goto="methode">${esc(ui('nav_methode'))}</a>
         <a href="#/" data-goto="a-propos">${esc(ui('nav_a_propos'))}</a>
         <a href="#/" data-goto="contact">${esc(ui('nav_contact'))}</a>
@@ -102,12 +101,6 @@
         </div>`;
     }).join('');
 
-    const making = C.pieces.map((p) => `
-      <div class="mo-row reveal" id="atelier-${esc(p.slug)}" data-slug="${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
-        <div class="mo-head"><h3><a href="#/${esc(p.slug)}">${esc(p.nom)}</a></h3><span class="count"></span></div>
-        <div class="mo-strip"></div>
-      </div>`).join('');
-
     const texts = t(ap.texte);
     home.innerHTML = `
       <section class="hero" id="accueil">
@@ -146,17 +139,6 @@
             </li>`).join('')}
         </ul>
         ${families}
-      </section>
-
-      <section class="section atelier" id="atelier">
-        <div class="wrap">
-          <div class="section-head reveal">
-            <h2 class="h-section">${esc(t(C.making_of.titre))}</h2>
-            <span class="rule"></span>
-            <p class="atelier-intro lead">${esc(t(C.making_of.texte))}</p>
-          </div>
-          ${making}
-        </div>
       </section>
 
       <section class="section wrap" id="methode">
@@ -202,7 +184,6 @@
       </section>`;
 
     reveal(home);
-    watchAtelier();
   }
 
   /* ---------- Formulaire (Web3Forms) ---------- */
@@ -296,17 +277,6 @@
     });
   }
 
-  function watchAtelier() {
-    const section = $('#atelier', home);
-    if (!section) return;
-    const start = () => $$('.mo-row', section).forEach(fillStrip);
-    if (!('IntersectionObserver' in window)) return start();
-    const io = new IntersectionObserver((entries) => {
-      if (entries.some((e) => e.isIntersecting)) { io.disconnect(); start(); }
-    }, { rootMargin: '1200px 0px' });
-    io.observe(section);
-  }
-
   /* ---------- Apparitions au défilement ---------- */
   function reveal(root) {
     const els = $$('.reveal', root);
@@ -333,7 +303,7 @@
               <button class="fiche-photo" type="button" data-i="${k}" aria-label="${esc(p.nom)} ${k + 1}/${p.photos.length}">
                 <img src="${esc(src)}" alt="${esc(p.nom)}" ${k ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async" width="1500" height="2000">
               </button>`).join('')}
-            <div class="mo-row fiche-mo" data-slug="${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
+            <div class="mo-row" data-slug="${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
               <div class="mo-head"><h3>${esc(t(C.making_of.titre))}</h3><span class="count"></span></div>
               <div class="mo-strip"></div>
             </div>
@@ -367,7 +337,7 @@
       };
       if (img.complete && img.naturalWidth) mark(); else img.addEventListener('load', mark, { once: true });
     });
-    const mo = $('.fiche-mo', pieceView);
+    const mo = $('.mo-row', pieceView);
     if (mo) fillStrip(mo);
     pieceView._photos = p.photos;
     pieceView._name = p.nom;

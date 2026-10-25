@@ -197,10 +197,6 @@ ES : Un tablero fino de roble y resina negra, enmarcado en merbau, y su caja de 
 FR : À l'atelier
 ES : En el taller
 
-— making_of › texte
-FR : Avant la pièce finie : la planche brute, les essais, les serre-joints.
-ES : Antes de la pieza terminada: la tabla en bruto, las pruebas, los sargentos.
-
 — methode › titre
 FR : Comment naît une pièce
 ES : Cómo nace una pieza
@@ -273,10 +269,6 @@ ES : 🇧🇪 Bruselas / Lyon 🇫🇷
 FR : Pièces
 ES : Piezas
 
-— interface › nav_atelier
-FR : Atelier
-ES : Taller
-
 — interface › nav_methode
 FR : Méthode
 ES : Método
@@ -308,10 +300,6 @@ ES : Pieza siguiente
 — interface › retour
 FR : Retour aux pièces
 ES : Volver a las piezas
-
-— interface › voir_atelier
-FR : Voir à l'atelier
-ES : Ver en el taller
 
 — interface › nom
 FR : Nom
