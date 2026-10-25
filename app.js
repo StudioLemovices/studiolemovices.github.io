@@ -349,6 +349,16 @@
           <a class="pn next" href="#/${esc(next.slug)}"><span class="eyebrow">${esc(ui('suivante'))} →</span><strong>${esc(next.nom)}</strong></a>
         </nav>
       </article>`;
+    // cadre selon le format : 4:5 par défaut, .wide pour une vue d'ensemble 5:4,
+    // .free (forme d'origine) pour une photo pas encore recadrée
+    $$('.fiche-photo img', pieceView).forEach((img) => {
+      const mark = () => {
+        const r = img.naturalWidth / img.naturalHeight;
+        img.parentElement.classList.toggle('wide', Math.abs(r - 1.25) < 0.03);
+        img.parentElement.classList.toggle('free', Math.abs(r - 0.8) >= 0.03 && Math.abs(r - 1.25) >= 0.03);
+      };
+      if (img.complete && img.naturalWidth) mark(); else img.addEventListener('load', mark, { once: true });
+    });
     const mo = $('.fiche-mo', pieceView);
     if (mo) fillStrip(mo);
     pieceView._photos = p.photos;

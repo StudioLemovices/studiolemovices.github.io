@@ -298,8 +298,7 @@
         "es": "Una mesa baja donde la piedra parece flotar. Patas de fibra finamente texturizada, una repisa de vidrio ahumado debajo: el contraste y la transparencia aligeran la masa de la cuarcita."
       },
       "photos": [
-        "pieces/table-levitas-aguacate/01-ensemble.jpg",
-        "pieces/table-levitas-aguacate/02-detail.jpg"
+        "pieces/table-levitas-aguacate/01-ensemble.jpg"
       ],
       "making_of": null
     },
@@ -388,14 +387,14 @@
         "es": "Formas simples, materias ricas"
       },
       "matieres": {
-        "fr": "Chêne · résine noire · merisier",
-        "en": "Oak · black resin · cherry",
-        "es": "Roble · resina negra · cerezo"
+        "fr": "Chêne · résine noire · merbau · merisier",
+        "en": "Oak · black resin · merbau · cherry",
+        "es": "Roble · resina negra · merbau · cerezo"
       },
       "texte": {
-        "fr": "Un plateau fin en chêne et résine noire, cadré de merisier, et sa boîte en merisier flammé aux clés claires. Tout est réduit à l'essentiel : le fil du bois fait le reste.",
-        "en": "A slim oak and black resin board framed in cherry, with a figured cherry box and light splines. Everything is pared back: the grain does the rest.",
-        "es": "Un tablero fino de roble y resina negra, enmarcado en cerezo, y su caja de cerezo flameado con llaves claras. Todo se reduce a lo esencial: la fibra de la madera hace el resto."
+        "fr": "Un plateau fin en chêne et résine noire, cadré de merbau, et sa boîte en merisier flammé aux clés claires. Tout est réduit à l'essentiel : le fil du bois fait le reste.",
+        "en": "A slim oak and black resin board framed in merbau, with a figured cherry box and light splines. Everything is pared back: the grain does the rest.",
+        "es": "Un tablero fino de roble y resina negra, enmarcado en merbau, y su caja de cerezo flameado con llaves claras. Todo se reduce a lo esencial: la fibra de la madera hace el resto."
       },
       "photos": [
         "pieces/chess-set-flamma/01-ensemble.jpg",
