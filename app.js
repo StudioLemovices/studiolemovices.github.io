@@ -87,14 +87,14 @@
         <div class="family" id="famille-${esc(f.id)}">
           <header class="family-head reveal">
             <span class="num">${esc(f.num)}</span>
-            <h3 class="h-family">${esc(f.nom)}</h3>
+            <h3 class="h-family">${esc(t(f.nom))}</h3>
           </header>
           <ul class="grid">
             ${list.map((p) => `
               <li class="card reveal">
                 <a href="${esc(p.slug)}/" data-slug="${esc(p.slug)}">
-                  <div class="frame"><img src="${esc(p.vignette || p.photos[0])}" alt="${esc(p.nom)}" loading="lazy" decoding="async" width="800" height="1000"></div>
-                  <span class="card-name">${esc(p.nom)}</span>
+                  <div class="frame"><img src="${esc(p.vignette || p.photos[0])}" alt="${esc(t(p.nom))}" loading="lazy" decoding="async" width="800" height="1000"></div>
+                  <span class="card-name">${esc(t(p.nom))}</span>
                 </a>
               </li>`).join('')}
           </ul>
@@ -134,7 +134,7 @@
             <li class="reveal">
               <a href="./" data-goto="famille-${esc(f.id)}">
                 <div class="toc-img">${f.texture ? `<img src="${esc(f.texture)}" alt="" loading="lazy" decoding="async" width="800" height="1000">` : ''}</div>
-                <span class="toc-label"><span class="num">${esc(f.num)}</span><span class="toc-name">${esc(f.nom)}</span></span>
+                <span class="toc-label"><span class="num">${esc(f.num)}</span><span class="toc-name">${esc(t(f.nom))}</span></span>
               </a>
             </li>`).join('')}
         </ul>
@@ -300,18 +300,18 @@
         <div class="fiche-grid">
           <div class="fiche-photos">
             ${p.photos.map((src, k) => `
-              <button class="fiche-photo" type="button" data-i="${k}" aria-label="${esc(p.nom)} ${k + 1}/${p.photos.length}">
-                <img src="${esc(src)}" alt="${esc(p.nom)}" ${k ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async" width="1500" height="2000">
+              <button class="fiche-photo" type="button" data-i="${k}" aria-label="${esc(t(p.nom))} ${k + 1}/${p.photos.length}">
+                <img src="${esc(src)}" alt="${esc(t(p.nom))}" ${k ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async" width="1500" height="2000">
               </button>`).join('')}
-            <div class="mo-row" data-slug="${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(p.nom)}"${p.making_of ? '' : ' hidden'}>
+            <div class="mo-row" data-slug="${esc(p.slug)}" data-dir="${esc(moDir(p))}" data-name="${esc(t(p.nom))}"${p.making_of ? '' : ' hidden'}>
               <div class="mo-head"><h3>${esc(t(C.making_of.titre))}</h3><span class="count"></span></div>
               <div class="mo-strip"></div>
             </div>
           </div>
           <div class="fiche-info">
             <a class="back" href="./" data-back>← ${esc(ui('retour'))}</a>
-            <p class="eyebrow">${esc(f ? `${f.num} — ${f.nom}` : '')}</p>
-            <h1 class="fiche-title">${esc(p.nom)}</h1>
+            <p class="eyebrow">${esc(f ? `${f.num} — ${t(f.nom)}` : '')}</p>
+            <h1 class="fiche-title">${esc(t(p.nom))}</h1>
             <p class="fiche-sub lead">${esc(quote(t(p.sous_titre)))}</p>
             <p class="fiche-mat"><span class="eyebrow">${esc(ui('matieres'))}</span><span>${esc(t(p.matieres))}</span></p>
             <p class="fiche-text">${esc(t(p.texte))}</p>
@@ -322,9 +322,9 @@
           </div>
         </div>
         <nav class="fiche-nav">
-          <a class="pn prev" href="${esc(prev.slug)}/"><span class="eyebrow">← ${esc(ui('precedente'))}</span><strong>${esc(prev.nom)}</strong></a>
+          <a class="pn prev" href="${esc(prev.slug)}/"><span class="eyebrow">← ${esc(ui('precedente'))}</span><strong>${esc(t(prev.nom))}</strong></a>
           <a class="back mid" href="./" data-back>${esc(ui('retour'))}</a>
-          <a class="pn next" href="${esc(next.slug)}/"><span class="eyebrow">${esc(ui('suivante'))} →</span><strong>${esc(next.nom)}</strong></a>
+          <a class="pn next" href="${esc(next.slug)}/"><span class="eyebrow">${esc(ui('suivante'))} →</span><strong>${esc(t(next.nom))}</strong></a>
         </nav>
       </article>`;
     // cadre selon le format : 4:5 par défaut, .wide pour une vue d'ensemble 5:4,
@@ -340,8 +340,8 @@
     const mo = $('.mo-row', pieceView);
     if (mo) fillStrip(mo);
     pieceView._photos = p.photos;
-    pieceView._name = p.nom;
-    document.title = `${p.nom} · ${C.nom}`;
+    pieceView._name = t(p.nom);
+    document.title = `${t(p.nom)} · ${C.nom}`;
   }
 
   /* ---------- Navigation : une vraie adresse par pièce (/slug/) ---------- */

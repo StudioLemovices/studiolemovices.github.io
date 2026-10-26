@@ -23,7 +23,7 @@ RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Numéro de version de style.css et app.js : à changer quand l'un des deux change,
 # pour que les navigateurs chargent aussitôt la nouvelle version.
-VERSION = '2026-10-28'
+VERSION = '2026-10-29'
 
 # Dossiers du dépôt qui ne sont pas des pages de pièces (jamais effacés).
 RESERVES = {'pieces', 'making-of', 'methode', 'site', 'logo', 'fonts', 'liens', 'scripts', '.github'}
@@ -127,7 +127,7 @@ def main():
                    '<meta name="twitter:card" content="summary_large_image">']
         return '\n'.join(lignes)
 
-    liens_pieces = ''.join(f'<li><a href="{e(p["slug"])}/">{e(p["nom"])}</a></li>' for p in pieces)
+    liens_pieces = ''.join(f'<li><a href="{e(p["slug"])}/">{e(fr(p["nom"]))}</a></li>' for p in pieces)
     noscript = (f'<p class="noscript">{e(nom)} — {e(fr(C["accueil"]["lieux"]))} — '
                 f'<a href="{e(C["contact"]["instagram"])}">Instagram</a></p>'
                 f'<nav class="noscript"><ul>{liens_pieces}</ul></nav>')
@@ -174,15 +174,15 @@ def main():
         slugs.append(slug)
         prec, suiv = pieces[(i - 1) % n], pieces[(i + 1) % n]
         f = familles.get(p['famille'])
-        titre = f'{p["nom"]} · {nom}'
+        titre = f'{fr(p["nom"])} · {nom}'
         description = resume(fr(p['texte']))
         url = f'{site}/{slug}/'
         photo = p['photos'][0]
         dims = taille_jpeg(photo) if photo.lower().endswith(('.jpg', '.jpeg')) else None
 
         photos = ''.join(
-            f'\n              <button class="fiche-photo{classe_format(src)}" type="button" data-i="{k}" aria-label="{e(p["nom"])} {k + 1}/{len(p["photos"])}">'
-            f'\n                <img src="{e(src)}" alt="{e(p["nom"])}" {"loading=\"lazy\"" if k else "fetchpriority=\"high\""} decoding="async" width="1500" height="2000">'
+            f'\n              <button class="fiche-photo{classe_format(src)}" type="button" data-i="{k}" aria-label="{e(fr(p["nom"]))} {k + 1}/{len(p["photos"])}">'
+            f'\n                <img src="{e(src)}" alt="{e(fr(p["nom"]))}" {"loading=\"lazy\"" if k else "fetchpriority=\"high\""} decoding="async" width="1500" height="2000">'
             f'\n              </button>'
             for k, src in enumerate(p['photos']))
         mo_dir = (p.get('making_of') or f'making-of/{slug}/').rstrip('/') + '/'
@@ -190,15 +190,15 @@ def main():
       <article class="fiche wrap">
         <div class="fiche-grid">
           <div class="fiche-photos">{photos}
-            <div class="mo-row" data-slug="{e(slug)}" data-dir="{e(mo_dir)}" data-name="{e(p["nom"])}" hidden>
+            <div class="mo-row" data-slug="{e(slug)}" data-dir="{e(mo_dir)}" data-name="{e(fr(p["nom"]))}" hidden>
               <div class="mo-head"><h3>{e(fr(C["making_of"]["titre"]))}</h3><span class="count"></span></div>
               <div class="mo-strip"></div>
             </div>
           </div>
           <div class="fiche-info">
             <a class="back" href="./" data-back>← {e(ui["retour"])}</a>
-            <p class="eyebrow">{e(f"{f['num']} — {f['nom']}" if f else '')}</p>
-            <h1 class="fiche-title">{e(p["nom"])}</h1>
+            <p class="eyebrow">{e(f"{f['num']} — {fr(f['nom'])}" if f else '')}</p>
+            <h1 class="fiche-title">{e(fr(p["nom"]))}</h1>
             <p class="fiche-sub lead">« {e(fr(p["sous_titre"]))} »</p>
             <p class="fiche-mat"><span class="eyebrow">{e(ui["matieres"])}</span><span>{e(fr(p["matieres"]))}</span></p>
             <p class="fiche-text">{e(fr(p["texte"]))}</p>
@@ -209,9 +209,9 @@ def main():
           </div>
         </div>
         <nav class="fiche-nav">
-          <a class="pn prev" href="{e(prec["slug"])}/"><span class="eyebrow">← {e(ui["precedente"])}</span><strong>{e(prec["nom"])}</strong></a>
+          <a class="pn prev" href="{e(prec["slug"])}/"><span class="eyebrow">← {e(ui["precedente"])}</span><strong>{e(fr(prec["nom"]))}</strong></a>
           <a class="back mid" href="./" data-back>{e(ui["retour"])}</a>
-          <a class="pn next" href="{e(suiv["slug"])}/"><span class="eyebrow">{e(ui["suivante"])} →</span><strong>{e(suiv["nom"])}</strong></a>
+          <a class="pn next" href="{e(suiv["slug"])}/"><span class="eyebrow">{e(ui["suivante"])} →</span><strong>{e(fr(suiv["nom"]))}</strong></a>
         </nav>
       </article>'''
         tete = '\n'.join([
@@ -219,7 +219,7 @@ def main():
             f'<meta name="description" content="{e(description)}">',
             f'<link rel="canonical" href="{e(url)}">',
             '',
-            og(titre, description, url, f'{site}/{photo}', p['nom'], *(dims or (None, None))),
+            og(titre, description, url, f'{site}/{photo}', fr(p['nom']), *(dims or (None, None))),
         ])
         ecrire(f'{slug}/index.html', page(tete, piece=fiche, piece_cachee=False, noscript=noscript))
 

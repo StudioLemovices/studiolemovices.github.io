@@ -40,7 +40,11 @@
     {
       "id": "dining",
       "num": "01",
-      "nom": "Dining",
+      "nom": {
+        "fr": "Salle à manger",
+        "en": "Dining",
+        "es": "Comedor"
+      },
       "bois": {
         "fr": "Chêne",
         "en": "Oak",
@@ -51,7 +55,11 @@
     {
       "id": "living",
       "num": "02",
-      "nom": "Living",
+      "nom": {
+        "fr": "Salon",
+        "en": "Living",
+        "es": "Salón"
+      },
       "bois": {
         "fr": "Noyer",
         "en": "Walnut",
@@ -62,7 +70,11 @@
     {
       "id": "working",
       "num": "03",
-      "nom": "Working",
+      "nom": {
+        "fr": "Bureau",
+        "en": "Working",
+        "es": "Despacho"
+      },
       "bois": {
         "fr": "Érable",
         "en": "Maple",
@@ -73,7 +85,11 @@
     {
       "id": "chess",
       "num": "04",
-      "nom": "Chess",
+      "nom": {
+        "fr": "Échecs",
+        "en": "Chess",
+        "es": "Ajedrez"
+      },
       "bois": {
         "fr": "Merisier",
         "en": "Cherry",
@@ -86,7 +102,11 @@
     {
       "slug": "table-quercus-aguacate",
       "famille": "dining",
-      "nom": "Table Quercus Aguacate",
+      "nom": {
+        "fr": "Table Quercus Aguacate",
+        "en": "Table Quercus Aguacate",
+        "es": "Mesa Quercus Aguacate"
+      },
       "sous_titre": {
         "fr": "Le chêne et la pierre",
         "en": "Oak and stone",
@@ -144,7 +164,11 @@
     {
       "slug": "bench-quercus-aguacate",
       "famille": "dining",
-      "nom": "Bench Quercus Aguacate",
+      "nom": {
+        "fr": "Banc Quercus Aguacate",
+        "en": "Bench Quercus Aguacate",
+        "es": "Banco Quercus Aguacate"
+      },
       "sous_titre": {
         "fr": "La forme distillée",
         "en": "Distilled form",
@@ -197,7 +221,11 @@
     {
       "slug": "stool-quercus-aguacate",
       "famille": "dining",
-      "nom": "Stool Quercus Aguacate",
+      "nom": {
+        "fr": "Tabouret Quercus Aguacate",
+        "en": "Stool Quercus Aguacate",
+        "es": "Taburete Quercus Aguacate"
+      },
       "sous_titre": {
         "fr": "Expression compacte",
         "en": "Compact expression",
@@ -249,7 +277,11 @@
     {
       "slug": "chair-quercus-aguacate",
       "famille": "dining",
-      "nom": "Chair Quercus Aguacate",
+      "nom": {
+        "fr": "Chaise Quercus Aguacate",
+        "en": "Chair Quercus Aguacate",
+        "es": "Silla Quercus Aguacate"
+      },
       "sous_titre": {
         "fr": "Forme et confort",
         "en": "Form and comfort",
@@ -311,7 +343,11 @@
     {
       "slug": "cutting-board-olea-nux",
       "famille": "dining",
-      "nom": "Cutting Board Olea Nux",
+      "nom": {
+        "fr": "Planche à découper Olea Nux",
+        "en": "Cutting Board Olea Nux",
+        "es": "Tabla de cortar Olea Nux"
+      },
       "sous_titre": {
         "fr": "Le bois millénaire",
         "en": "Millenary wood",
@@ -363,7 +399,11 @@
     {
       "slug": "tasting-board-olea-lux",
       "famille": "dining",
-      "nom": "Tasting Board Olea Lux",
+      "nom": {
+        "fr": "Planche de dégustation Olea Lux",
+        "en": "Tasting Board Olea Lux",
+        "es": "Tabla de degustación Olea Lux"
+      },
       "sous_titre": {
         "fr": "La veine sombre",
         "en": "Dark vein",
@@ -400,7 +440,11 @@
     {
       "slug": "table-prunus-orbita",
       "famille": "dining",
-      "nom": "Table Prunus Orbita",
+      "nom": {
+        "fr": "Table Prunus Orbita",
+        "en": "Table Prunus Orbita",
+        "es": "Mesa Prunus Orbita"
+      },
       "sous_titre": {
         "fr": "La courbe tranquille",
         "en": "The quiet curve",
@@ -462,7 +506,11 @@
     {
       "slug": "credenza-confluencia",
       "famille": "living",
-      "nom": "Credenza Confluencia",
+      "nom": {
+        "fr": "Enfilade Confluencia",
+        "en": "Credenza Confluencia",
+        "es": "Aparador Confluencia"
+      },
       "sous_titre": {
         "fr": "Paysage intérieur",
         "en": "Inner landscape",
@@ -530,7 +578,11 @@
     {
       "slug": "table-levitas-aguacate",
       "famille": "living",
-      "nom": "Table Levitas Aguacate",
+      "nom": {
+        "fr": "Table Levitas Aguacate",
+        "en": "Table Levitas Aguacate",
+        "es": "Mesa Levitas Aguacate"
+      },
       "sous_titre": {
         "fr": "La masse flottante",
         "en": "Floating mass",
@@ -555,7 +607,11 @@
     {
       "slug": "standing-desk-quercus-industria",
       "famille": "working",
-      "nom": "Standing Desk Quercus Industria",
+      "nom": {
+        "fr": "Bureau debout Quercus Industria",
+        "en": "Standing Desk Quercus Industria",
+        "es": "Escritorio de pie Quercus Industria"
+      },
       "sous_titre": {
         "fr": "Mémoire industrielle",
         "en": "Industrial memory",
@@ -598,7 +654,11 @@
     {
       "slug": "standing-desk-quercus-memoria",
       "famille": "working",
-      "nom": "Standing Desk Quercus Memoria",
+      "nom": {
+        "fr": "Bureau debout Quercus Memoria",
+        "en": "Standing Desk Quercus Memoria",
+        "es": "Escritorio de pie Quercus Memoria"
+      },
       "sous_titre": {
         "fr": "Mémoire endormie",
         "en": "Dormant memory",
@@ -656,7 +716,11 @@
     {
       "slug": "chess-table-dualis",
       "famille": "chess",
-      "nom": "Chess Table Dualis",
+      "nom": {
+        "fr": "Table d'échecs Dualis",
+        "en": "Chess Table Dualis",
+        "es": "Mesa de ajedrez Dualis"
+      },
       "sous_titre": {
         "fr": "Une étude en contraste",
         "en": "A study in contrast",
@@ -723,7 +787,11 @@
     {
       "slug": "chess-set-flamma",
       "famille": "chess",
-      "nom": "Chess Set Flamma",
+      "nom": {
+        "fr": "Jeu d'échecs Flamma",
+        "en": "Chess Set Flamma",
+        "es": "Juego de ajedrez Flamma"
+      },
       "sous_titre": {
         "fr": "Formes simples, matières riches",
         "en": "Simple forms, rich materials",
