@@ -221,11 +221,11 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .toc-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
 .toc a:hover .toc-img img { transform: scale(1.045); }
 .toc-label {
-  position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 6px;
+  position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 6px; padding: 0 12px; text-align: center;
   background: rgba(0,0,0,.16); text-shadow: 0 1px 12px rgba(0,0,0,.25);
 }
 .toc-label .num { font-family: var(--serif); font-size: clamp(16px, 1.6vw, 22px); }
-.toc-name { font-family: var(--serif); font-size: clamp(17px, 2vw, 28px); letter-spacing: .24em; margin-right: -.24em; text-transform: uppercase; }
+.toc-name { font-family: var(--serif); font-size: clamp(17px, 2vw, 28px); letter-spacing: .24em; margin-right: -.24em; text-transform: uppercase; line-height: 1.35; }
 .family { scroll-margin-top: calc(var(--header-h) + 16px); }
 
 /* ---------- Rangée « À l'atelier » (making-of) de la page d'une pièce ---------- */

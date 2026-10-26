@@ -64,7 +64,7 @@ Même chose dans le dossier `making-of/` : un dossier au même nom (`table-nouve
 3. Collez-le juste après, et modifiez :
    - `"slug"` : le nom du dossier (`table-nouvelle`) — c'est aussi l'adresse de la page de la pièce : `studiolemovices.be/table-nouvelle/` (créée automatiquement) ;
    - `"famille"` : `dining`, `living`, `working` ou `chess` ;
-   - `"nom"`, `"sous_titre"`, `"matieres"`, `"texte"` (en français, en anglais et en espagnol) ;
+   - `"nom"` (par exemple « Banc Nouveau » en français, « New Bench » en anglais, « Banco Nuevo » en espagnol), `"sous_titre"`, `"matieres"`, `"texte"` : chacun en français, en anglais et en espagnol ;
    - `"photos"` : les chemins de vos photos, par exemple `"pieces/table-nouvelle/01-ensemble.jpg"` ;
    - `"vignette"` (facultatif) : la vignette de l'accueil, toujours en vertical 4:5, par exemple `"pieces/table-nouvelle/00-vignette.jpg"`. Utile quand la photo d'ensemble est horizontale (meuble long, format 5:4). Sans ce champ, l'accueil montre la première photo.
    - `"making_of"` : `"making-of/table-nouvelle/"`, ou `null` s'il n'y a pas de photos d'atelier.
@@ -104,7 +104,7 @@ Ce qui est en place, pour mémoire :
 
 ## Numéro de version des fichiers du site
 
-Les fichiers `style.css` et `app.js` sont appelés avec un numéro de version (`style.css?v=2026-10-28`…), réglé en haut de `scripts/generer.py` (ligne `VERSION = …`). Quand l'un de ces deux fichiers change, on change aussi ce numéro (par exemple la date du jour) : les navigateurs des visiteurs chargent alors tout de suite la nouvelle version, au lieu de garder l'ancienne en mémoire pendant quelques minutes.
+Les fichiers `style.css` et `app.js` sont appelés avec un numéro de version (`style.css?v=2026-10-29`…), réglé en haut de `scripts/generer.py` (ligne `VERSION = …`). Quand l'un de ces deux fichiers change, on change aussi ce numéro (par exemple la date du jour) : les navigateurs des visiteurs chargent alors tout de suite la nouvelle version, au lieu de garder l'ancienne en mémoire pendant quelques minutes.
 
 Ce n'est pas nécessaire quand on modifie seulement `contenu.json` ou des photos.
 
