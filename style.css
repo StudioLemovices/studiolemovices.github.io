@@ -283,9 +283,6 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .form-status { min-height: 1.7em; margin: 0; text-align: center; font-size: 14px; }
 .thanks { margin-top: 48px; padding: 48px 24px; border: 1px solid var(--line); }
 .contact-links { margin-top: 56px; display: grid; gap: 10px; justify-items: center; }
-.insta { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-size: 12px; letter-spacing: .24em; text-transform: uppercase; }
-.insta svg { width: 18px; height: 18px; }
-.insta:hover { text-decoration: underline; text-underline-offset: 6px; }
 .places { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
 
 /* ---------- Fiche pièce ---------- */
@@ -328,6 +325,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .foot a { letter-spacing: .2em; text-transform: uppercase; text-decoration: none; }
 .foot a:hover { color: var(--ink); }
 .foot-links { display: flex; flex-wrap: wrap; gap: 14px 32px; }
+.foot-insta { display: inline-flex; align-items: center; gap: 8px; }
+.foot-insta svg { width: 15px; height: 15px; flex: none; }
 
 /* ---------- Visionneuse ---------- */
 .lightbox {
