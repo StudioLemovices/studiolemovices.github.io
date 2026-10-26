@@ -71,7 +71,7 @@
         <details><summary>${esc(ui('mentions_titre'))}</summary><p>${esc(ui('mentions_texte'))}</p></details>
         <span class="foot-links">
           ${C.portfolio_pdf ? `<a href="${esc(C.portfolio_pdf)}" target="_blank" rel="noopener">${esc(ui('version_pdf'))}</a>` : ''}
-          <a href="${esc(C.contact.instagram)}" target="_blank" rel="noopener">Instagram</a>
+          <a class="foot-insta" href="${esc(C.contact.instagram)}" target="_blank" rel="noopener">${instaIcon}<span>Instagram</span></a>
         </span>
       </div>`;
   }
@@ -177,7 +177,6 @@
           </div>
           <div class="reveal" id="form-zone">${formHTML()}</div>
           <div class="contact-links reveal">
-            <a class="insta" href="${esc(c.instagram)}" target="_blank" rel="noopener">${instaIcon}<span>@studiolemovices</span></a>
             <span class="places">${esc(t(c.lieux))}</span>
           </div>
         </div>

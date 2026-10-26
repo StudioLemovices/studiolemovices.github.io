@@ -23,7 +23,7 @@ RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Numéro de version de style.css et app.js : à changer quand l'un des deux change,
 # pour que les navigateurs chargent aussitôt la nouvelle version.
-VERSION = '2026-10-30'
+VERSION = '2026-10-31'
 
 # Dossiers du dépôt qui ne sont pas des pages de pièces (jamais effacés).
 RESERVES = {'pieces', 'making-of', 'methode', 'site', 'logo', 'fonts', 'liens', 'scripts', '.github'}
