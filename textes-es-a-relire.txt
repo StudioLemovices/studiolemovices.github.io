@@ -619,3 +619,15 @@ ES : Primer montaje en seco, primera prueba superada
 — Chess Table Dualis › atelier 07
 FR : Quarante ans, soixante-quatre cases
 ES : Cuarenta años, sesenta y cuatro casillas
+
+— Chess Set Flamma › atelier 01
+FR : La résine noire coule, puis on attend. Aux échecs aussi, la patience compte.
+ES : La resina negra se vierte, y luego toca esperar. En el ajedrez también cuenta la paciencia.
+
+— Chess Set Flamma › atelier 02
+FR : Une couche d'huile, et les flammes s'allument.
+ES : Una capa de aceite, y las llamas se encienden.
+
+— Chess Set Flamma › atelier 03
+FR : Le dessous compte aussi. Ici, du chêne ébonisé.
+ES : La parte de abajo también cuenta. Aquí, roble ebonizado.

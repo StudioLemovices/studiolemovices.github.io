@@ -838,7 +838,24 @@
         "pieces/chess-set-flamma/01-ensemble.jpg",
         "pieces/chess-set-flamma/02-detail.jpg"
       ],
-      "making_of": null
+      "making_of": "making-of/chess-set-flamma/",
+      "legendes": {
+        "01": {
+          "fr": "La résine noire coule, puis on attend. Aux échecs aussi, la patience compte.",
+          "en": "The black resin is poured, then it waits. In chess, patience counts too.",
+          "es": "La resina negra se vierte, y luego toca esperar. En el ajedrez también cuenta la paciencia."
+        },
+        "02": {
+          "fr": "Une couche d'huile, et les flammes s'allument.",
+          "en": "One coat of oil, and the flames come alive.",
+          "es": "Una capa de aceite, y las llamas se encienden."
+        },
+        "03": {
+          "fr": "Le dessous compte aussi. Ici, du chêne ébonisé.",
+          "en": "The underside matters too. Here, ebonised oak.",
+          "es": "La parte de abajo también cuenta. Aquí, roble ebonizado."
+        }
+      }
     }
   ],
   "making_of": {
