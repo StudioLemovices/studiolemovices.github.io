@@ -576,33 +576,60 @@
       }
     },
     {
-      "slug": "table-levitas-aguacate",
+      "slug": "table-prunus-gyra",
       "famille": "living",
       "nom": {
-        "fr": "Table Levitas Aguacate",
-        "en": "Table Levitas Aguacate",
-        "es": "Mesa Levitas Aguacate"
+        "fr": "Table Prunus Gyra",
+        "en": "Table Prunus Gyra",
+        "es": "Mesa Prunus Gyra"
       },
       "sous_titre": {
-        "fr": "La masse flottante",
-        "en": "Floating mass",
-        "es": "La masa flotante"
+        "fr": "Le quart de tour",
+        "en": "Turning Point",
+        "es": "El cuarto de vuelta"
       },
       "matieres": {
-        "fr": "Afzelia · quartzite Avocado · verre fumé",
-        "en": "Afzelia · Avocado quartzite · smoked glass",
-        "es": "Afzelia · cuarcita Avocado · vidrio ahumado"
+        "fr": "Merisier massif · quartzite Avocado",
+        "en": "Solid cherry · Avocado quartzite",
+        "es": "Cerezo macizo · cuarcita Avocado"
       },
       "texte": {
-        "fr": "Une table basse où la pierre, tirée de la même dalle que la Table Quercus Aguacate, semble flotter. Des pieds taillés dans une chute d'afzelia, une tablette de verre fumé dessous : le contraste et la transparence allègent la masse du quartzite.",
-        "en": "A coffee table where the stone, cut from the same slab as the Table Quercus Aguacate, seems to float. Legs cut from an afzelia offcut, a smoked glass shelf below: contrast and transparency lighten the mass of the quartzite.",
-        "es": "Una mesa baja donde la piedra, extraída de la misma losa que la Table Quercus Aguacate, parece flotar. Patas talladas en un retal de afzelia, una repisa de vidrio ahumado debajo: el contraste y la transparencia aligeran la masa de la cuarcita."
+        "fr": "La pierre vient de la même plaque de quartzite Avocado que la Table Quercus Aguacate, celle qui a tout commencé. Un couple est venu la voir et ne l'a plus quittée des yeux. Il ne restait qu'à lui dessiner des pieds. Une table basse en merisier massif. À chaque angle, le pied a pivoté d'un quart de tour : large d'un côté, fin de l'autre. On en fait le tour, et la table change de visage. Dessous, une tablette de merisier accueille livres et objets.",
+        "en": "The stone comes from the same slab of Avocado quartzite as the Quercus Aguacate table, the one that started it all. A couple came to see it and couldn't take their eyes off it. All that was left was to draw it some legs. A solid cherry coffee table. At each corner, the leg has turned a quarter turn: wide on one side, slim on the other. Walk around it, and the table changes its face. Below, a cherry shelf holds books and objects.",
+        "es": "La piedra procede de la misma placa de cuarcita Avocado que la Mesa Quercus Aguacate, la que lo empezó todo. Una pareja vino a verla y ya no pudo apartar la vista de ella. Solo faltaba dibujarle unas patas. Una mesa baja de cerezo macizo. En cada esquina, la pata ha girado un cuarto de vuelta: ancha por un lado, fina por el otro. Al rodearla, la mesa cambia de rostro. Debajo, una repisa de cerezo acoge libros y objetos."
       },
-      "vignette": "pieces/table-levitas-aguacate/00-vignette.jpg",
       "photos": [
-        "pieces/table-levitas-aguacate/01-ensemble.jpg"
+        "pieces/table-prunus-gyra/01-ensemble.jpg",
+        "pieces/table-prunus-gyra/02-detail.jpg"
       ],
-      "making_of": null
+      "making_of": "making-of/table-prunus-gyra/",
+      "legendes": {
+        "01": {
+          "fr": "Un passage au rabot, et le fil se met à onduler sous la lumière.",
+          "en": "One pass of the planer, and the grain starts to ripple in the light.",
+          "es": "Una pasada de cepillo, y la veta empieza a ondular bajo la luz."
+        },
+        "02": {
+          "fr": "Tout le merisier de la table tient sur un coin d'établi. Reste à le mettre debout.",
+          "en": "The whole cherry table fits on a corner of the bench. Now it just has to stand up.",
+          "es": "Todo el cerezo de la mesa cabe en una esquina del banco de trabajo. Solo falta ponerlo en pie."
+        },
+        "03": {
+          "fr": "Les lames de la tablette cherchent leur place. Le fil doit passer d'une planche à l'autre sans se casser.",
+          "en": "The shelf boards look for their place. The grain has to run from one board to the next without a break.",
+          "es": "Las tablas de la repisa buscan su sitio. La veta debe pasar de una tabla a otra sin romperse."
+        },
+        "04": {
+          "fr": "Un premier montage à blanc. Juste pour voir si tout le monde s'entend.",
+          "en": "A first dry fit. Just to see if everyone gets along.",
+          "es": "Un primer montaje en seco. Solo para ver si todos se llevan bien."
+        },
+        "05": {
+          "fr": "La dernière couche d'huile est appliquée. La pierre, elle, attend depuis le début.",
+          "en": "The last coat of oil is on. The stone has been waiting since the start.",
+          "es": "La última capa de aceite ya está aplicada. La piedra, en cambio, espera desde el principio."
+        }
+      }
     },
     {
       "slug": "standing-desk-quercus-industria",
@@ -811,7 +838,24 @@
         "pieces/chess-set-flamma/01-ensemble.jpg",
         "pieces/chess-set-flamma/02-detail.jpg"
       ],
-      "making_of": null
+      "making_of": "making-of/chess-set-flamma/",
+      "legendes": {
+        "01": {
+          "fr": "La résine noire coule, puis on attend. Aux échecs aussi, la patience compte.",
+          "en": "The black resin is poured, then it waits. In chess, patience counts too.",
+          "es": "La resina negra se vierte, y luego toca esperar. En el ajedrez también cuenta la paciencia."
+        },
+        "02": {
+          "fr": "Une couche d'huile, et les flammes s'allument.",
+          "en": "One coat of oil, and the flames come alive.",
+          "es": "Una capa de aceite, y las llamas se encienden."
+        },
+        "03": {
+          "fr": "Le dessous compte aussi. Ici, du chêne ébonisé.",
+          "en": "The underside matters too. Here, ebonised oak.",
+          "es": "La parte de abajo también cuenta. Aquí, roble ebonizado."
+        }
+      }
     }
   ],
   "making_of": {

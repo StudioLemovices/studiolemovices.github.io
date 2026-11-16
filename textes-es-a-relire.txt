@@ -133,17 +133,41 @@ ES : Nogal americano · olivo · latón
 FR : Une ligne de noyer américain, calme et droite. Au centre, l'olivier garde ses rives naturelles ; un filet de laiton les tient en ligne. Six mois de dessin, deux ans d'atelier.
 ES : Una línea de nogal americano, serena y recta. En el centro, el olivo conserva sus cantos naturales; un filete de latón los mantiene en línea. Seis meses de dibujo, dos años de taller.
 
-— Table Levitas Aguacate › sous_titre
-FR : La masse flottante
-ES : La masa flotante
+— Table Prunus Gyra › nom
+FR : Table Prunus Gyra
+ES : Mesa Prunus Gyra
 
-— Table Levitas Aguacate › matieres
-FR : Afzelia · quartzite Avocado · verre fumé
-ES : Afzelia · cuarcita Avocado · vidrio ahumado
+— Table Prunus Gyra › sous_titre
+FR : Le quart de tour
+ES : El cuarto de vuelta
 
-— Table Levitas Aguacate › texte
-FR : Une table basse où la pierre, tirée de la même dalle que la Table Quercus Aguacate, semble flotter. Des pieds taillés dans une chute d'afzelia, une tablette de verre fumé dessous : le contraste et la transparence allègent la masse du quartzite.
-ES : Una mesa baja donde la piedra, extraída de la misma losa que la Table Quercus Aguacate, parece flotar. Patas talladas en un retal de afzelia, una repisa de vidrio ahumado debajo: el contraste y la transparencia aligeran la masa de la cuarcita.
+— Table Prunus Gyra › matieres
+FR : Merisier massif · quartzite Avocado
+ES : Cerezo macizo · cuarcita Avocado
+
+— Table Prunus Gyra › texte
+FR : La pierre vient de la même plaque de quartzite Avocado que la Table Quercus Aguacate, celle qui a tout commencé. Un couple est venu la voir et ne l'a plus quittée des yeux. Il ne restait qu'à lui dessiner des pieds. Une table basse en merisier massif. À chaque angle, le pied a pivoté d'un quart de tour : large d'un côté, fin de l'autre. On en fait le tour, et la table change de visage. Dessous, une tablette de merisier accueille livres et objets.
+ES : La piedra procede de la misma placa de cuarcita Avocado que la Mesa Quercus Aguacate, la que lo empezó todo. Una pareja vino a verla y ya no pudo apartar la vista de ella. Solo faltaba dibujarle unas patas. Una mesa baja de cerezo macizo. En cada esquina, la pata ha girado un cuarto de vuelta: ancha por un lado, fina por el otro. Al rodearla, la mesa cambia de rostro. Debajo, una repisa de cerezo acoge libros y objetos.
+
+— Table Prunus Gyra › atelier 01
+FR : Un passage au rabot, et le fil se met à onduler sous la lumière.
+ES : Una pasada de cepillo, y la veta empieza a ondular bajo la luz.
+
+— Table Prunus Gyra › atelier 02
+FR : Tout le merisier de la table tient sur un coin d'établi. Reste à le mettre debout.
+ES : Todo el cerezo de la mesa cabe en una esquina del banco de trabajo. Solo falta ponerlo en pie.
+
+— Table Prunus Gyra › atelier 03
+FR : Les lames de la tablette cherchent leur place. Le fil doit passer d'une planche à l'autre sans se casser.
+ES : Las tablas de la repisa buscan su sitio. La veta debe pasar de una tabla a otra sin romperse.
+
+— Table Prunus Gyra › atelier 04
+FR : Un premier montage à blanc. Juste pour voir si tout le monde s'entend.
+ES : Un primer montaje en seco. Solo para ver si todos se llevan bien.
+
+— Table Prunus Gyra › atelier 05
+FR : La dernière couche d'huile est appliquée. La pierre, elle, attend depuis le début.
+ES : La última capa de aceite ya está aplicada. La piedra, en cambio, espera desde el principio.
 
 — Standing Desk Quercus Industria › sous_titre
 FR : Mémoire industrielle
@@ -595,3 +619,15 @@ ES : Primer montaje en seco, primera prueba superada
 — Chess Table Dualis › atelier 07
 FR : Quarante ans, soixante-quatre cases
 ES : Cuarenta años, sesenta y cuatro casillas
+
+— Chess Set Flamma › atelier 01
+FR : La résine noire coule, puis on attend. Aux échecs aussi, la patience compte.
+ES : La resina negra se vierte, y luego toca esperar. En el ajedrez también cuenta la paciencia.
+
+— Chess Set Flamma › atelier 02
+FR : Une couche d'huile, et les flammes s'allument.
+ES : Una capa de aceite, y las llamas se encienden.
+
+— Chess Set Flamma › atelier 03
+FR : Le dessous compte aussi. Ici, du chêne ébonisé.
+ES : La parte de abajo también cuenta. Aquí, roble ebonizado.
