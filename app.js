@@ -96,6 +96,7 @@
                 <a href="${esc(p.slug)}/" data-slug="${esc(p.slug)}">
                   <div class="frame"><img src="${esc(p.vignette || p.photos[0])}" alt="${esc(t(p.nom))}" loading="lazy" decoding="async" width="800" height="1000"></div>
                   <span class="card-name">${esc(t(p.nom))}</span>
+                  ${p.matieres ? `<span class="card-mat">${esc(t(p.matieres))}</span>` : ''}
                 </a>
               </li>`).join('')}
           </ul>
