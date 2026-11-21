@@ -635,53 +635,6 @@
       }
     },
     {
-      "slug": "standing-desk-quercus-industria",
-      "famille": "working",
-      "nom": {
-        "fr": "Bureau debout Quercus Industria",
-        "en": "Standing Desk Quercus Industria",
-        "es": "Escritorio de pie Quercus Industria"
-      },
-      "sous_titre": {
-        "fr": "Mémoire industrielle",
-        "en": "Industrial memory",
-        "es": "Memoria industrial"
-      },
-      "matieres": {
-        "fr": "Chêne de réemploi · piètement réglable",
-        "en": "Reclaimed oak · height-adjustable base",
-        "es": "Roble recuperado · base regulable"
-      },
-      "texte": {
-        "fr": "Des planches de chêne récupérées sur un ancien site industriel, marquées par le temps et l'usage. Le plateau est repris et stabilisé, puis posé sur un piètement réglable en hauteur.",
-        "en": "Oak boards salvaged from an old industrial site, deeply marked by time and use. The top is reworked and stabilised, then set on a height-adjustable base.",
-        "es": "Tablas de roble recuperadas de un antiguo sitio industrial, marcadas por el tiempo y el uso. El tablero se retrabaja y se estabiliza, y luego descansa sobre una base regulable en altura."
-      },
-      "vignette": "pieces/standing-desk-quercus-industria/00-vignette.jpg",
-      "photos": [
-        "pieces/standing-desk-quercus-industria/01-ensemble.jpg",
-        "pieces/standing-desk-quercus-industria/02-detail.jpg"
-      ],
-      "making_of": "making-of/standing-desk-quercus-industria/",
-      "legendes": {
-        "01": {
-          "fr": "Mis à nu, le chêne redevenait neuf. Trop neuf.",
-          "en": "Stripped back, the oak looked new. Too new.",
-          "es": "Al desnudo, el roble volvía a ser nuevo. Demasiado nuevo."
-        },
-        "02": {
-          "fr": "Teinter, poncer, recommencer, jusqu'à « celui-là »",
-          "en": "Stain, sand, start again, until \"that one\"",
-          "es": "Teñir, lijar, volver a empezar, hasta «ese»"
-        },
-        "03": {
-          "fr": "Le neuf affleure, la mémoire reste",
-          "en": "The new shows through, the memory stays",
-          "es": "Lo nuevo aflora, la memoria permanece"
-        }
-      }
-    },
-    {
       "slug": "standing-desk-quercus-memoria",
       "famille": "working",
       "nom": {
@@ -740,6 +693,53 @@
           "fr": "Le défaut au centre ne se cache plus, il devient le sujet",
           "en": "The flaw at the centre no longer hides; it becomes the subject",
           "es": "El defecto del centro ya no se esconde, se convierte en el tema"
+        }
+      }
+    },
+    {
+      "slug": "standing-desk-quercus-industria",
+      "famille": "working",
+      "nom": {
+        "fr": "Bureau debout Quercus Industria",
+        "en": "Standing Desk Quercus Industria",
+        "es": "Escritorio de pie Quercus Industria"
+      },
+      "sous_titre": {
+        "fr": "Mémoire industrielle",
+        "en": "Industrial memory",
+        "es": "Memoria industrial"
+      },
+      "matieres": {
+        "fr": "Chêne de réemploi · piètement réglable",
+        "en": "Reclaimed oak · height-adjustable base",
+        "es": "Roble recuperado · base regulable"
+      },
+      "texte": {
+        "fr": "Des planches de chêne récupérées sur un ancien site industriel, marquées par le temps et l'usage. Le plateau est repris et stabilisé, puis posé sur un piètement réglable en hauteur.",
+        "en": "Oak boards salvaged from an old industrial site, deeply marked by time and use. The top is reworked and stabilised, then set on a height-adjustable base.",
+        "es": "Tablas de roble recuperadas de un antiguo sitio industrial, marcadas por el tiempo y el uso. El tablero se retrabaja y se estabiliza, y luego descansa sobre una base regulable en altura."
+      },
+      "vignette": "pieces/standing-desk-quercus-industria/00-vignette.jpg",
+      "photos": [
+        "pieces/standing-desk-quercus-industria/01-ensemble.jpg",
+        "pieces/standing-desk-quercus-industria/02-detail.jpg"
+      ],
+      "making_of": "making-of/standing-desk-quercus-industria/",
+      "legendes": {
+        "01": {
+          "fr": "Mis à nu, le chêne redevenait neuf. Trop neuf.",
+          "en": "Stripped back, the oak looked new. Too new.",
+          "es": "Al desnudo, el roble volvía a ser nuevo. Demasiado nuevo."
+        },
+        "02": {
+          "fr": "Teinter, poncer, recommencer, jusqu'à « celui-là »",
+          "en": "Stain, sand, start again, until \"that one\"",
+          "es": "Teñir, lijar, volver a empezar, hasta «ese»"
+        },
+        "03": {
+          "fr": "Le neuf affleure, la mémoire reste",
+          "en": "The new shows through, the memory stays",
+          "es": "Lo nuevo aflora, la memoria permanece"
         }
       }
     },
