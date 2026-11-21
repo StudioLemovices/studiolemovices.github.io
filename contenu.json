@@ -8,15 +8,22 @@
   "accueil": {
     "logo": "logo/logo-noir.svg",
     "logo_sombre": "logo/logo-blanc.svg",
+    "photos_couverture": [
+      "credenza-confluencia",
+      "table-prunus-gyra",
+      "table-prunus-orbita",
+      "table-quercus-aguacate",
+      "chess-table-dualis"
+    ],
     "phrase": {
       "fr": "Chaque pièce est unique.",
       "en": "Every piece is one of a kind.",
       "es": "Cada pieza es única."
     },
     "lieux": {
-      "fr": "🇧🇪 Bruxelles / Lyon 🇫🇷",
-      "en": "🇧🇪 Bruxelles / Lyon 🇫🇷",
-      "es": "🇧🇪 Bruselas / Lyon 🇫🇷"
+      "fr": "Bruxelles / Lyon",
+      "en": "Bruxelles / Lyon",
+      "es": "Bruselas / Lyon"
     }
   },
   "intro": {
@@ -49,8 +56,7 @@
         "fr": "Chêne",
         "en": "Oak",
         "es": "Roble"
-      },
-      "texture": "site/sommaire-01-dining---chene.jpg"
+      }
     },
     {
       "id": "living",
@@ -64,8 +70,7 @@
         "fr": "Noyer",
         "en": "Walnut",
         "es": "Nogal"
-      },
-      "texture": "site/sommaire-02-living---noyer.jpg"
+      }
     },
     {
       "id": "working",
@@ -79,8 +84,7 @@
         "fr": "Érable",
         "en": "Maple",
         "es": "Arce"
-      },
-      "texture": "site/sommaire-03-working---erable.jpg"
+      }
     },
     {
       "id": "chess",
@@ -94,8 +98,7 @@
         "fr": "Merisier",
         "en": "Cherry",
         "es": "Cerezo"
-      },
-      "texture": "site/sommaire-04-chess---merisier.jpg"
+      }
     }
   ],
   "pieces": [
@@ -981,9 +984,9 @@
     },
     "instagram": "https://www.instagram.com/studiolemovices/",
     "lieux": {
-      "fr": "🇧🇪 Bruxelles / Lyon 🇫🇷",
-      "en": "🇧🇪 Bruxelles / Lyon 🇫🇷",
-      "es": "🇧🇪 Bruselas / Lyon 🇫🇷"
+      "fr": "Bruxelles / Lyon",
+      "en": "Bruxelles / Lyon",
+      "es": "Bruselas / Lyon"
     }
   },
   "mentions_legales": {
@@ -994,6 +997,11 @@
     "goatcounter_code": "studiolemovices"
   },
   "interface": {
+    "projet_similaire": {
+      "fr": "Parler d'un projet similaire",
+      "en": "Discuss a similar project",
+      "es": "Hablar de un proyecto similar"
+    },
     "nav_pieces": {
       "fr": "Pièces",
       "en": "Pieces",

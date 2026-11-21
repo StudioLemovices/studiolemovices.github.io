@@ -16,6 +16,7 @@
   let current = null;      // slug de la fiche affichée, ou null pour l'accueil
   let view = 'home';       // vue demandée (mise à jour tout de suite, avant l'animation)
   let homeScroll = 0;
+  let coverSlug;           // pièce de la photo de couverture (tirée au premier affichage)
   let pendingGoto = null;
   let firstRender = true;
   let formState = { sent: false, values: {} };
@@ -95,6 +96,7 @@
                 <a href="${esc(p.slug)}/" data-slug="${esc(p.slug)}">
                   <div class="frame"><img src="${esc(p.vignette || p.photos[0])}" alt="${esc(t(p.nom))}" loading="lazy" decoding="async" width="800" height="1000"></div>
                   <span class="card-name">${esc(t(p.nom))}</span>
+                  ${p.matieres ? `<span class="card-mat">${esc(t(p.matieres))}</span>` : ''}
                 </a>
               </li>`).join('')}
           </ul>
@@ -102,14 +104,25 @@
     }).join('');
 
     const texts = t(ap.texte);
+    // photo de couverture : tirée au hasard une fois par visite parmi « photos_couverture »
+    if (coverSlug === undefined) {
+      const list = (a.photos_couverture || []).filter(isPiece);
+      coverSlug = list.length ? list[Math.floor(Math.random() * list.length)] : null;
+    }
+    const cover = coverSlug && C.pieces.find((p) => p.slug === coverSlug);
     home.innerHTML = `
-      <section class="hero" id="accueil">
+      <section class="hero${cover ? ' has-photo' : ''}" id="accueil">
         <div class="hero-inner">
-          ${logo(a, 400, 'hero-logo')}
+          ${logo(a, 120, 'hero-logo')}
           <h1 class="hero-title">${esc(C.nom)}</h1>
           <p class="hero-phrase lead">${esc(t(a.phrase))}</p>
           <p class="hero-lieux">${esc(t(a.lieux))}</p>
         </div>
+        ${cover ? `
+        <a class="hero-photo" href="${esc(cover.slug)}/">
+          <img src="${esc(cover.vignette || cover.photos[0])}" alt="${esc(t(cover.nom))}" fetchpriority="high" decoding="async" width="1600" height="2000">
+          <span class="hero-cap">${esc(t(cover.nom))} →</span>
+        </a>` : ''}
         <a class="hero-scroll" href="./" data-goto="intro" aria-label="${esc(t(i.titre))}"></a>
       </section>
 
@@ -129,15 +142,6 @@
           <h2 class="h-section">${esc(ui('pieces_titre'))}</h2>
           <span class="rule"></span>
         </div>
-        <ul class="toc">
-          ${C.familles.filter((f) => C.pieces.some((p) => p.famille === f.id)).map((f) => `
-            <li class="reveal">
-              <a href="./" data-goto="famille-${esc(f.id)}">
-                <div class="toc-img">${f.texture ? `<img src="${esc(f.texture)}" alt="" loading="lazy" decoding="async" width="800" height="1000">` : ''}</div>
-                <span class="toc-label"><span class="num">${esc(f.num)}</span><span class="toc-name">${esc(t(f.nom))}</span></span>
-              </a>
-            </li>`).join('')}
-        </ul>
         ${families}
       </section>
 
@@ -316,7 +320,7 @@
             <p class="fiche-text">${esc(t(p.texte))}</p>
             <p class="fiche-mention">${esc(t(C.contact.mention))}</p>
             <div class="fiche-actions">
-              <a class="btn" href="./#contact" data-goto="contact">${esc(ui('nav_contact'))}</a>
+              <a class="btn" href="./#contact" data-goto="contact">${esc(C.interface.projet_similaire ? ui('projet_similaire') : ui('nav_contact'))}</a>
             </div>
           </div>
         </div>

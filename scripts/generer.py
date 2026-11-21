@@ -23,7 +23,7 @@ RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Numéro de version de style.css et app.js : à changer quand l'un des deux change,
 # pour que les navigateurs chargent aussitôt la nouvelle version.
-VERSION = '2026-10-31'
+VERSION = '2026-11-21'
 
 # Dossiers du dépôt qui ne sont pas des pages de pièces (jamais effacés).
 RESERVES = {'pieces', 'making-of', 'methode', 'site', 'logo', 'fonts', 'liens', 'scripts', '.github'}
@@ -204,7 +204,7 @@ def main():
             <p class="fiche-text">{e(fr(p["texte"]))}</p>
             <p class="fiche-mention">{e(fr(C["contact"]["mention"]))}</p>
             <div class="fiche-actions">
-              <a class="btn" href="./#contact" data-goto="contact">{e(ui["nav_contact"])}</a>
+              <a class="btn" href="./#contact" data-goto="contact">{e(ui.get("projet_similaire") or ui["nav_contact"])}</a>
             </div>
           </div>
         </div>
