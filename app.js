@@ -466,6 +466,8 @@
   lb.count = $('.lb-count', lb.el);
   lb.nameEl = $('.lb-name', lb.el);
   lb.legendEl = $('.lb-legend', lb.el);
+  lb.img.addEventListener('load', fitLB);
+  window.addEventListener('resize', fitLB);
 
   function openLB(list, i, name, legends = []) {
     lb.list = list; lb.i = i; lb.name = name; lb.legends = legends; lb.last = document.activeElement;
@@ -475,8 +477,23 @@
     $('.lb-close', lb.el).setAttribute('aria-label', ui('fermer'));
     $('.lb-close', lb.el).focus();
   }
+  // Taille de la photo calculée ici, en pixels, d'après la place disponible : Safari rapetissait
+  // certaines photos quand la taille était laissée au navigateur.
+  function fitLB() {
+    const img = lb.img, fig = img.parentElement;
+    if (lb.el.hidden || !img.naturalWidth) return;
+    const f = getComputedStyle(fig), s = getComputedStyle(img);
+    const pad = (st, a, b) => parseFloat(st[a]) + parseFloat(st[b]);
+    const maxW = fig.clientWidth - pad(f, 'paddingLeft', 'paddingRight') - pad(s, 'paddingLeft', 'paddingRight');
+    const maxH = parseFloat(s.maxHeight);
+    const k = Math.min(1, maxW / img.naturalWidth, maxH / img.naturalHeight);
+    img.style.width = `${Math.round(img.naturalWidth * k)}px`;
+    img.style.height = `${Math.round(img.naturalHeight * k)}px`;
+  }
+
   function showLB() {
     const n = lb.list.length;
+    lb.img.style.width = lb.img.style.height = '';
     lb.img.src = lb.list[lb.i];
     lb.img.classList.toggle('sketch', isSketch(lb.list[lb.i]));
     const legend = lb.legends[lb.i] || '';
@@ -489,6 +506,7 @@
     $('.lb-prev', lb.el).style.visibility = lb.i > 0 ? '' : 'hidden';
     $('.lb-next', lb.el).style.visibility = n > 1 ? '' : 'hidden';
     if (lb.i + 1 < n) { new Image().src = lb.list[lb.i + 1]; }
+    if (lb.img.complete) fitLB();
   }
   function stepLB(d) {
     // Pas de boucle : après la dernière photo, la visionneuse se ferme ; avant la première, rien.
@@ -502,6 +520,7 @@
     lb.el.hidden = true;
     document.body.classList.remove('lb-open');
     lb.img.removeAttribute('src');
+    lb.img.style.width = lb.img.style.height = '';
     if (lb.last) lb.last.focus({ preventScroll: true });
   }
   lb.el.addEventListener('click', (e) => {

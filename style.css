@@ -267,11 +267,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 }
 .mo-item { flex: 0 0 auto; scroll-snap-align: start; overflow: hidden; background: var(--soft); }
 .mo-item img { height: clamp(150px, 16vw, 220px); width: calc(clamp(150px, 16vw, 220px) * .8); max-width: none; object-fit: cover; transition: transform 1.2s var(--ease); }
-/* dessin 00.jpg : image entière, à sa largeur naturelle, sur le papier du site */
-.mo-item.sketch { background: var(--paper); isolation: isolate; }
-@media not all and (prefers-color-scheme: dark) {
-  .mo-item.sketch img, .lb-figure img.sketch { mix-blend-mode: multiply; }
-}
+/* dessin 00.jpg : image entière, à sa largeur naturelle, sur le papier du site
+   (le fond des fichiers 00.jpg est déjà au crème du site, #F6F3EE) */
+.mo-item.sketch { background: var(--paper); }
 .mo-item.sketch img { width: auto; object-fit: contain; }
 
 /* ---------- Méthode ---------- */
