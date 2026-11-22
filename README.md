@@ -63,7 +63,7 @@ Même chose dans le dossier `making-of/` : un dossier au même nom (`table-nouve
    Copiez tout le bloc, de l'accolade `{` jusqu'à l'accolade `},` qui le ferme.
 3. Collez-le juste après, et modifiez :
    - `"slug"` : le nom du dossier (`table-nouvelle`) — c'est aussi l'adresse de la page de la pièce : `studiolemovices.be/table-nouvelle/` (créée automatiquement) ;
-   - `"famille"` : `dining`, `living`, `working` ou `chess` ;
+   - `"famille"` : `dining`, `living`, `working`, `chess` ou `interiors` ;
    - `"nom"` (par exemple « Banc Nouveau » en français, « New Bench » en anglais, « Banco Nuevo » en espagnol), `"sous_titre"`, `"matieres"`, `"texte"` : chacun en français, en anglais et en espagnol ;
    - `"photos"` : les chemins de vos photos, par exemple `"pieces/table-nouvelle/01-ensemble.jpg"` ;
    - `"vignette"` (facultatif) : la vignette de l'accueil, toujours en vertical 4:5, par exemple `"pieces/table-nouvelle/00-vignette.jpg"`. Utile quand la photo d'ensemble est horizontale (meuble long, format 5:4). Sans ce champ, l'accueil montre la première photo.
