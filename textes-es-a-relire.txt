@@ -631,3 +631,35 @@ ES : Una capa de aceite, y las llamas se encienden.
 — Chess Set Flamma › atelier 03
 FR : Le dessous compte aussi. Ici, du chêne ébonisé.
 ES : La parte de abajo también cuenta. Aquí, roble ebonizado.
+
+— famille › interiors
+FR : Intérieurs
+ES : Interiores
+
+— Shoe Cabinet Quercus Angusta › nom
+FR : Meuble à chaussures Quercus Angusta
+ES : Zapatero Quercus Angusta
+
+— Shoe Cabinet Quercus Angusta › sous_titre
+FR : Lumière étroite
+ES : Luz estrecha
+
+— Shoe Cabinet Quercus Angusta › matieres
+FR : Panneaux de chêne récupérés · miroir · éclairage LED
+ES : Paneles de roble recuperados · espejo · iluminación LED
+
+— Shoe Cabinet Quercus Angusta › texte
+FR : Vingt centimètres de profondeur, c'est moins qu'une chaussure. Ce recoin de l'entrée demandait un meuble dessiné pour lui seul, avec chaque hauteur pensée pour ceux qui vivent là, jusqu'au miroir. Le chêne est verni pour tenir face aux allées et venues.
+ES : Veinte centímetros de fondo, menos que un zapato. Este rincón de la entrada pedía un mueble dibujado solo para él, con cada altura pensada para quienes viven allí, hasta el espejo. El roble está barnizado para resistir el ir y venir de cada día.
+
+— Shoe Cabinet Quercus Angusta › atelier 01
+FR : Le chêne vient de panneaux récupérés. Pas de seconde chance : il n'y en avait pas d'autres.
+ES : El roble procede de paneles recuperados. Sin segunda oportunidad: no había otros.
+
+— Shoe Cabinet Quercus Angusta › atelier 02
+FR : À l'atelier, il avait tout d'un escalier. Personne n'a essayé de monter.
+ES : En el taller, tenía todo de una escalera. Nadie intentó subir.
+
+— Shoe Cabinet Quercus Angusta › atelier 03
+FR : Pour le redresser dans l'entrée, sa diagonale a été calculée au centimètre près.
+ES : Para ponerlo en pie en la entrada, su diagonal se calculó al centímetro.
