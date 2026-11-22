@@ -368,7 +368,16 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;
   padding: clamp(56px, 8vh, 96px) clamp(72px, 10vw, 160px) clamp(28px, 5vh, 56px);
 }
-.lb-figure img { flex: 0 1 auto; min-height: 0; width: auto; height: auto; max-width: 100%; max-height: calc(100% - 90px); object-fit: contain; user-select: none; -webkit-user-drag: none; }
+.lb-figure img {
+  /* hauteur maximale fixée d'après la fenêtre (et non par rétrécissement flex) : sinon Safari
+     rapetisse la photo dès qu'une légende s'affiche dessous (photos d'atelier) */
+  --lb-max-h: calc(100vh - clamp(56px, 8vh, 96px) - clamp(28px, 5vh, 56px) - 90px);
+  flex: none; width: auto; height: auto; max-width: 100%; max-height: var(--lb-max-h);
+  object-fit: contain; user-select: none; -webkit-user-drag: none;
+}
+@supports (height: 100dvh) {
+  .lb-figure img { --lb-max-h: calc(100dvh - clamp(56px, 8vh, 96px) - clamp(28px, 5vh, 56px) - 90px); }
+}
 .lb-cap {
   display: flex; gap: 18px; align-items: baseline; justify-content: center; flex-wrap: wrap; text-align: center;
   font-family: var(--serif); font-size: 14px; letter-spacing: .24em; text-transform: uppercase; color: var(--ink);
@@ -443,6 +452,8 @@ body.lb-open .site-header { visibility: hidden; }
   .fiche-nav { grid-template-columns: 1fr 1fr; }
   .fiche-nav .mid { grid-column: 1 / -1; grid-row: 2; justify-self: center; }
   .lb-figure { padding: 64px 20px 76px; }
+  .lb-figure img { --lb-max-h: calc(100vh - 230px); }
+  @supports (height: 100dvh) { .lb-figure img { --lb-max-h: calc(100dvh - 230px); } }
   .lb-cap { font-size: 12px; gap: 12px; }
   .lb-prev, .lb-next { top: auto; bottom: max(12px, env(safe-area-inset-bottom)); transform: none; }
   .lb-prev { left: 8px; } .lb-next { right: 8px; }
