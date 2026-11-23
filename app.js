@@ -483,17 +483,24 @@
     const img = lb.img, fig = img.parentElement;
     if (lb.el.hidden || !img.naturalWidth) return;
     const f = getComputedStyle(fig), s = getComputedStyle(img);
-    const pad = (st, a, b) => parseFloat(st[a]) + parseFloat(st[b]);
-    const maxW = fig.clientWidth - pad(f, 'paddingLeft', 'paddingRight') - pad(s, 'paddingLeft', 'paddingRight');
-    const maxH = parseFloat(s.maxHeight);
-    const k = Math.min(1, maxW / img.naturalWidth, maxH / img.naturalHeight);
+    const px = (st, ...props) => props.reduce((sum, p) => sum + (parseFloat(st[p]) || 0), 0);
+    // place libre mesurée directement : hauteur de la visionneuse moins ses marges,
+    // la légende, le nom et les espaces entre eux (sans lire max-height, que Safari résout mal)
+    const others = [...fig.children].filter((c) => c !== img && !c.hidden);
+    const used = others.reduce((sum, c) => sum + c.offsetHeight + px(getComputedStyle(c), 'marginTop', 'marginBottom'), 0)
+      + px(f, 'rowGap') * others.length;
+    const maxW = fig.clientWidth - px(f, 'paddingLeft', 'paddingRight') - px(s, 'paddingLeft', 'paddingRight');
+    const maxH = fig.clientHeight - px(f, 'paddingTop', 'paddingBottom') - px(s, 'paddingTop', 'paddingBottom') - used;
+    const k = Math.min(1, maxW / img.naturalWidth, Math.max(maxH, 120) / img.naturalHeight);
+    img.style.maxWidth = img.style.maxHeight = 'none';
     img.style.width = `${Math.round(img.naturalWidth * k)}px`;
     img.style.height = `${Math.round(img.naturalHeight * k)}px`;
   }
 
+
   function showLB() {
     const n = lb.list.length;
-    lb.img.style.width = lb.img.style.height = '';
+    lb.img.style.width = lb.img.style.height = lb.img.style.maxWidth = lb.img.style.maxHeight = '';
     lb.img.src = lb.list[lb.i];
     lb.img.classList.toggle('sketch', isSketch(lb.list[lb.i]));
     const legend = lb.legends[lb.i] || '';
@@ -520,7 +527,7 @@
     lb.el.hidden = true;
     document.body.classList.remove('lb-open');
     lb.img.removeAttribute('src');
-    lb.img.style.width = lb.img.style.height = '';
+    lb.img.style.width = lb.img.style.height = lb.img.style.maxWidth = lb.img.style.maxHeight = '';
     if (lb.last) lb.last.focus({ preventScroll: true });
   }
   lb.el.addEventListener('click', (e) => {
