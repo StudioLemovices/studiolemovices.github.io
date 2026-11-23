@@ -466,8 +466,6 @@
   lb.count = $('.lb-count', lb.el);
   lb.nameEl = $('.lb-name', lb.el);
   lb.legendEl = $('.lb-legend', lb.el);
-  lb.img.addEventListener('load', fitLB);
-  window.addEventListener('resize', fitLB);
 
   function openLB(list, i, name, legends = []) {
     lb.list = list; lb.i = i; lb.name = name; lb.legends = legends; lb.last = document.activeElement;
@@ -477,30 +475,8 @@
     $('.lb-close', lb.el).setAttribute('aria-label', ui('fermer'));
     $('.lb-close', lb.el).focus();
   }
-  // Taille de la photo calculée ici, en pixels, d'après la place disponible : Safari rapetissait
-  // certaines photos quand la taille était laissée au navigateur.
-  function fitLB() {
-    const img = lb.img, fig = img.parentElement;
-    if (lb.el.hidden || !img.naturalWidth) return;
-    const f = getComputedStyle(fig), s = getComputedStyle(img);
-    const px = (st, ...props) => props.reduce((sum, p) => sum + (parseFloat(st[p]) || 0), 0);
-    // place libre mesurée directement : hauteur de la visionneuse moins ses marges,
-    // la légende, le nom et les espaces entre eux (sans lire max-height, que Safari résout mal)
-    const others = [...fig.children].filter((c) => c !== img && !c.hidden);
-    const used = others.reduce((sum, c) => sum + c.offsetHeight + px(getComputedStyle(c), 'marginTop', 'marginBottom'), 0)
-      + px(f, 'rowGap') * others.length;
-    const maxW = fig.clientWidth - px(f, 'paddingLeft', 'paddingRight') - px(s, 'paddingLeft', 'paddingRight');
-    const maxH = fig.clientHeight - px(f, 'paddingTop', 'paddingBottom') - px(s, 'paddingTop', 'paddingBottom') - used;
-    const k = Math.min(1, maxW / img.naturalWidth, Math.max(maxH, 120) / img.naturalHeight);
-    img.style.maxWidth = img.style.maxHeight = 'none';
-    img.style.width = `${Math.round(img.naturalWidth * k)}px`;
-    img.style.height = `${Math.round(img.naturalHeight * k)}px`;
-  }
-
-
   function showLB() {
     const n = lb.list.length;
-    lb.img.style.width = lb.img.style.height = lb.img.style.maxWidth = lb.img.style.maxHeight = '';
     lb.img.src = lb.list[lb.i];
     lb.img.classList.toggle('sketch', isSketch(lb.list[lb.i]));
     const legend = lb.legends[lb.i] || '';
@@ -513,7 +489,6 @@
     $('.lb-prev', lb.el).style.visibility = lb.i > 0 ? '' : 'hidden';
     $('.lb-next', lb.el).style.visibility = n > 1 ? '' : 'hidden';
     if (lb.i + 1 < n) { new Image().src = lb.list[lb.i + 1]; }
-    if (lb.img.complete) fitLB();
   }
   function stepLB(d) {
     // Pas de boucle : après la dernière photo, la visionneuse se ferme ; avant la première, rien.
@@ -527,13 +502,18 @@
     lb.el.hidden = true;
     document.body.classList.remove('lb-open');
     lb.img.removeAttribute('src');
-    lb.img.style.width = lb.img.style.height = lb.img.style.maxWidth = lb.img.style.maxHeight = '';
     if (lb.last) lb.last.focus({ preventScroll: true });
   }
   lb.el.addEventListener('click', (e) => {
     const a = e.target.closest('[data-lb]');
     if (a) { const k = a.dataset.lb; if (k === 'close') closeLB(); else stepLB(k === 'next' ? 1 : -1); return; }
-    if (e.target === lb.el || e.target.classList.contains('lb-figure')) closeLB();
+    if (e.target === lb.el || e.target.classList.contains('lb-figure') || e.target.classList.contains('lb-frame')) { closeLB(); return; }
+    // clic dans le cadre mais à côté de la photo (bandes vides laissées par l'ajustement) : fermer
+    if (e.target === lb.img && lb.img.naturalWidth) {
+      const r = lb.img.getBoundingClientRect(), k = Math.min(r.width / lb.img.naturalWidth, r.height / lb.img.naturalHeight);
+      const w = lb.img.naturalWidth * k, h = lb.img.naturalHeight * k;
+      if (Math.abs(e.clientX - (r.left + r.width / 2)) > w / 2 || Math.abs(e.clientY - (r.top + r.height / 2)) > h / 2) closeLB();
+    }
   });
   let tx = null, ty = null;
   lb.el.addEventListener('touchstart', (e) => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
