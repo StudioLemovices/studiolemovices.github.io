@@ -116,7 +116,6 @@
           ${logo(a, 120, 'hero-logo')}
           <h1 class="hero-title">${esc(C.nom)}</h1>
           <p class="hero-phrase lead">${esc(t(a.phrase))}</p>
-          <p class="hero-lieux">${esc(t(a.lieux))}</p>
         </div>
         ${cover ? `
         <a class="hero-photo" href="${esc(cover.slug)}/">
